@@ -9,7 +9,7 @@ identifiers:
   upc_ean: null
 
 cover:
-  github_path: null
+  github_path: assets/releases/unseen-dragon/cover/Unseen_Dragon_Cover.png
   web_url: null
   drive_url: null
 
@@ -68,4 +68,4 @@ website:
 notes_public: >
   Priority Pitch用Release Summaryは2026-08-12作成。Spotify Artist情報、Marketing Elements、
   Past Awards / Milestones、画像／EPK等は要確認。GitHub公開素材中心の参照設計へ移行済み。
-  Unseen Dragon正式カバーのGitHub実ファイル移行後にcover.github_pathを登録する。
+  2026-08-12にUnseen Dragon正式カバーをGitHub assetsへ分類し、cover.github_pathを登録。
