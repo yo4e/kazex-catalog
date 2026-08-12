@@ -51,8 +51,32 @@ Spotify URL、UPC、ISRC、リリース日、受賞歴、チャート実績、�
 - `assets/` — 軽量な公開素材
 - `assets/inbox/` — 未整理の公開素材の一時投入場所
 - `docs/` — 仕様・将来設計
-- `scripts/` — validation / task packet生成等の補助ツール
+- `scripts/` — validation / readiness確認 / task packet生成等の補助ツール
 - `templates/` — 新規登録時の雛形
+
+## Conversational Catalog Intake
+
+ユーザーが制作会話の途中で「それカタログに入れといて」「この曲も登録しといて」「このプロンプト残しといて」等と指示した場合は、`docs/INTAKE_WORKFLOW.md` を参照してください。
+
+基本動作:
+
+1. 現在の会話とcatalogから対象artist / release / trackを特定する。
+2. 既知の公開可能情報をまずcatalogへ保存する。
+3. 不足値があっても、既知情報の保存自体は止めない。
+4. 制作中は、保存に必要な曖昧さだけ質問する。
+5. release date、UPC、ISRC、Spotify Artist URL等が単に未決定・未発行なら `null` のままにし、毎回質問しない。
+6. ユーザーが「ピッチ準備」「Spotify登録できる状態にして」「ブラウザへ投げられる状態にして」等と指示した段階で、対象外部サービスに必要な不足だけをまとめて要求する。
+7. 既存catalogや会話から生成できる文章・実績整理は、事実を増やさずAIが作成してよい。
+8. 更新後はvalidationを行い、何を保存したかを短く報告する。
+
+環境でスクリプト実行が可能なら、外部登録準備時に以下も利用できます。
+
+```bash
+python scripts/check_readiness.py release <release-id>
+python scripts/check_readiness.py artist <artist-id>
+```
+
+ユーザーに再質問する前に、現在の会話とcatalogで解決できないか確認してください。
 
 ## Priority Pitch
 
