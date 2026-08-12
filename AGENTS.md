@@ -48,6 +48,8 @@ Spotify URL、UPC、ISRC、リリース日、受賞歴、チャート実績、�
 
 - `artists/*.yaml` — アーティスト単位の公開情報
 - `releases/*.yaml` — リリース単位の公開情報とプロモーション情報
+- `assets/` — 軽量な公開素材
+- `assets/inbox/` — 未整理の公開素材の一時投入場所
 - `docs/` — 仕様・将来設計
 - `templates/` — 新規登録時の雛形
 
@@ -57,22 +59,48 @@ Too Lost Priority Pitch を作成・更新するときは、必ず `docs/PRIORIT
 
 Pitch本文やMilestoneは事実に基づき、英語として自然に整えて構いませんが、実績・施策・受賞歴を盛らないでください。
 
-## Google Drive素材管理 / Inbox
+## 公開素材 / Asset Inbox
 
 素材を扱う作業では `docs/ASSETS.md` を参照してください。
 
-KAZEX Records Assets の直下には `Inbox/` があり、人間が未整理素材を雑な仮名のまま投入してよい運用になっています。
+日常的にAIが整理・参照する公開アー写、公開ジャケット、ロゴ、コンセプト画像、Web掲載前提の軽量素材は、原則としてGitHubの `assets/` を正本とします。
 
-AIが素材整理を担当する場合は、可能であれば最初に `Inbox/` を確認してください。
+高解像度原本、PSD / AI、動画、音源、制作途中ファイル、バックアップ等はGoogle Drive側の原本倉庫に置きます。Drive URLをYAMLへ保存する場合も、公開されて問題ないURLだけを記録してください。
 
-- ファイル名、内容、既存カタログ、Drive構造から所属が十分に判断できる場合だけリネーム・分類する。
-- アーティスト写真、ロゴ、EPK、リリースのCover Art / Visuals / Other Assetsなど、用途に応じた既存フォルダへ移す。
-- 正式採用素材としてカタログから参照すべき場合は、対応するartist / release YAMLも更新する。
-- どのアーティスト／作品／用途か判断できない場合は推測しない。山田へ確認し、確認前は `Inbox/` に残す。
-- 不明ファイルを「たぶんこれ」と勝手に分類しない。
-- 内容を確認せず削除・上書きしない。
+### Inbox処理
 
-InboxのURLや詳細な命名・分類ルールは `docs/ASSETS.md` を正本とします。
+人間は公開して問題ない未整理素材を、雑なファイル名のまま `assets/inbox/` へ投入して構いません。
+
+AIが素材整理を担当する場合は、次の順で処理してください。
+
+1. 画像・ファイル内容を実際に確認する。
+2. 既存の artist / release YAML、ファイル内容、文脈から artist / release / asset type を判定する。
+3. 十分に判断できるものだけ、一貫したファイル名へリネームする。
+4. `assets/artists/<artist-id>/...` または `assets/releases/<release-id>/...` の適切な場所へ移す。
+5. 正式採用素材として参照すべき場合は、対応するYAMLの `github_path` 等を更新する。
+6. どの作品・アーティスト・用途か判断できない場合だけ山田へ確認する。
+7. 判別不能な素材は確認前に無理に移動しない。
+
+### 推測で確定してはいけないこと
+
+- 正式アー写
+- 正式ジャケット
+- 正式ロゴ
+- EPK採用版
+- 素材の作品所属や用途が不明な場合の分類
+
+明示がない限り、候補素材は `candidate` として扱ってください。AIは「これが一番よさそう」という理由だけで正式採用へ昇格させません。
+
+### 分類の基本
+
+- アー写 → `assets/artists/<artist-id>/artist-photos/`
+- ロゴ → `assets/artists/<artist-id>/logos/`
+- 設定画・コンセプト画像 → `assets/artists/<artist-id>/concept-art/`
+- ジャケット → `assets/releases/<release-id>/cover/`
+- Canvas / Visualizer / MV等 → `assets/releases/<release-id>/visuals/`
+- その他の作品固有公開素材 → `assets/releases/<release-id>/other-assets/`
+
+内容を確認せず削除・上書きしないでください。
 
 ## 将来のWebサイト連携
 
