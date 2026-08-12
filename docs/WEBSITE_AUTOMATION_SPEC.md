@@ -6,19 +6,20 @@
 
 ## 目的
 
-アーティストやリリース情報を `kazex-catalog` に一度登録すれば、その情報を正本としてKAZEX Records公式サイトへ反映できるようにする。
+アーティストやリリース情報を `kazex-catalog` に一度登録すれば、その情報と公開素材を正本としてKAZEX Records公式サイトへ反映できるようにする。
 
 人間がWeb管理画面へ同じ情報を二重入力する運用をなくす。
 
 ## 基本要件
 
 1. `artists/*.yaml` と `releases/*.yaml` を読み込めること
-2. YAMLをサイトへ反映する前にvalidationできること
-3. 公開対象だけをサイトへ出力できること
-4. 内部運用用フィールドが将来追加されても、サイトへ無条件に露出しないこと
-5. 既存サイトのデザイン・URL・SEOを不必要に壊さないこと
-6. リリース情報の修正がサイトへ再反映されること
-7. AIが安全にデータ追加できること
+2. `assets/` の公開素材を参照またはサイト側へコピーできること
+3. YAMLをサイトへ反映する前にvalidationできること
+4. 公開対象だけをサイトへ出力できること
+5. 内部運用用フィールドが将来追加されても、サイトへ無条件に露出しないこと
+6. 既存サイトのデザイン・URL・SEOを不必要に壊さないこと
+7. リリース情報や公開素材の修正がサイトへ再反映されること
+8. AIが安全にデータ追加できること
 
 ## 想定する公開情報
 
@@ -95,6 +96,8 @@ website:
 
 サイト連携の前にSchema validationを導入する。
 
+現在は `scripts/validate_catalog.py` と `.github/workflows/catalog-validation.yml` により、基本的なYAML整合性を検査する。将来必要に応じてJSON Schema等へ拡張する。
+
 検査候補：
 
 - `id` の一意性
@@ -104,9 +107,9 @@ website:
 - `tracks` の構造
 - `release_type` の許容値
 - `status` の許容値
+- GitHub素材参照先の存在
+- Priority Pitch文字数制限
 - website公開設定の整合性
-
-可能ならGitHub Actionsでpush / PR時に検証する。
 
 ## 実装方式の選択
 
@@ -140,6 +143,8 @@ website build
 deploy
 ```
 
+YAMLと `assets/` を同じコミットから取得すれば、メタデータと画像の対応を再現しやすい。
+
 ### パターンB：公開用JSONを生成
 
 サイト実装とカタログを疎結合にしたい場合。
@@ -151,6 +156,8 @@ public JSON
  ↓
 website
 ```
+
+画像は `github_path` を基準にサイトビルド時にコピーするか、別の公開URLへ解決する。
 
 ### パターンC：SQL等へimport
 
@@ -177,29 +184,37 @@ SQLへ移行するときも、既存YAMLから再現可能なmigration/importを
 
 ## 画像
 
-当面、高解像度原本はGoogle Drive等で管理する。
+公開アー写、公開ジャケット、ロゴ、コンセプト画像、Web掲載前提の軽量画像は、原則として `kazex-catalog/assets/` を公開素材の正本とする。
 
-サイト自動更新を実装するときは、Driveを直接画像CDNとして利用する前に適切性を評価する。
+高解像度原本、PSD / AI、動画、音源、制作途中ファイル等はGoogle Drive等の原本倉庫に残す。
 
-候補：
+YAMLでは役割を分離する。
 
-- サイトリポジトリへ公開用軽量画像をコピー
-- Cloudflare R2等へ配置
+- `github_path` — `kazex-catalog` 内の公開素材
+- `web_url` — サイト上の最終公開URL。実装未決定なら `null`
+- `drive_url` — 制作原本または高解像度原本への参照
+
+サイト自動更新を実装するときは、次の方式から既存サイトに適したものを選ぶ。
+
+- GitHub上の公開画像をそのまま利用
+- サイトビルド時に `kazex-catalog` からコピー
+- GitHubを正本としてCloudflare R2 / CDNへ同期
 - 既存サイトの画像管理機能を利用
 
-原本とWeb配信用画像は分離してよい。
+原本、カタログ上の公開素材、Web配信用URLは分離してよい。
 
 ## Codex向け実装手順
 
-1. `README.md`、`AGENTS.md`、`docs/ROADMAP.md`、本仕様書を読む
+1. `README.md`、`AGENTS.md`、`docs/ROADMAP.md`、`docs/ASSETS.md`、本仕様書を読む
 2. KAZEX公式サイトの既存実装を調査する
 3. 既存サイトに合わせた具体設計をIssueまたは設計文書へ提示する
 4. 最小実装を選ぶ
-5. YAML Schema / validationを先に整える
+5. 既存validationを確認し、不足があればSchema等を追加する
 6. 1アーティスト・1リリースで試験する
-7. 既存ページとの差分を確認する
-8. 自動デプロイを接続する
-9. README / docsを実装内容に合わせて更新する
+7. 公開素材の解決方法を試験する
+8. 既存ページとの差分を確認する
+9. 自動デプロイを接続する
+10. README / docsを実装内容に合わせて更新する
 
 ## 受け入れ条件
 
@@ -208,6 +223,7 @@ SQLへ移行するときも、既存YAMLから再現可能なmigration/importを
 - 新しいrelease YAMLを追加すると、手作業で同じ内容をサイトへ再入力せずページを生成できる
 - release YAMLを修正するとサイト側にも反映できる
 - artistとの関連付けが `artist_id` で機械的に行われる
+- `github_path` で指定した公開素材をサイトへ反映できる
 - 非公開設定のリリースは公開されない
 - validation失敗時にデプロイが止まる
 - 既存サイトの主要ページやURLを壊さない

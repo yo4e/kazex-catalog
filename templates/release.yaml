@@ -12,8 +12,9 @@ identifiers:
   upc_ean: null
 
 cover:
-  drive_url: null
+  github_path: null
   web_url: null
+  drive_url: null
 
 links:
   spotify: null
@@ -51,7 +52,11 @@ promotion:
       epk_url: null
 
 assets:
+  github_asset_dir: null
   drive_folder_url: null
+  cover_drive_folder_url: null
+  visuals_drive_folder_url: null
+  other_assets_drive_folder_url: null
 
 website:
   publish: false

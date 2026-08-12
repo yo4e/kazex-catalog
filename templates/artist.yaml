@@ -35,9 +35,30 @@ milestones: []
 #       Debut release ...
 
 assets:
+  github_asset_dir: null
   drive_folder_url: null
-  artist_image_url: null
-  logo_url: null
-  epk_url: null
+  artist_photos_drive_folder_url: null
+  logos_drive_folder_url: null
+  epk_drive_folder_url: null
+  releases_drive_folder_url: null
+  artist_image:
+    github_path: null
+    web_url: null
+    drive_url: null
+  logo:
+    github_path: null
+    web_url: null
+    drive_url: null
+  epk:
+    github_path: null
+    web_url: null
+    drive_url: null
+  artist_photo_candidates: []
+  concept_art: []
+# candidate例:
+# artist_photo_candidates:
+#   - github_path: assets/artists/example/artist-photos/example.jpg
+#     status: candidate
+#     role: null
 
 notes_public: null

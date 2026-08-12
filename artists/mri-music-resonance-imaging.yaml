@@ -35,14 +35,27 @@ social:
 milestones: []
 
 assets:
+  github_asset_dir: assets/artists/mri-music-resonance-imaging/
   drive_folder_url: "https://drive.google.com/drive/folders/1Z9qdUHo5QEzYukHTaoQ6NuJSGXX78rbR"
-  artist_photos_folder_url: "https://drive.google.com/drive/folders/1qj20QAPikeNEHkFtteEDoiOTZdO0kEa5"
-  logos_folder_url: "https://drive.google.com/drive/folders/1SOCAe9bJ89Wvj4EPC_9lcNhwMoxBTkra"
-  epk_folder_url: "https://drive.google.com/drive/folders/1FE9gZFSomJr4mjlcz7AyeA214-tkH_aa"
-  releases_folder_url: "https://drive.google.com/drive/folders/1mB4PDWLTAooFhLwYrgRba204Gh_HbyBc"
-  artist_image_url: null
-  logo_url: null
-  epk_url: null
+  artist_photos_drive_folder_url: "https://drive.google.com/drive/folders/1qj20QAPikeNEHkFtteEDoiOTZdO0kEa5"
+  logos_drive_folder_url: "https://drive.google.com/drive/folders/1SOCAe9bJ89Wvj4EPC_9lcNhwMoxBTkra"
+  epk_drive_folder_url: "https://drive.google.com/drive/folders/1FE9gZFSomJr4mjlcz7AyeA214-tkH_aa"
+  releases_drive_folder_url: "https://drive.google.com/drive/folders/1mB4PDWLTAooFhLwYrgRba204Gh_HbyBc"
+  artist_image:
+    github_path: null
+    web_url: null
+    drive_url: null
+  logo:
+    github_path: null
+    web_url: null
+    drive_url: null
+  epk:
+    github_path: null
+    web_url: null
+    drive_url: null
+  artist_photo_candidates: []
+  concept_art: []
 
 notes_public: >
   初期登録。Spotify Artist情報、正式BIO、個別の宣材素材URLなどは未登録。
+  2026-08-12にGitHub公開素材中心の参照設計へ移行。MRI画像5点の実ファイル移行は別途実施する。
