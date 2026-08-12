@@ -24,6 +24,14 @@ jobs:
       - name: Validate catalog
         run: python scripts/validate_catalog.py
 
+      - name: Smoke test readiness checks
+        run: |
+          python scripts/check_readiness.py release unseen-dragon > /tmp/release-readiness.txt
+          python scripts/check_readiness.py artist mri-music-resonance-imaging > /tmp/artist-readiness.txt
+          grep -q "CAPTURE" /tmp/release-readiness.txt
+          grep -q "TOO LOST PRIORITY PITCH" /tmp/release-readiness.txt
+          grep -q "SPOTIFY FOR ARTISTS CLAIM / PROFILE" /tmp/artist-readiness.txt
+
       - name: Smoke test browser task packets
         run: |
           python scripts/render_browser_task.py priority-pitch unseen-dragon > /tmp/priority-pitch.txt
@@ -32,3 +40,4 @@ jobs:
           grep -q "BLOCKED — DO NOT SUBMIT" /tmp/priority-pitch.txt
           grep -q "Browser Task Packet — Spotify for Artists" /tmp/spotify-profile.txt
           grep -q "CLAIM / SET UP ACCESS" /tmp/spotify-profile.txt
+          grep -q "BLOCKED — DO NOT CLAIM" /tmp/spotify-profile.txt
