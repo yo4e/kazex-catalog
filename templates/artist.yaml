@@ -1,0 +1,43 @@
+# KAZEX Catalog artist template
+# 不明な値は推測せず null のままにする。
+
+id: null
+name: null
+sort_name: null
+status: active
+
+description:
+  short: null
+  long: null
+
+concept: null
+
+genres: []
+
+platforms:
+  spotify_artist_url: null
+  apple_music_artist_url: null
+  youtube_artist_url: null
+
+social:
+  website: null
+  instagram: null
+  x: null
+  facebook: null
+  tiktok: null
+  bluesky: null
+
+milestones: []
+# 例:
+# milestones:
+#   - date: 2026-01-01
+#     description: >
+#       Debut release ...
+
+assets:
+  drive_folder_url: null
+  artist_image_url: null
+  logo_url: null
+  epk_url: null
+
+notes_public: null
