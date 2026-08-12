@@ -51,6 +51,7 @@ Spotify URL、UPC、ISRC、リリース日、受賞歴、チャート実績、�
 - `assets/` — 軽量な公開素材
 - `assets/inbox/` — 未整理の公開素材の一時投入場所
 - `docs/` — 仕様・将来設計
+- `scripts/` — validation / task packet生成等の補助ツール
 - `templates/` — 新規登録時の雛形
 
 ## Priority Pitch
@@ -58,6 +59,21 @@ Spotify URL、UPC、ISRC、リリース日、受賞歴、チャート実績、�
 Too Lost Priority Pitch を作成・更新するときは、必ず `docs/PRIORITY_PITCH.md` を参照してください。
 
 Pitch本文やMilestoneは事実に基づき、英語として自然に整えて構いませんが、実績・施策・受賞歴を盛らないでください。
+
+## Browser Task Packets
+
+Too Lost、Spotify for Artists等の外部サービスをブラウザ操作担当AIへ渡す場合は、`docs/BROWSER_TASKS.md` を参照してください。
+
+可能なら `scripts/render_browser_task.py` を使い、catalog正本から自己完結型の作業パケットを生成してください。
+
+ブラウザ作業パケットでは以下を守ってください。
+
+- YAMLの `null` や空配列を推測で埋めない。
+- 必須値が欠けている場合は、最終Submit / claim / saveを禁止または停止条件として明示する。
+- Browser AIが画面上で新たな必須項目や仕様を発見した場合、完了報告で回収しcatalogへ還元する。
+- `candidate` 素材を正式採用素材として扱わない。
+- 外部サービスの認証情報をこのpublic repoへ保存しない。
+- ブラウザUIが変更されている可能性があるため、実行時の画面を優先し、既存docsと差異があれば報告する。
 
 ## 公開素材 / Asset Inbox
 
