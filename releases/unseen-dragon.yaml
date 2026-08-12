@@ -1,0 +1,65 @@
+id: unseen-dragon
+title: Unseen Dragon
+artist_id: mri-music-resonance-imaging
+release_type: album
+release_date: 2026-08-22
+status: upcoming
+
+identifiers:
+  upc_ean: null
+
+cover:
+  drive_url: null
+  web_url: null
+
+links:
+  spotify: null
+  apple_music: null
+  youtube: null
+
+tracks:
+  - title: MRI_Music Resonance Imaging
+    isrc: null
+    creative_prompt: >
+      industrial techno, techno percussion, classical piano solo, prepared piano stabs,
+      metallic percussion, found-object hits, sub bass pulses, distorted kick, gated reverb,
+      abrupt silence, syncopated toms, glitch edits, dry spoken delivery, monotone cadence,
+      cold urgency, 128 BPM, live percussion, stereo hammering, dark machine funk
+
+credits: {}
+
+description:
+  short: >
+    実際のMRI検査の聴覚体験を出発点に、機械音、金属音、静寂、共鳴を音楽として再構築するアルバム。
+  long: null
+
+promotion:
+  priority_pitch:
+    status: draft
+    selected_track: MRI_Music Resonance Imaging
+    release_summary: >
+      “MRI_Music Resonance Imaging” opens Unseen Dragon, transforming the real sonic experience of an MRI scan into industrial techno. Metallic percussion, distorted kicks, prepared piano, glitch edits, sub-bass, and classical piano recreate the cold, mechanical intensity of being scanned. The track introduces the project’s core idea: turning resonance into music to reveal what cannot be seen.
+    spotify_artist: null
+    marketing_elements: []
+    past_awards_milestones: null
+    upcoming_tour_dates: null
+    social:
+      facebook: null
+      instagram: null
+      x: null
+      tiktok: null
+    attachments:
+      image_url: null
+      epk_url: null
+
+assets:
+  drive_folder_url: null
+
+website:
+  publish: false
+  publish_at: null
+  featured: false
+
+notes_public: >
+  Priority Pitch用Release Summaryは2026-08-12作成。Spotify Artist情報、Marketing Elements、
+  Past Awards / Milestones、画像／EPK等は要確認。
