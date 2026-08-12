@@ -27,14 +27,27 @@ social:
 milestones: []
 
 assets:
+  github_asset_dir: assets/artists/the-aerial-gravities/
   drive_folder_url: "https://drive.google.com/drive/folders/1IzYE-Ltk8pZiB6aYn5ay_nHM0-uwCmHQ"
-  artist_photos_folder_url: "https://drive.google.com/drive/folders/1cY7v76W4jVP_1atSp4e03cw98tGLtwFZ"
-  logos_folder_url: "https://drive.google.com/drive/folders/15k2W4XUMG9K_BaMk9FCaIN1linddk0fG"
-  epk_folder_url: "https://drive.google.com/drive/folders/1A_cBBDzFw9Ki3R5h-YxpSTeo4uWX2hR3"
-  releases_folder_url: "https://drive.google.com/drive/folders/16Iops57vn-5pdXh2P9f8ax1-PciTTTdv"
-  artist_image_url: null
-  logo_url: null
-  epk_url: null
+  artist_photos_drive_folder_url: "https://drive.google.com/drive/folders/1cY7v76W4jVP_1atSp4e03cw98tGLtwFZ"
+  logos_drive_folder_url: "https://drive.google.com/drive/folders/15k2W4XUMG9K_BaMk9FCaIN1linddk0fG"
+  epk_drive_folder_url: "https://drive.google.com/drive/folders/1A_cBBDzFw9Ki3R5h-YxpSTeo4uWX2hR3"
+  releases_drive_folder_url: "https://drive.google.com/drive/folders/16Iops57vn-5pdXh2P9f8ax1-PciTTTdv"
+  artist_image:
+    github_path: null
+    web_url: null
+    drive_url: null
+  logo:
+    github_path: null
+    web_url: null
+    drive_url: null
+  epk:
+    github_path: null
+    web_url: null
+    drive_url: null
+  artist_photo_candidates: []
+  concept_art: []
 
 notes_public: >
   初期登録。Spotify Artist情報、BIO、マイルストーン、個別の宣材素材URLなどは未登録。
+  2026-08-12にGitHub公開素材中心の参照設計へ移行。
