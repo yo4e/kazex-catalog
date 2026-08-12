@@ -1,0 +1,78 @@
+id: ghost-velocity
+title: Ghost Velocity
+artist_id: the-aerial-gravities
+release_type: album
+release_date: null
+status: upcoming
+
+identifiers:
+  upc_ean: "0682286685142"
+
+cover:
+  drive_url: null
+  web_url: null
+
+links:
+  spotify: null
+  apple_music: null
+  youtube: null
+
+tracks:
+  - title: Ghost Velocity
+    isrc: null
+  - title: Slipstream Memorial
+    isrc: null
+  - title: Static in the Dive
+    isrc: null
+  - title: Blueburn Transit
+    isrc: null
+  - title: Phantom Turnaround
+    isrc: null
+  - title: Terminal Vectors
+    isrc: null
+  - title: Afterimage Mechanics
+    isrc: null
+  - title: Nocturne for Falling Metal
+    isrc: null
+  - title: Scatter Signal Parade
+    isrc: null
+  - title: Airspeed of the Absent
+    isrc: null
+  - title: Landing on Invisible Fire
+    isrc: null
+
+credits: {}
+
+description:
+  short: null
+  long: null
+
+promotion:
+  priority_pitch:
+    status: draft
+    selected_track: Ghost Velocity
+    release_summary: null
+    spotify_artist: null
+    marketing_elements: []
+    past_awards_milestones: null
+    upcoming_tour_dates: null
+    social:
+      facebook: null
+      instagram: null
+      x: null
+      tiktok: null
+    attachments:
+      image_url: null
+      epk_url: null
+
+assets:
+  drive_folder_url: null
+
+website:
+  publish: false
+  publish_at: null
+  featured: false
+
+notes_public: >
+  2026-08-12時点でPriority Pitch作成途中。リリース日、Spotify Artist情報、
+  Release Summary、Marketing Elements、Past Awards / Milestones等は要確認。
