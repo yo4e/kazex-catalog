@@ -9,8 +9,9 @@ identifiers:
   upc_ean: "0682286685142"
 
 cover:
-  drive_url: null
+  github_path: null
   web_url: null
+  drive_url: null
 
 links:
   spotify: null
@@ -66,10 +67,11 @@ promotion:
       epk_url: null
 
 assets:
+  github_asset_dir: assets/releases/ghost-velocity/
   drive_folder_url: "https://drive.google.com/drive/folders/1Ng3w8qhgjeK16LBD9gjPpkObqhlzeyUe"
-  cover_art_folder_url: "https://drive.google.com/drive/folders/1KC1WDtYvnCPjuJ5-m5Qwtx9PVbPqXlg7"
-  visuals_folder_url: "https://drive.google.com/drive/folders/11JunyCIoRDaNnLPsPBechChNwFrDRw"
-  other_assets_folder_url: "https://drive.google.com/drive/folders/12VtoKaipXpFbBugccEt88tCqnn2VWSCs"
+  cover_drive_folder_url: "https://drive.google.com/drive/folders/1KC1WDtYvnCPjuJ5-m5Qwtx9PVbPqXlg7"
+  visuals_drive_folder_url: "https://drive.google.com/drive/folders/11JunyCIoRDaNnLPsPBechChNwFrDRw"
+  other_assets_drive_folder_url: "https://drive.google.com/drive/folders/12VtoKaipXpFbBugccEt88tCqnn2VWSCs"
 
 website:
   publish: false
@@ -79,3 +81,4 @@ website:
 notes_public: >
   2026-08-12時点でPriority Pitch作成途中。リリース日、Spotify Artist情報、
   Release Summary、Marketing Elements、Past Awards / Milestones等は要確認。
+  GitHub公開素材中心の参照設計へ移行済み。
