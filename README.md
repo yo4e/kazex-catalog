@@ -137,6 +137,10 @@ python scripts/render_browser_task.py spotify-profile mri-music-resonance-imagin
 - `docs/WEBSITE_AUTOMATION_SPEC.md` — KAZEX Records公式サイト自動更新の将来実装仕様
 - `AGENTS.md` — ChatGPT / Codex などAIが作業する際のルール
 
+## Credits
+
+- System Designer: **月野テンプレクス (Tsukino Templex)**
+
 ## ステータス
 
 初期運用段階です。まずは実際の制作会話からrelease / track / promptを蓄積し、Priority Pitch、Spotify for Artists作業、素材整理が安定して回るところまで運用を固めます。その知見をもとに、Schema validation、Webサイト連携、必要に応じたデータベース化を段階的に進めます。
