@@ -10,10 +10,14 @@ KAZEX Records の高解像度ジャケット、アーティスト写真、ロゴ
 KAZEX Records Assets:
 https://drive.google.com/drive/folders/1AZM9PH-E-ilGq5CayJ6ZC78kCQQ7tMub
 
+Asset Inbox:
+https://drive.google.com/drive/folders/1Hx-1Ky2kuzKnjzgD-RcSCZE53HkGrxHg
+
 ## 現在のフォルダ構造
 
 ```text
 KAZEX Records Assets/
+├── Inbox/
 ├── Artists/
 │   ├── The Aerial Gravities/
 │   │   ├── Artist Photos/
@@ -41,7 +45,36 @@ KAZEX Records Assets/
     └── Templates/
 ```
 
-## 運用ルール
+## Inbox 運用
+
+`Inbox/` は、人間が素材を素早く投入するための未整理置き場とする。
+
+山田は整理・命名を気にせず、例えば `MRIのジャケ.png`、`Aerialアー写候補.jpg` のような暫定名で素材を置いてよい。
+
+ChatGPT / Codex 等のAIが素材整理を行う際は、原則として次の順に処理する。
+
+1. `Inbox/` の内容を確認する。
+2. ファイル名、画像内容、既存の artist / release YAML、Drive上の既存構造から所属を判断する。
+3. 所属が十分に判定できる場合は、用途に合った一貫した名前へリネームする。
+4. `Artists/<Artist Name>/...` または `Label Assets/...` の適切なフォルダへ移動する。
+5. 正式採用素材、カバー原本、EPK等としてカタログから参照すべき素材なら、対応するYAMLのURL／メタデータも更新する。
+6. 判定に十分な根拠がない場合は推測で分類せず、山田に「これはどのアーティスト／作品／用途の素材か」を確認する。
+7. 確認待ちのファイルは `Inbox/` に残す。誤分類を避けるため、無理に移動しない。
+
+### リネーム方針
+
+厳密な命名規則は実運用を見ながら確定する。当面は以下を優先する。
+
+- 人間が見て内容を識別できる。
+- アーティスト名／作品名／用途が必要に応じて分かる。
+- `final`, `master`, `web`, `alt`, `01` 等は意味が明確な場合だけ使う。
+- 元ファイル名に含まれる有用な情報を不用意に失わない。
+- 「最新版」が複数発生するような曖昧な名前を避ける。
+- ファイル内容を確認せず、名前だけを根拠に破壊的な上書き・削除をしない。
+
+Inboxは一時置き場であり、長期保管場所にはしない。ただし、AIが分類できないものを人間の確認前に追い出すこともしない。
+
+## 通常の運用ルール
 
 - アーティスト固有の素材は `Artists/<Artist Name>/` に置く。
 - アー写は `Artist Photos/`、アーティストロゴは `Logos/`、EPK原本は `EPK/` に置く。
