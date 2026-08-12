@@ -32,8 +32,10 @@ kazex-catalog/
 ├── releases/
 │   └── <release-id>.yaml
 ├── docs/
+│   ├── ASSETS.md
 │   ├── PRIORITY_PITCH.md
-│   └── ROADMAP.md
+│   ├── ROADMAP.md
+│   └── WEBSITE_AUTOMATION_SPEC.md
 └── templates/
     ├── artist.yaml
     └── release.yaml
@@ -44,6 +46,8 @@ kazex-catalog/
 ## 画像・EPKなどのファイル
 
 高解像度のジャケット、アーティスト写真、動画、EPK などのバイナリ資産は、原則として Google Drive など外部ストレージで管理し、このリポジトリには公開可能な参照情報を記録します。
+
+現行の Google Drive 素材庫とフォルダ構造、運用ルールは `docs/ASSETS.md` を正本とします。
 
 将来、Webサイト配信用の軽量画像をこのリポジトリや CDN / オブジェクトストレージへ置く構成に移行する可能性があります。
 
@@ -57,8 +61,10 @@ kazex-catalog/
 
 ## ドキュメント
 
+- `docs/ASSETS.md` — Google Drive 素材庫の構造と素材管理ルール
 - `docs/PRIORITY_PITCH.md` — Too Lost Priority Pitch 作成仕様
 - `docs/ROADMAP.md` — 将来設計と段階的な実装方針
+- `docs/WEBSITE_AUTOMATION_SPEC.md` — KAZEX Records公式サイト自動更新の将来実装仕様
 - `AGENTS.md` — ChatGPT / Codex などAIが作業する際のルール
 
 ## ステータス
