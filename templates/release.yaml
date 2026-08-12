@@ -21,6 +21,10 @@ links:
   apple_music: null
   youtube: null
 
+generation:
+  provider: null
+  source_playlist_url: null
+
 tracks: []
 # 例:
 # tracks:

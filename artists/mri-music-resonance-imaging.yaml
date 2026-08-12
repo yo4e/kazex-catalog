@@ -42,7 +42,7 @@ assets:
   epk_drive_folder_url: "https://drive.google.com/drive/folders/1FE9gZFSomJr4mjlcz7AyeA214-tkH_aa"
   releases_drive_folder_url: "https://drive.google.com/drive/folders/1mB4PDWLTAooFhLwYrgRba204Gh_HbyBc"
   artist_image:
-    github_path: null
+    github_path: assets/artists/mri-music-resonance-imaging/artist-photos/MRI_Duo_Artist_Photo.png
     web_url: null
     drive_url: null
   logo:
@@ -61,7 +61,7 @@ assets:
       status: candidate
       role: piano
     - github_path: assets/artists/mri-music-resonance-imaging/artist-photos/MRI_Duo_Artist_Photo.png
-      status: candidate
+      status: selected
       role: duo
   concept_art:
     - github_path: assets/artists/mri-music-resonance-imaging/concept-art/MRI_Character_Reference.png
@@ -71,4 +71,4 @@ assets:
 notes_public: >
   初期登録。Spotify Artist情報、正式BIO、個別の宣材素材URLなどは未登録。
   2026-08-12にGitHub公開素材中心の参照設計へ移行し、MRI公開画像4点を分類登録。
-  3点のアーティスト写真は正式採用未確定のためcandidate扱い。
+  正方形のDuoアーティスト写真を正式アー写として選定。

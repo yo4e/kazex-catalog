@@ -18,14 +18,60 @@ links:
   apple_music: null
   youtube: null
 
+generation:
+  provider: suno
+  source_playlist_url: "https://suno.com/playlist/b17330f8-23ff-451e-b0a4-eb8fbcf929a4"
+
 tracks:
   - title: MRI_Music Resonance Imaging
     isrc: null
-    creative_prompt: >
+    creative_prompt: &unseen_dragon_prompt >
       industrial techno, techno percussion, classical piano solo, prepared piano stabs,
       metallic percussion, found-object hits, sub bass pulses, distorted kick, gated reverb,
       abrupt silence, syncopated toms, glitch edits, dry spoken delivery, monotone cadence,
       cold urgency, 128 BPM, live percussion, stereo hammering, dark machine funk
+  - title: Remove All Metal
+    isrc: null
+    creative_prompt: *unseen_dragon_prompt
+  - title: Table Feed
+    isrc: null
+    creative_prompt: *unseen_dragon_prompt
+  - title: Bore Mouth
+    isrc: null
+    creative_prompt: *unseen_dragon_prompt
+  - title: Gradient Hammer
+    isrc: null
+    creative_prompt: *unseen_dragon_prompt
+  - title: Hospital Piano
+    isrc: null
+    creative_prompt: *unseen_dragon_prompt
+  - title: Out of Sync
+    isrc: null
+    creative_prompt: *unseen_dragon_prompt
+  - title: Slice Selection
+    isrc: null
+    creative_prompt: *unseen_dragon_prompt
+  - title: Signal Void
+    isrc: null
+    creative_prompt: *unseen_dragon_prompt
+  - title: The Third Disc
+    isrc: null
+    creative_prompt: *unseen_dragon_prompt
+  - title: Nerve Root
+    isrc: null
+    creative_prompt: *unseen_dragon_prompt
+  - title: Unseen Dragon
+    isrc: null
+    creative_prompt: *unseen_dragon_prompt
+  - title: Gated Silence
+    isrc: null
+    creative_prompt: *unseen_dragon_prompt
+  - title: Image Reconstruction
+    isrc: null
+    creative_prompt: *unseen_dragon_prompt
+  - title: Resonance After the Machine
+    isrc: null
+    creative_prompt: *unseen_dragon_prompt
 
 credits: {}
 
@@ -41,8 +87,10 @@ promotion:
     release_summary: >
       “MRI_Music Resonance Imaging” opens Unseen Dragon, transforming the real sonic experience of an MRI scan into industrial techno. Metallic percussion, distorted kicks, prepared piano, glitch edits, sub-bass, and classical piano recreate the cold, mechanical intensity of being scanned. The track introduces the project’s core idea: turning resonance into music to reveal what cannot be seen.
     spotify_artist: null
-    marketing_elements: []
-    past_awards_milestones: null
+    marketing_elements:
+      - visual content strategy
+    past_awards_milestones: >
+      This is the debut release from MRI_Music Resonance Imaging. The project has no prior awards, chart milestones, or previous releases to report.
     upcoming_tour_dates: null
     social:
       facebook: null
@@ -66,6 +114,7 @@ website:
   featured: false
 
 notes_public: >
-  Priority Pitch用Release Summaryは2026-08-12作成。Spotify Artist情報、Marketing Elements、
-  Past Awards / Milestones、画像／EPK等は要確認。GitHub公開素材中心の参照設計へ移行済み。
-  2026-08-12にUnseen Dragon正式カバーをGitHub assetsへ分類し、cover.github_pathを登録。
+  Priority Pitch用Release Summaryは2026-08-12作成。Spotify Artist情報、画像／EPK等は要確認。
+  Spotify Canvas等のビジュアル施策を予定しているためPriority PitchのMarketing Elementsに
+  visual content strategyを登録。デビュー作品のため過去の受賞・リリース実績はなし。
+  SunoプレイリストURLと制作チャットで確定した15曲の曲名・共通creative promptを登録。
