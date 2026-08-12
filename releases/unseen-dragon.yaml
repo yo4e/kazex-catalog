@@ -9,8 +9,9 @@ identifiers:
   upc_ean: null
 
 cover:
-  drive_url: null
+  github_path: null
   web_url: null
+  drive_url: null
 
 links:
   spotify: null
@@ -53,10 +54,11 @@ promotion:
       epk_url: null
 
 assets:
+  github_asset_dir: assets/releases/unseen-dragon/
   drive_folder_url: "https://drive.google.com/drive/folders/1pnZrHOEZxqGLn811EcehjRen8ZT8WM-n"
-  cover_art_folder_url: "https://drive.google.com/drive/folders/12rFGN8UJfUgtEjRsdwpQNqNFMDPrN9Yw"
-  visuals_folder_url: "https://drive.google.com/drive/folders/1dRShYH9UhYhSbQp1pK3H3k8MghFqULyE"
-  other_assets_folder_url: "https://drive.google.com/drive/folders/1OvSpMumnQOvb1KffIuB_i_OnJuq3YAga"
+  cover_drive_folder_url: "https://drive.google.com/drive/folders/12rFGN8UJfUgtEjRsdwpQNqNFMDPrN9Yw"
+  visuals_drive_folder_url: "https://drive.google.com/drive/folders/1dRShYH9UhYhSbQp1pK3H3k8MghFqULyE"
+  other_assets_drive_folder_url: "https://drive.google.com/drive/folders/1OvSpMumnQOvb1KffIuB_i_OnJuq3YAga"
 
 website:
   publish: false
@@ -65,4 +67,5 @@ website:
 
 notes_public: >
   Priority Pitch用Release Summaryは2026-08-12作成。Spotify Artist情報、Marketing Elements、
-  Past Awards / Milestones、画像／EPK等は要確認。
+  Past Awards / Milestones、画像／EPK等は要確認。GitHub公開素材中心の参照設計へ移行済み。
+  Unseen Dragon正式カバーのGitHub実ファイル移行後にcover.github_pathを登録する。
