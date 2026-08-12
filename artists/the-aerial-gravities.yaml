@@ -27,10 +27,14 @@ social:
 milestones: []
 
 assets:
-  drive_folder_url: null
+  drive_folder_url: "https://drive.google.com/drive/folders/1IzYE-Ltk8pZiB6aYn5ay_nHM0-uwCmHQ"
+  artist_photos_folder_url: "https://drive.google.com/drive/folders/1cY7v76W4jVP_1atSp4e03cw98tGLtwFZ"
+  logos_folder_url: "https://drive.google.com/drive/folders/15k2W4XUMG9K_BaMk9FCaIN1linddk0fG"
+  epk_folder_url: "https://drive.google.com/drive/folders/1A_cBBDzFw9Ki3R5h-YxpSTeo4uWX2hR3"
+  releases_folder_url: "https://drive.google.com/drive/folders/16Iops57vn-5pdXh2P9f8ax1-PciTTTdv"
   artist_image_url: null
   logo_url: null
   epk_url: null
 
 notes_public: >
-  初期登録。Spotify Artist情報、BIO、マイルストーン、宣材素材などは未登録。
+  初期登録。Spotify Artist情報、BIO、マイルストーン、個別の宣材素材URLなどは未登録。
