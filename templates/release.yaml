@@ -1,0 +1,61 @@
+# KAZEX Catalog release template
+# 不明な値は推測せず null のままにする。
+
+id: null
+title: null
+artist_id: null
+release_type: null # single / ep / album など
+release_date: null
+status: planned # planned / upcoming / released など
+
+identifiers:
+  upc_ean: null
+
+cover:
+  drive_url: null
+  web_url: null
+
+links:
+  spotify: null
+  apple_music: null
+  youtube: null
+
+tracks: []
+# 例:
+# tracks:
+#   - title: Example Track
+#     isrc: null
+
+credits: {}
+
+description:
+  short: null
+  long: null
+
+promotion:
+  priority_pitch:
+    status: draft # draft / ready / submitted / not_planned
+    selected_track: null
+    release_summary: null
+    spotify_artist: null
+    marketing_elements: []
+    past_awards_milestones: null
+    upcoming_tour_dates: null
+    social:
+      facebook: null
+      instagram: null
+      x: null
+      tiktok: null
+    attachments:
+      image_url: null
+      epk_url: null
+
+assets:
+  drive_folder_url: null
+
+website:
+  publish: false
+  publish_at: null
+  featured: false
+
+notes_public: null
