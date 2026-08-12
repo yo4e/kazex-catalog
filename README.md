@@ -2,13 +2,16 @@
 
 KAZEX Records のアーティスト情報・リリース情報・公開素材・プロモーション情報を、AIと人間が共同で扱える形で蓄積する公開カタログです。
 
-現在の主目的は、Too Lost の **Priority Pitch** を作成・更新しやすくすることです。将来的には、このリポジトリを KAZEX Records 公式サイトのデータソースとして利用し、リリース情報や公開素材の追加・更新からサイト更新までを自動化することを目指します。
+現在の主目的は、Too Lost の **Priority Pitch** を作成・更新しやすくすることです。あわせて、Spotify for Artists 等の外部サービス操作を、カタログ正本から生成した安全な作業パケットとしてChatGPT等のブラウザ操作担当へ渡せるようにします。
+
+将来的には、このリポジトリを KAZEX Records 公式サイトのデータソースとして利用し、リリース情報や公開素材の追加・更新からサイト更新までを自動化することを目指します。
 
 ## このリポジトリの役割
 
 - アーティスト情報の正本を管理する
 - リリース情報・トラック情報を管理する
 - Too Lost Priority Pitch の作成に必要な情報を管理する
+- 外部サービス操作用のbrowser task packetを生成する
 - Web掲載・Pitch・EPK等で利用する軽量な公開素材を管理する
 - 高解像度原本等がある場合はGoogle Drive上の原本所在を記録する
 - 将来の KAZEX Records 公式サイト自動更新に使える構造化データを育てる
@@ -41,15 +44,37 @@ kazex-catalog/
 │       └── <release-id>/...
 ├── docs/
 │   ├── ASSETS.md
+│   ├── BROWSER_TASKS.md
 │   ├── PRIORITY_PITCH.md
 │   ├── ROADMAP.md
 │   └── WEBSITE_AUTOMATION_SPEC.md
+├── scripts/
+│   ├── render_browser_task.py
+│   └── validate_catalog.py
 └── templates/
     ├── artist.yaml
     └── release.yaml
 ```
 
 当面は **YAML を構造化データの正本**として使用します。文章そのものが成果物になる長文資料は Markdown を使用します。
+
+## Browser Task Packets
+
+外部サービスへ同じ事実を手入力し直す代わりに、catalogからブラウザ操作担当AIへ渡す自己完結型の指示文を生成できます。
+
+Too Lost Priority Pitch:
+
+```bash
+python scripts/render_browser_task.py priority-pitch unseen-dragon
+```
+
+Spotify for Artists:
+
+```bash
+python scripts/render_browser_task.py spotify-profile mri-music-resonance-imaging
+```
+
+必須値が欠けている場合は、パケット自体がSubmit禁止や停止条件を明示します。詳細は `docs/BROWSER_TASKS.md` を参照してください。
 
 ## 画像・EPKなどのファイル
 
@@ -72,11 +97,12 @@ kazex-catalog/
 
 将来、サイト内検索、複雑な関連付け、大量データ、複数サービスからの同時更新などが必要になった場合は、SQLite / PostgreSQL 等の SQL データベースや、別のCMS・データストアへの移行／同期も視野に入れます。
 
-重要なのは、**入力した公開情報を一度だけ正本として保持し、そこからサイト、Priority Pitch、EPK、SNS告知などへ派生させること**です。
+重要なのは、**入力した公開情報を一度だけ正本として保持し、そこからサイト、Priority Pitch、Spotifyプロフィール作業、EPK、SNS告知などへ派生させること**です。
 
 ## ドキュメント
 
 - `docs/ASSETS.md` — GitHub公開素材とGoogle Drive原本の役割分担・Inbox運用
+- `docs/BROWSER_TASKS.md` — 外部サービスをブラウザ操作するための作業パケット仕様
 - `docs/PRIORITY_PITCH.md` — Too Lost Priority Pitch 作成仕様
 - `docs/ROADMAP.md` — 将来設計と段階的な実装方針
 - `docs/WEBSITE_AUTOMATION_SPEC.md` — KAZEX Records公式サイト自動更新の将来実装仕様
@@ -84,4 +110,4 @@ kazex-catalog/
 
 ## ステータス
 
-初期運用段階です。まずは実際のリリースと公開素材を登録し、Priority Pitch と素材整理が安定して回るところまで運用を固めます。その知見をもとに、Schema validation、Webサイト連携、必要に応じたデータベース化を段階的に進めます。
+初期運用段階です。まずは実際のリリースと公開素材を登録し、Priority Pitch、Spotify for Artists作業、素材整理が安定して回るところまで運用を固めます。その知見をもとに、Schema validation、Webサイト連携、必要に応じたデータベース化を段階的に進めます。
