@@ -53,9 +53,22 @@ assets:
     github_path: null
     web_url: null
     drive_url: null
-  artist_photo_candidates: []
-  concept_art: []
+  artist_photo_candidates:
+    - github_path: assets/artists/mri-music-resonance-imaging/artist-photos/MRI_Techno_Artist_Photo.png
+      status: candidate
+      role: techno
+    - github_path: assets/artists/mri-music-resonance-imaging/artist-photos/MRI_Piano_Artist_Photo.png
+      status: candidate
+      role: piano
+    - github_path: assets/artists/mri-music-resonance-imaging/artist-photos/MRI_Duo_Artist_Photo.png
+      status: candidate
+      role: duo
+  concept_art:
+    - github_path: assets/artists/mri-music-resonance-imaging/concept-art/MRI_Character_Reference.png
+      status: candidate
+      role: character-reference
 
 notes_public: >
   初期登録。Spotify Artist情報、正式BIO、個別の宣材素材URLなどは未登録。
-  2026-08-12にGitHub公開素材中心の参照設計へ移行。MRI画像5点の実ファイル移行は別途実施する。
+  2026-08-12にGitHub公開素材中心の参照設計へ移行し、MRI公開画像4点を分類登録。
+  3点のアーティスト写真は正式採用未確定のためcandidate扱い。
