@@ -26,6 +26,8 @@ tracks: []
 # tracks:
 #   - title: Example Track
 #     isrc: null
+#     creative_prompt: >
+#       制作時に使用した公開可能なmusic / style promptを保存する。
 
 credits: {}
 
