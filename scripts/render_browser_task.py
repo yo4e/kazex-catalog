@@ -150,16 +150,32 @@ def render_spotify_profile(artist_id: str) -> str:
     candidates = assets.get("artist_photo_candidates") or []
 
     spotify_url = platforms.get("spotify_artist_url")
-    mode = "UPDATE EXISTING PROFILE" if clean(spotify_url) else "CLAIM / SET UP ACCESS"
+    existing_profile = clean(spotify_url) is not None
+    mode = "UPDATE EXISTING PROFILE" if existing_profile else "CLAIM / SET UP ACCESS"
 
     release_lines: list[str] = []
+    related_upcs: list[str] = []
     for release in releases:
+        upc = clean((release.get("identifiers") or {}).get("upc_ean"))
+        if upc:
+            related_upcs.append(upc)
         release_lines.append(
             f"- {show(release.get('title'))} | date: {show(release.get('release_date'))} | "
-            f"UPC/EAN: {show((release.get('identifiers') or {}).get('upc_ean'))}"
+            f"UPC/EAN: {show(upc)}"
         )
     if not release_lines:
         release_lines = ["- none registered"]
+
+    claim_missing: list[str] = []
+    if not existing_profile:
+        claim_missing.append("Spotify Artist URL / URI")
+        if not related_upcs:
+            claim_missing.append("UPC/EAN for a related release")
+
+    readiness = "READY FOR PROFILE UPDATE" if existing_profile else (
+        "READY FOR CLAIM / ACCESS SETUP" if not claim_missing else "BLOCKED — DO NOT CLAIM"
+    )
+    missing_text = ", ".join(claim_missing) if claim_missing else "none"
 
     selected_path = selected_image.get("github_path") if isinstance(selected_image, dict) else None
     selected_url = selected_image.get("web_url") if isinstance(selected_image, dict) else None
@@ -188,6 +204,7 @@ def render_spotify_profile(artist_id: str) -> str:
         "",
         "## Safety / execution rules",
         "- アーティスト名、URL、実績、SNS、リリース情報を推測で補わない。",
+        "- ReadinessがBLOCKEDの場合はclaim申請を送信しない。正規画面で取得可能な情報だけ確認し、不足項目を報告する。",
         "- claimに必要なArtist URL/URI、UPC/EAN、本人確認情報等が不足している場合は、取得できる正規画面まで進めて停止し、必要項目を報告する。",
         "- Bioは下記Source factsだけを使って自然な文章にしてよいが、架空の実績・人物設定・受賞歴・活動歴は追加しない。",
         "- 正式採用画像 (`assets.artist_image`) が未設定なら、candidate一覧から勝手に1枚を正式採用しない。画像変更は行わず候補を報告する。",
@@ -196,6 +213,10 @@ def render_spotify_profile(artist_id: str) -> str:
         "",
         "## Task mode",
         mode,
+        "",
+        "## Readiness",
+        readiness,
+        f"Missing claim fields: {missing_text}",
         "",
         "## Artist identity",
         f"Artist name: {show(artist.get('name'))}",
