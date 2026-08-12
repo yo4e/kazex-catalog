@@ -2,12 +2,13 @@
 
 KAZEX Records のアーティスト情報・リリース情報・公開素材・プロモーション情報を、AIと人間が共同で扱える形で蓄積する公開カタログです。
 
-現在の主目的は、Too Lost の **Priority Pitch** を作成・更新しやすくすることです。あわせて、Spotify for Artists 等の外部サービス操作を、カタログ正本から生成した安全な作業パケットとしてChatGPT等のブラウザ操作担当へ渡せるようにします。
+現在の主目的は、制作中の会話から作品情報を随時蓄積し、Too Lost の **Priority Pitch** や Spotify for Artists 等の外部サービス操作へ再利用できる状態を作ることです。外部サービス操作は、カタログ正本から生成した安全なbrowser task packetとしてChatGPT等のブラウザ操作担当へ渡せるようにします。
 
 将来的には、このリポジトリを KAZEX Records 公式サイトのデータソースとして利用し、リリース情報や公開素材の追加・更新からサイト更新までを自動化することを目指します。
 
 ## このリポジトリの役割
 
+- 制作会話で決まったartist / release / track情報を随時保存する
 - アーティスト情報の正本を管理する
 - リリース情報・トラック情報を管理する
 - Too Lost Priority Pitch の作成に必要な情報を管理する
@@ -45,10 +46,12 @@ kazex-catalog/
 ├── docs/
 │   ├── ASSETS.md
 │   ├── BROWSER_TASKS.md
+│   ├── INTAKE_WORKFLOW.md
 │   ├── PRIORITY_PITCH.md
 │   ├── ROADMAP.md
 │   └── WEBSITE_AUTOMATION_SPEC.md
 ├── scripts/
+│   ├── check_readiness.py
 │   ├── render_browser_task.py
 │   └── validate_catalog.py
 └── templates/
@@ -57,6 +60,31 @@ kazex-catalog/
 ```
 
 当面は **YAML を構造化データの正本**として使用します。文章そのものが成果物になる長文資料は Markdown を使用します。
+
+## 制作中の会話から登録する
+
+普段の制作チャットで、例えば次のように指示できます。
+
+- 「それカタログに入れといて」
+- 「この曲もアルバムに追加しといて」
+- 「このプロンプト残しといて」
+
+AIは会話と既存catalogから対象を特定し、分かっている公開情報を先に保存します。release date、UPC、ISRC、Spotify URL等がまだ存在しない場合でも、既知情報の保存は止めません。
+
+制作中は必要以上に質問せず、保存先や確定状態が曖昧な場合だけ確認します。ユーザーが「ピッチ準備」「Spotify登録できる状態にして」等と指示した段階で、外部サービスに必要な不足だけをまとめて確認します。
+
+詳細は `docs/INTAKE_WORKFLOW.md` を参照してください。
+
+## Readiness check
+
+外部登録に必要な不足を機械的に確認できます。
+
+```bash
+python scripts/check_readiness.py release unseen-dragon
+python scripts/check_readiness.py artist mri-music-resonance-imaging
+```
+
+`CAPTURE`、`TOO LOST PRIORITY PITCH`、`SPOTIFY FOR ARTISTS CLAIM / PROFILE` 等について、`READY` または `BLOCKED` と不足項目を表示します。
 
 ## Browser Task Packets
 
@@ -103,6 +131,7 @@ python scripts/render_browser_task.py spotify-profile mri-music-resonance-imagin
 
 - `docs/ASSETS.md` — GitHub公開素材とGoogle Drive原本の役割分担・Inbox運用
 - `docs/BROWSER_TASKS.md` — 外部サービスをブラウザ操作するための作業パケット仕様
+- `docs/INTAKE_WORKFLOW.md` — 制作会話から随時catalogへ登録し、外部登録準備へつなぐ運用
 - `docs/PRIORITY_PITCH.md` — Too Lost Priority Pitch 作成仕様
 - `docs/ROADMAP.md` — 将来設計と段階的な実装方針
 - `docs/WEBSITE_AUTOMATION_SPEC.md` — KAZEX Records公式サイト自動更新の将来実装仕様
@@ -110,4 +139,4 @@ python scripts/render_browser_task.py spotify-profile mri-music-resonance-imagin
 
 ## ステータス
 
-初期運用段階です。まずは実際のリリースと公開素材を登録し、Priority Pitch、Spotify for Artists作業、素材整理が安定して回るところまで運用を固めます。その知見をもとに、Schema validation、Webサイト連携、必要に応じたデータベース化を段階的に進めます。
+初期運用段階です。まずは実際の制作会話からrelease / track / promptを蓄積し、Priority Pitch、Spotify for Artists作業、素材整理が安定して回るところまで運用を固めます。その知見をもとに、Schema validation、Webサイト連携、必要に応じたデータベース化を段階的に進めます。
