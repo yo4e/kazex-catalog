@@ -4,7 +4,9 @@ sort_name: The Aerial Gravities
 status: active
 
 description:
-  short: null
+  short: >
+    This music was not played. It was prompted, assembled, curated.
+    The Aerial Gravities are imaginary. The fall is not.
   long: null
 
 concept: null
@@ -12,7 +14,7 @@ concept: null
 genres: []
 
 platforms:
-  spotify_artist_url: null
+  spotify_artist_url: "https://open.spotify.com/intl-ja/artist/26VmtM7je1d3PqWMW5ZXzc"
   apple_music_artist_url: null
   youtube_artist_url: null
 
@@ -24,7 +26,9 @@ social:
   tiktok: null
   bluesky: null
 
-milestones: []
+milestones:
+  - >
+    2025: Released Still Falling, Drift Logic, The Bookjam Paradox, and Orbital Debris.
 
 assets:
   github_asset_dir: assets/artists/the-aerial-gravities/
@@ -57,6 +61,9 @@ assets:
   concept_art: []
 
 notes_public: >
-  初期登録。Spotify Artist情報、BIO、マイルストーン、個別の宣材素材URLなどは未登録。
   2026-08-12にGitHub公開素材中心の参照設計へ移行。
   2026-08-18に正式アー写4点をルートInboxから分類登録。代表1枚は未指定。
+  Spotify Artist URLと公開BIOを登録。公開BIOではThe Bookjam Paradoxが
+  NovelJam 2025のofficial opening trackとして告知されていたが、
+  現時点でNovelJam公式サイトから同指定を独立確認できていないため、
+  verified milestoneには含めず出典付き注記として保持する。
