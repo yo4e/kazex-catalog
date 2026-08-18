@@ -1,6 +1,6 @@
 # KAZEX Records 素材管理仕様
 
-最終更新: 2026-08-12
+最終更新: 2026-08-18
 
 KAZEX Records の素材は、**GitHubを公開素材の正本、Google Driveを重い制作原本の倉庫**として役割分担する。
 
@@ -19,6 +19,8 @@ AIが日常的に整理・参照し、Web、Priority Pitch、EPK等へ再利用�
 - Web掲載前提の軽量画像
 - 必要に応じて軽量PDF / EPK
 
+未整理素材の投入先はリポジトリルートの `inbox/` とする。`inbox/` が唯一のAsset Inbox正本であり、`assets/inbox/` は使用しない。
+
 ### Google Drive
 
 制作・保管用の重い原本を置く。
@@ -36,45 +38,46 @@ GitHub上の公開素材は、Drive原本から派生したWeb用コピーでも
 ## GitHub の公開素材構造
 
 ```text
-assets/
+kazex-catalog/
 ├── inbox/
-├── artists/
-│   ├── the-aerial-gravities/
-│   │   ├── artist-photos/
-│   │   ├── logos/
-│   │   └── concept-art/
-│   └── mri-music-resonance-imaging/
-│       ├── artist-photos/
-│       ├── logos/
-│       └── concept-art/
-└── releases/
-    ├── ghost-velocity/
-    │   ├── cover/
-    │   ├── visuals/
-    │   └── other-assets/
-    └── unseen-dragon/
-        ├── cover/
-        ├── visuals/
-        └── other-assets/
+└── assets/
+    ├── artists/
+    │   ├── the-aerial-gravities/
+    │   │   ├── artist-photos/
+    │   │   ├── logos/
+    │   │   └── concept-art/
+    │   └── mri-music-resonance-imaging/
+    │       ├── artist-photos/
+    │       ├── logos/
+    │       └── concept-art/
+    └── releases/
+        ├── ghost-velocity/
+        │   ├── cover/
+        │   ├── visuals/
+        │   └── other-assets/
+        └── unseen-dragon/
+            ├── cover/
+            ├── visuals/
+            └── other-assets/
 ```
 
 Gitは空ディレクトリを保持しないため、各サブディレクトリは最初の素材が入った時点で作成してよい。
 
 ## GitHub Asset Inbox 運用
 
-`assets/inbox/` は、人間が公開素材を素早く投入するための未整理置き場とする。
+リポジトリルートの `inbox/` は、人間が公開素材を素早く投入するための未整理置き場とする。
 
 山田は整理・命名を気にせず、例えば `MRIのジャケ.png`、`Aerialアー写候補.jpg` のような暫定名で素材を置いてよい。
 
 ChatGPT / Codex 等のAIが素材整理を行う際は、原則として次の順に処理する。
 
-1. ファイル内容を実際に確認する。
+1. ファイル内容を実際に確認する。ユーザーが素材の所属・用途を明示した場合はその情報も根拠として扱う。
 2. ファイル名、画像内容、既存の artist / release YAML、会話文脈から所属を判断する。
 3. artist / release / asset type が十分に判定できる場合だけ、一貫した名前へリネームする。
 4. `assets/artists/<artist-id>/...` または `assets/releases/<release-id>/...` の適切な場所へ移動する。
 5. 正式採用素材としてカタログから参照すべき場合は、対応するYAMLの `github_path` / `web_url` 等を更新する。
 6. 判定に十分な根拠がない場合は推測で分類せず、山田に必要な点だけ確認する。
-7. 確認待ちの素材は `assets/inbox/` に残す。
+7. 確認待ちの素材は `inbox/` に残す。
 
 ### 採用状態
 
@@ -84,7 +87,7 @@ AIは、明示されていない素材を正式採用へ勝手に昇格させな
 - `selected` — 山田が正式採用した素材。
 - `archived` — 過去素材。削除せず参照を残す必要がある場合。
 
-YAMLで候補素材を列挙する場合は、各素材に `status` を持たせる。
+YAMLで素材を列挙する場合は、各素材に `status` を持たせる。複数の正式アー写がある場合は複数項目を `selected` としてよい。代表1枚が指定されていない場合、AIは `artist_image` を勝手に1枚へ固定しない。
 
 ### リネーム方針
 
@@ -137,7 +140,7 @@ KAZEX Records Assets/
     └── Templates/
 ```
 
-Drive上の `Inbox/` は今後、制作原本を素早く投げ込む用途では利用してよいが、AIが日常的に整理する公開素材Inboxの正本は `assets/inbox/` とする。
+Drive上の `Inbox/` は今後、制作原本を素早く投げ込む用途では利用してよいが、AIが日常的に整理する公開素材Inboxの正本はGitHubリポジトリルートの `inbox/` とする。
 
 ## YAML の素材参照
 
@@ -182,7 +185,7 @@ cover:
 
 1. GitHub上の画像をそのまま利用
 2. サイトビルド時に `kazex-catalog` からコピー
-3. GitHubを正本としてCloudflare R2 / CDNへ同期
+3. GitHubを正本としてCloudflare R2 / CDN等へ同期
 4. 将来の専用アセット配信層へ移行
 
 判断基準は、実装の簡単さ、表示速度、コスト、AIの扱いやすさ、キャッシュ/CDN、将来規模とする。

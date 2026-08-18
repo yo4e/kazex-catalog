@@ -39,6 +39,8 @@ AIが日常的に扱う軽量な公開素材は `assets/` に置く。
 - Web掲載前提の軽量画像
 - 必要に応じて軽量PDF / EPK
 
+未整理の公開素材はリポジトリルートの `inbox/` に置き、AIが分類後に `assets/` へ移す。
+
 Google Drive等には重い制作原本を置く。
 
 - 高解像度原本
@@ -66,7 +68,7 @@ Priority Pitch と公開素材整理をAIが迷わず行える状態にする。
 - リリース情報のYAML化
 - Too Lost Priority Pitch仕様の保存
 - Pitch作成に必要なフィールドの定義
-- GitHub `assets/` / `assets/inbox/` の導入
+- GitHub `inbox/` + `assets/` の公開素材運用
 - Google Driveを制作原本倉庫として役割分離
 - `github_path` / `web_url` / `drive_url` の分離
 - AI共同運用ルール
@@ -80,7 +82,7 @@ Priority Pitch と公開素材整理をAIが迷わず行える状態にする。
 公開素材については、次の流れが成立すれば第一段階完了とする。
 
 ```text
-assets/inbox/
+inbox/
     ↓ AIが内容確認
 リネーム・分類
     ↓
@@ -384,7 +386,7 @@ AIは以下を行う。
 
 1. 既存artistデータを読む
 2. 新release／trackデータを追加する
-3. `assets/inbox/` の公開素材を確認・分類する
+3. `inbox/` の公開素材を確認・分類する
 4. Suno等の生成ページ、使用プロンプト、歌詞等の公開可能な制作情報を記録する
 5. validationを通す
 6. Priority Pitchを生成する
