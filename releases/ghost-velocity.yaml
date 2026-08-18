@@ -33,6 +33,10 @@ links:
   apple_music: null
   youtube: null
 
+generation:
+  provider: suno
+  source_playlist_url: "https://suno.com/playlist/a542b111-24f7-4489-a31c-cbda94a6c3a3"
+
 tracks:
   - title: Ghost Velocity
     isrc: "QZPEW0848423"
@@ -60,17 +64,25 @@ tracks:
 credits: {}
 
 description:
-  short: null
-  long: null
+  short: >
+    幽霊、速度、残像、落下、信号、金属、不在を軸に、
+    「消えたあとも続く運動」を描くコズミック・ジャズのアルバム。
+  long: >
+    存在そのものは消えても、速度、後流、残像、信号、ベクトルだけがなお進み続ける。
+    Ghost Velocityは、触れられないものが運動の痕跡だけを残して飛び続ける感覚を核に、
+    落下する金属、散乱する信号、見えない炎への着陸までを11曲で描く。
 
 promotion:
   priority_pitch:
     status: draft
     selected_track: Ghost Velocity
-    release_summary: null
-    spotify_artist: null
-    marketing_elements: []
-    past_awards_milestones: null
+    release_summary: >
+      “Ghost Velocity” is a fast-paced cosmic jazz piece where vibraphone and piano trace luminous afterimages through space. Driven by upright bass and light drums, it moves with the force of something half-gone but still accelerating. Delicate chord accents suggest gravity, while the abstract arrangement turns speed, absence, and motion into a vivid sonic apparition.
+    spotify_artist: "https://open.spotify.com/intl-ja/artist/26VmtM7je1d3PqWMW5ZXzc"
+    marketing_elements:
+      - visual content strategy
+    past_awards_milestones: >
+      Previous releases include Still Falling, Drift Logic, The Bookjam Paradox, and Orbital Debris, all released in 2025.
     upcoming_tour_dates: null
     social:
       facebook: null
@@ -98,5 +110,10 @@ notes_public: >
   カタログ番号、C/Pライン、歌詞なし、11曲分のISRCを反映。
   Too Lost画面上では「配信済み11トラック」と表示されていたが、
   リリース日は2026-08-24のため、catalog statusはupcomingのまま維持。
-  Priority Pitch用のSpotify Artist情報、Release Summary、Marketing Elements、
-  Past Awards / Milestones等は引き続き要確認。
+  Suno公開プレイリストを制作元として登録。各曲の公開creative promptは
+  プレイリストから追補可能。
+  初期設定資料からアルバム全体のコンセプト説明とPriority Pitch用Release Summaryを反映。
+  トラックごとの日本語意訳・解説は docs/releases/ghost-velocity-initial-concept.md に保存。
+  2025年の過去リリース4作をPriority Pitch用Past Awards / Milestonesに反映。
+  Spotify Artist URLをPriority Pitch用情報として登録。
+  Spotify Canvas制作予定をMarketing Elementsのvisual content strategyとして登録。
