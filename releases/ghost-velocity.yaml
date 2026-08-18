@@ -64,14 +64,20 @@ tracks:
 credits: {}
 
 description:
-  short: null
-  long: null
+  short: >
+    幽霊、速度、残像、落下、信号、金属、不在を軸に、
+    「消えたあとも続く運動」を描くコズミック・ジャズのアルバム。
+  long: >
+    存在そのものは消えても、速度、後流、残像、信号、ベクトルだけがなお進み続ける。
+    Ghost Velocityは、触れられないものが運動の痕跡だけを残して飛び続ける感覚を核に、
+    落下する金属、散乱する信号、見えない炎への着陸までを11曲で描く。
 
 promotion:
   priority_pitch:
     status: draft
     selected_track: Ghost Velocity
-    release_summary: null
+    release_summary: >
+      “Ghost Velocity” is a fast-paced cosmic jazz piece where vibraphone and piano trace luminous afterimages through space. Driven by upright bass and light drums, it moves with the force of something half-gone but still accelerating. Delicate chord accents suggest gravity, while the abstract arrangement turns speed, absence, and motion into a vivid sonic apparition.
     spotify_artist: null
     marketing_elements: []
     past_awards_milestones: null
@@ -104,5 +110,6 @@ notes_public: >
   リリース日は2026-08-24のため、catalog statusはupcomingのまま維持。
   Suno公開プレイリストを制作元として登録。各曲の公開creative promptは
   プレイリストから追補可能。
-  Priority Pitch用のSpotify Artist情報、Release Summary、Marketing Elements、
-  Past Awards / Milestones等は引き続き要確認。
+  初期設定資料からアルバム全体のコンセプト説明とPriority Pitch用Release Summaryを反映。
+  トラックごとの日本語意訳・解説は docs/releases/ghost-velocity-initial-concept.md に保存。
+  Priority Pitch用のSpotify Artist情報、Marketing Elements、Past Awards / Milestones等は引き続き要確認。
