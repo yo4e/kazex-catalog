@@ -32,13 +32,14 @@ KAZEX Records のアーティスト情報・リリース情報・公開素材・
 kazex-catalog/
 ├── README.md
 ├── AGENTS.md
+├── inbox/
+│   └── README.md
 ├── artists/
 │   └── <artist-id>.yaml
 ├── releases/
 │   └── <release-id>.yaml
 ├── assets/
 │   ├── README.md
-│   ├── inbox/
 │   ├── artists/
 │   │   └── <artist-id>/...
 │   └── releases/
@@ -112,10 +113,11 @@ python scripts/render_browser_task.py spotify-profile mri-music-resonance-imagin
 
 つまり、基本的な役割分担は次のとおりです。
 
-- GitHub: 公開カタログの正本 + 軽量な公開素材
+- GitHub `assets/`: 公開カタログから参照する整理済み軽量素材
+- GitHub `inbox/`: 未整理の公開素材を人間が投入する唯一のAsset Inbox
 - Google Drive: 重い制作原本・バックアップ
 
-未整理の公開素材は `assets/inbox/` へ投入し、AIが後から分類できます。正式採用状態をAIが推測で確定することはしません。
+未整理の公開素材はリポジトリルートの `inbox/` へ投入し、AIが後から分類できます。正式採用状態をAIが推測で確定することはしません。`assets/inbox/` は使用しません。
 
 素材管理の詳細は `docs/ASSETS.md` を正本とします。
 
