@@ -75,7 +75,7 @@ description:
 
 promotion:
   priority_pitch:
-    status: draft
+    status: submitted
     selected_track: Ghost Velocity
     release_summary: >
       “Ghost Velocity” is a fast-paced cosmic jazz piece where vibraphone and piano trace luminous afterimages through space. Driven by upright bass and light drums, it moves with the force of something half-gone but still accelerating. Delicate chord accents suggest gravity, while the abstract arrangement turns speed, absence, and motion into a vivid sonic apparition.
@@ -119,3 +119,4 @@ notes_public: >
   Spotify Artist URLをPriority Pitch用情報として登録。
   Spotify Canvas制作予定をMarketing Elementsのvisual content strategyとして登録。
   2026-08-18にルートInboxへ追加された画像をGhost Velocityの正式ジャケットとして分類登録。
+  2026-08-18にToo Lost Priority PitchへGhost Velocityを実申請。statusをsubmittedへ更新。
