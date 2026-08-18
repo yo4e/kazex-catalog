@@ -33,6 +33,10 @@ links:
   apple_music: null
   youtube: null
 
+generation:
+  provider: suno
+  source_playlist_url: "https://suno.com/playlist/a542b111-24f7-4489-a31c-cbda94a6c3a3"
+
 tracks:
   - title: Ghost Velocity
     isrc: "QZPEW0848423"
@@ -98,5 +102,7 @@ notes_public: >
   カタログ番号、C/Pライン、歌詞なし、11曲分のISRCを反映。
   Too Lost画面上では「配信済み11トラック」と表示されていたが、
   リリース日は2026-08-24のため、catalog statusはupcomingのまま維持。
+  Suno公開プレイリストを制作元として登録。各曲の公開creative promptは
+  プレイリストから追補可能。
   Priority Pitch用のSpotify Artist情報、Release Summary、Marketing Elements、
   Past Awards / Milestones等は引き続き要確認。
