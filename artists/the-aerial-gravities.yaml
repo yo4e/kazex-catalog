@@ -45,9 +45,18 @@ assets:
     github_path: null
     web_url: null
     drive_url: null
-  artist_photo_candidates: []
+  artist_photo_candidates:
+    - github_path: assets/artists/the-aerial-gravities/artist-photos/The_Aerial_Gravities_Artist_Photo_01.jpeg
+      status: selected
+    - github_path: assets/artists/the-aerial-gravities/artist-photos/The_Aerial_Gravities_Artist_Photo_02.jpeg
+      status: selected
+    - github_path: assets/artists/the-aerial-gravities/artist-photos/The_Aerial_Gravities_Artist_Photo_03.jpeg
+      status: selected
+    - github_path: assets/artists/the-aerial-gravities/artist-photos/The_Aerial_Gravities_Artist_Photo_04.jpeg
+      status: selected
   concept_art: []
 
 notes_public: >
   初期登録。Spotify Artist情報、BIO、マイルストーン、個別の宣材素材URLなどは未登録。
   2026-08-12にGitHub公開素材中心の参照設計へ移行。
+  2026-08-18に正式アー写4点をルートInboxから分類登録。代表1枚は未指定。
