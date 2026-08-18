@@ -49,7 +49,7 @@ Spotify URL、UPC、ISRC、リリース日、受賞歴、チャート実績、�
 - `artists/*.yaml` — アーティスト単位の公開情報
 - `releases/*.yaml` — リリース単位の公開情報とプロモーション情報
 - `assets/` — 軽量な公開素材
-- `assets/inbox/` — 未整理の公開素材の一時投入場所
+- `inbox/` — 未整理の公開素材の唯一の一時投入場所
 - `docs/` — 仕様・将来設計
 - `scripts/` — validation / readiness確認 / task packet生成等の補助ツール
 - `templates/` — 新規登録時の雛形
@@ -109,7 +109,7 @@ Too Lost、Spotify for Artists等の外部サービスをブラウザ操作担�
 
 ### Inbox処理
 
-人間は公開して問題ない未整理素材を、雑なファイル名のまま `assets/inbox/` へ投入して構いません。
+人間は公開して問題ない未整理素材を、雑なファイル名のままリポジトリルートの `inbox/` へ投入して構いません。`inbox/` が唯一のAsset Inbox正本であり、`assets/inbox/` は使用しません。
 
 AIが素材整理を担当する場合は、次の順で処理してください。
 
