@@ -24,7 +24,7 @@ lyrics:
   language: null
 
 cover:
-  github_path: null
+  github_path: assets/releases/ghost-velocity/cover/Ghost_Velocity_Cover.png
   web_url: null
   drive_url: null
 
@@ -117,3 +117,4 @@ notes_public: >
   2025年の過去リリース4作をPriority Pitch用Past Awards / Milestonesに反映。
   Spotify Artist URLをPriority Pitch用情報として登録。
   Spotify Canvas制作予定をMarketing Elementsのvisual content strategyとして登録。
+  2026-08-18にルートInboxへ追加された画像をGhost Velocityの正式ジャケットとして分類登録。
