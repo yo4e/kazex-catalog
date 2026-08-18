@@ -8,8 +8,22 @@ release_type: null # single / ep / album など
 release_date: null
 status: planned # planned / upcoming / released など
 
+genres: []
+
+label: null
+
 identifiers:
   upc_ean: null
+  catalog_number: null
+  amazon_asin: null
+
+copyright:
+  c_line: null
+  p_line: null
+
+lyrics:
+  has_lyrics: null
+  language: null
 
 cover:
   github_path: null
