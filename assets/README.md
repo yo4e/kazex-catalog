@@ -14,7 +14,6 @@
 
 ```text
 assets/
-├── inbox/
 ├── artists/
 │   ├── the-aerial-gravities/
 │   │   ├── artist-photos/
@@ -35,6 +34,8 @@ assets/
         └── other-assets/
 ```
 
-Gitは空ディレクトリを保持しないため、各サブディレクトリは最初の素材が入った時点で作成してよい。未整理素材は `assets/inbox/` へ投入する。
+未整理の公開素材は、リポジトリルートの `inbox/` へ投入する。`inbox/` が唯一のAsset Inbox正本であり、`assets/inbox/` は使用しない。
+
+Gitは空ディレクトリを保持しないため、各サブディレクトリは最初の素材が入った時点で作成してよい。
 
 詳細は `docs/ASSETS.md` を参照してください。
