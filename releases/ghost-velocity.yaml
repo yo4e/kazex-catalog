@@ -80,7 +80,8 @@ promotion:
       “Ghost Velocity” is a fast-paced cosmic jazz piece where vibraphone and piano trace luminous afterimages through space. Driven by upright bass and light drums, it moves with the force of something half-gone but still accelerating. Delicate chord accents suggest gravity, while the abstract arrangement turns speed, absence, and motion into a vivid sonic apparition.
     spotify_artist: null
     marketing_elements: []
-    past_awards_milestones: null
+    past_awards_milestones: >
+      Previous releases include Still Falling, Drift Logic, The Bookjam Paradox, and Orbital Debris, all released in 2025.
     upcoming_tour_dates: null
     social:
       facebook: null
@@ -112,4 +113,5 @@ notes_public: >
   プレイリストから追補可能。
   初期設定資料からアルバム全体のコンセプト説明とPriority Pitch用Release Summaryを反映。
   トラックごとの日本語意訳・解説は docs/releases/ghost-velocity-initial-concept.md に保存。
-  Priority Pitch用のSpotify Artist情報、Marketing Elements、Past Awards / Milestones等は引き続き要確認。
+  2025年の過去リリース4作をPriority Pitch用Past Awards / Milestonesに反映。
+  Spotify Artist URLはartist正本側のPR #8で登録。Marketing Elementsは引き続き要確認。
