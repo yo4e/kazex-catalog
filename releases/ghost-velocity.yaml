@@ -2,11 +2,26 @@ id: ghost-velocity
 title: Ghost Velocity
 artist_id: the-aerial-gravities
 release_type: album
-release_date: null
+release_date: 2026-08-24
 status: upcoming
+
+genres:
+  - Jazz
+
+label: KazeX Records
 
 identifiers:
   upc_ean: "0682286685142"
+  catalog_number: "TOOLOST3001315059"
+  amazon_asin: null
+
+copyright:
+  c_line: "GlamorousFan © 2026"
+  p_line: "KazeX Records ℗ 2026"
+
+lyrics:
+  has_lyrics: false
+  language: null
 
 cover:
   github_path: null
@@ -20,27 +35,27 @@ links:
 
 tracks:
   - title: Ghost Velocity
-    isrc: null
+    isrc: "QZPEW0848423"
   - title: Slipstream Memorial
-    isrc: null
+    isrc: "QZPEW0848424"
   - title: Static in the Dive
-    isrc: null
+    isrc: "QZPEW0848425"
   - title: Blueburn Transit
-    isrc: null
+    isrc: "QZPEW0848426"
   - title: Phantom Turnaround
-    isrc: null
+    isrc: "QZPEW0848427"
   - title: Terminal Vectors
-    isrc: null
+    isrc: "QZPEW0848428"
   - title: Afterimage Mechanics
-    isrc: null
+    isrc: "QZPEW0848429"
   - title: Nocturne for Falling Metal
-    isrc: null
+    isrc: "QZPEW0848430"
   - title: Scatter Signal Parade
-    isrc: null
+    isrc: "QZPEW0848431"
   - title: Airspeed of the Absent
-    isrc: null
+    isrc: "QZPEW0848432"
   - title: Landing on Invisible Fire
-    isrc: null
+    isrc: "QZPEW0848433"
 
 credits: {}
 
@@ -79,6 +94,9 @@ website:
   featured: false
 
 notes_public: >
-  2026-08-12時点でPriority Pitch作成途中。リリース日、Spotify Artist情報、
-  Release Summary、Marketing Elements、Past Awards / Milestones等は要確認。
-  GitHub公開素材中心の参照設計へ移行済み。
+  2026-08-18時点でToo Lost登録情報から、リリース日、ジャンル、レーベル、
+  カタログ番号、C/Pライン、歌詞なし、11曲分のISRCを反映。
+  Too Lost画面上では「配信済み11トラック」と表示されていたが、
+  リリース日は2026-08-24のため、catalog statusはupcomingのまま維持。
+  Priority Pitch用のSpotify Artist情報、Release Summary、Marketing Elements、
+  Past Awards / Milestones等は引き続き要確認。
