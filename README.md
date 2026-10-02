@@ -8,6 +8,7 @@ KAZEX Records のアーティスト情報・リリース情報・公開素材・
 
 ## レーベル公式リンク
 
+- 公式サイト: [KAZEX Records](https://kazex.my.canva.site/)
 - Instagram: [@kazex_records](https://www.instagram.com/kazex_records)
 
 ## このリポジトリの役割
