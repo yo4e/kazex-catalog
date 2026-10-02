@@ -6,6 +6,10 @@ KAZEX Records のアーティスト情報・リリース情報・公開素材・
 
 将来的には、このリポジトリを KAZEX Records 公式サイトのデータソースとして利用し、リリース情報や公開素材の追加・更新からサイト更新までを自動化することを目指します。
 
+## レーベル公式リンク
+
+- Instagram: [@kazex_records](https://www.instagram.com/kazex_records)
+
 ## このリポジトリの役割
 
 - 制作会話で決まったartist / release / track情報を随時保存する
