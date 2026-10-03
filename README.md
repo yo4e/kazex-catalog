@@ -131,6 +131,8 @@ python scripts/render_browser_task.py spotify-profile mri-music-resonance-imagin
 
 ## ドキュメント
 
+- [Instagram宣伝ワークフロー](docs/INSTAGRAM_PROMOTION_WORKFLOW.md) — 週次の選曲・確認・Slack納品・スマホ投稿の運用案
+- [Instagram音楽宣伝の調査 2026-10-03](docs/INSTAGRAM_PROMOTION_RESEARCH_2026-10-03.md) — 他アーティストの公開例、caption案、聴取導線と測定の限界
 - `docs/ASSETS.md` — GitHub公開素材とGoogle Drive原本の役割分担・Inbox運用
 - `docs/BROWSER_TASKS.md` — 外部サービスをブラウザ操作するための作業パケット仕様
 - `docs/INTAKE_WORKFLOW.md` — 制作会話から随時catalogへ登録し、外部登録準備へつなぐ運用
