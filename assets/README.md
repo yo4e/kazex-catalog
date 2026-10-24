@@ -39,3 +39,8 @@ assets/
 Gitは空ディレクトリを保持しないため、各サブディレクトリは最初の素材が入った時点で作成してよい。
 
 詳細は `docs/ASSETS.md` を参照してください。
+
+## 素材索引
+
+- [MRI — Instagram宣伝用の生成オフショット](artists/mri-music-resonance-imaging/concept-art/generated-offshots/README.md)
+  — 休憩・スタジオ制作を描いたAI生成画像。プレビューとPNGへのリンクを掲載。

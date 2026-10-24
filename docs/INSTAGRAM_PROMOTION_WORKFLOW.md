@@ -6,6 +6,8 @@
 
 関連資料: [Instagram音楽宣伝の調査](INSTAGRAM_PROMOTION_RESEARCH_2026-10-03.md)
 
+再利用できる素材: [MRIの生成オフショット一覧](../assets/artists/mri-music-resonance-imaging/concept-art/generated-offshots/README.md)。AI生成の演出画像として扱い、実際の収録や舞台裏を撮影した記録とは表記しない。
+
 週1本程度を目安に、カタログから選曲し、静止画と動画をそれぞれ確認した後、投稿用セットをSlackへ届ける。公開は担当者がスマートフォンのInstagramアプリで行う。素材制作から投稿までを毎回やり直さず、確認とスマホ投稿に人の手間を集中する。
 
 ## 進め方

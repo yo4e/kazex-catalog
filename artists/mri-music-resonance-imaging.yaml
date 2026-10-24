@@ -67,6 +67,54 @@ assets:
     - github_path: assets/artists/mri-music-resonance-imaging/concept-art/MRI_Character_Reference.png
       status: candidate
       role: character-reference
+    - github_path: assets/artists/mri-music-resonance-imaging/concept-art/generated-offshots/MRI_01_Duo_Phone_Break.png
+      status: candidate
+      role: duo-phone-break
+      description: 白衣とヘルメット姿の2人がソファでスマートフォンを見る、休憩シーンの生成画像。
+      generation_method: ai-generated
+      intended_use: instagram-promotion
+      width_px: 941
+      height_px: 1672
+    - github_path: assets/artists/mri-music-resonance-imaging/concept-art/generated-offshots/MRI_02_Duo_Studio_Corridor.png
+      status: candidate
+      role: duo-studio-corridor
+      description: 機材ケースを持ち、スタジオの廊下を歩く2人を描いた生成画像。
+      generation_method: ai-generated
+      intended_use: instagram-promotion
+      width_px: 941
+      height_px: 1672
+    - github_path: assets/artists/mri-music-resonance-imaging/concept-art/generated-offshots/MRI_03_Techno_Synth_Recording.png
+      status: candidate
+      role: techno-synth-recording
+      description: Techno側のキャラクターがシンセサイザーやリズムマシンを操作する、制作シーンの生成画像。
+      generation_method: ai-generated
+      intended_use: instagram-promotion
+      width_px: 941
+      height_px: 1672
+    - github_path: assets/artists/mri-music-resonance-imaging/concept-art/generated-offshots/MRI_04_Piano_Recording.png
+      status: candidate
+      role: piano-recording
+      description: Piano側のキャラクターが、マイクのあるアップライトピアノの前に座る生成画像。
+      generation_method: ai-generated
+      intended_use: instagram-promotion
+      width_px: 941
+      height_px: 1672
+    - github_path: assets/artists/mri-music-resonance-imaging/concept-art/generated-offshots/MRI_05_Duo_Playback_Check.png
+      status: candidate
+      role: duo-playback-check
+      description: DAW画面のあるデスクで2人が再生内容を確認する場面を描いた生成画像。
+      generation_method: ai-generated
+      intended_use: instagram-promotion
+      width_px: 941
+      height_px: 1672
+    - github_path: assets/artists/mri-music-resonance-imaging/concept-art/generated-offshots/MRI_06_Techno_Outside_Break.png
+      status: candidate
+      role: techno-outside-break
+      description: Techno側のキャラクターがスタジオ入口の外で缶を持って座る、休憩シーンの生成画像。
+      generation_method: ai-generated
+      intended_use: instagram-promotion
+      width_px: 941
+      height_px: 1672
 
 notes_public: >
   初期登録。Spotify Artist情報、正式BIO、個別の宣材素材URLなどは未登録。
