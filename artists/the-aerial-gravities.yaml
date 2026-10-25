@@ -114,6 +114,38 @@ assets:
     - github_path: assets/artists/the-aerial-gravities/artist-photos/The_Aerial_Gravities_Band_Group_Candidate_2026-10-25.png
       status: candidate
       role: band-group
+    - github_path: assets/artists/the-aerial-gravities/artist-photos/2026-10-25-vertical-promotion/The_Aerial_Gravities_Instagram_01_Backstage_2026-10-25.png
+      status: candidate
+      role: backstage-vertical
+      description: 白いヘルメットと黒いスーツの4人がバックステージで談笑する縦長の生成アー写。
+      generation_method: ai-generated
+      intended_use: instagram-promotion
+      width_px: 941
+      height_px: 1672
+    - github_path: assets/artists/the-aerial-gravities/artist-photos/2026-10-25-vertical-promotion/The_Aerial_Gravities_Instagram_02_Miltaer_2026-10-25.png
+      status: candidate
+      role: miltaer-vibraphone-vertical
+      description: Miltaerがスタジオでヴィブラフォンを演奏する縦長の生成アー写。
+      generation_method: ai-generated
+      intended_use: instagram-promotion
+      width_px: 941
+      height_px: 1672
+    - github_path: assets/artists/the-aerial-gravities/artist-photos/2026-10-25-vertical-promotion/The_Aerial_Gravities_Instagram_03_Jonion_2026-10-25.png
+      status: candidate
+      role: jonion-piano-vertical
+      description: Jonionがスタジオでグランドピアノを演奏する縦長の生成アー写。
+      generation_method: ai-generated
+      intended_use: instagram-promotion
+      width_px: 941
+      height_px: 1672
+    - github_path: assets/artists/the-aerial-gravities/artist-photos/2026-10-25-vertical-promotion/The_Aerial_Gravities_Instagram_04_Rhythm_Section_2026-10-25.png
+      status: candidate
+      role: rhythm-section-vertical
+      description: PercigeeのウッドベースとConiolisのドラムによるリズムセクションを描いた縦長の生成アー写。
+      generation_method: ai-generated
+      intended_use: instagram-promotion
+      width_px: 941
+      height_px: 1672
     # 2026-10-25より前の旧キャラクターデザイン。現行アー写として再利用しない。
     - github_path: assets/artists/the-aerial-gravities/artist-photos/legacy/pre-2026-10-25/The_Aerial_Gravities_Artist_Photo_01.jpeg
       status: archived
@@ -165,3 +197,5 @@ notes_public: >
   2026-10-25に山田の指示で、それ以前の旧デザインのアー写4点を
   artist-photos/legacy/pre-2026-10-25/へ移動し、selectedからarchivedへ変更。
   旧版は履歴参照用であり、現行キャラクターデザインのアー写として再利用しない。
+  同日制作の縦長プロモーション用生成アー写4点をChatGPT Libraryから元PNGのまま追加。
+  現行リファレンスを参照して生成された候補として用途・寸法を登録し、代表アー写は未指定のまま維持。
