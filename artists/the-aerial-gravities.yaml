@@ -111,17 +111,22 @@ assets:
     web_url: null
     drive_url: null
   artist_photo_candidates:
-    - github_path: assets/artists/the-aerial-gravities/artist-photos/The_Aerial_Gravities_Artist_Photo_01.jpeg
-      status: selected
-    - github_path: assets/artists/the-aerial-gravities/artist-photos/The_Aerial_Gravities_Artist_Photo_02.jpeg
-      status: selected
-    - github_path: assets/artists/the-aerial-gravities/artist-photos/The_Aerial_Gravities_Artist_Photo_03.jpeg
-      status: selected
-    - github_path: assets/artists/the-aerial-gravities/artist-photos/The_Aerial_Gravities_Artist_Photo_04.jpeg
-      status: selected
     - github_path: assets/artists/the-aerial-gravities/artist-photos/The_Aerial_Gravities_Band_Group_Candidate_2026-10-25.png
       status: candidate
       role: band-group
+    # 2026-10-25より前の旧キャラクターデザイン。現行アー写として再利用しない。
+    - github_path: assets/artists/the-aerial-gravities/artist-photos/legacy/pre-2026-10-25/The_Aerial_Gravities_Artist_Photo_01.jpeg
+      status: archived
+      role: legacy-character-design
+    - github_path: assets/artists/the-aerial-gravities/artist-photos/legacy/pre-2026-10-25/The_Aerial_Gravities_Artist_Photo_02.jpeg
+      status: archived
+      role: legacy-character-design
+    - github_path: assets/artists/the-aerial-gravities/artist-photos/legacy/pre-2026-10-25/The_Aerial_Gravities_Artist_Photo_03.jpeg
+      status: archived
+      role: legacy-character-design
+    - github_path: assets/artists/the-aerial-gravities/artist-photos/legacy/pre-2026-10-25/The_Aerial_Gravities_Artist_Photo_04.jpeg
+      status: archived
+      role: legacy-character-design
   concept_art:
     - github_path: assets/artists/the-aerial-gravities/concept-art/2026-10-25-reference-set/The_Aerial_Gravities_Band_Reference_Sheet_2026-10-25.png
       status: candidate
@@ -156,4 +161,7 @@ notes_public: >
   2026-10-25にMJQをモチーフとした4人の名前・担当楽器・性格・共通外観を
   制作会話から整理してmembersとvisual_identityへ登録。
   同日に集合アー写候補1点と関連リファレンス7点を元PNGのSHA-256照合後に登録。
-  新規8点はcandidateとし、既存selectedアー写4点と代表アー写未指定の状態を維持。
+  新規8点はcandidateとして保持し、代表アー写は未指定。
+  2026-10-25に山田の指示で、それ以前の旧デザインのアー写4点を
+  artist-photos/legacy/pre-2026-10-25/へ移動し、selectedからarchivedへ変更。
+  旧版は履歴参照用であり、現行キャラクターデザインのアー写として再利用しない。

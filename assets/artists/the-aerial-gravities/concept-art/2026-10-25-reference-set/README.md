@@ -17,10 +17,11 @@
 
 ## Classification and status
 
-- The collective studio image belongs in `artist-photos/` as a **candidate**. Do not replace the four previously selected artist photographs or set a single `artist_image` without explicit approval.
+- The collective studio image remains in `artist-photos/` as a **candidate**. Do not promote it to selected or set a single `artist_image` without explicit approval.
 - The full-band sheet, four instruments, character and helmet belong in `concept-art/2026-10-25-reference-set/` as reference images, not official release cover art.
 - All images are 2026-10-25 session outputs and remain PNG; preserve bytes to keep these checksums meaningful.
-- The group photo is registered in `artists/the-aerial-gravities.yaml` under `artist_photo_candidates`; the seven references are registered under `concept_art`. All eight new entries have `status: candidate`. The four existing selected photos and the unset representative `artist_image` are unchanged.
+- The group photo is registered in `artists/the-aerial-gravities.yaml` under `artist_photo_candidates`; the seven references are registered under `concept_art`. All eight entries from this session retain `status: candidate`, their original paths and their original PNG bytes. The representative `artist_image` remains unset.
+- On 2026-10-25 (JST), at the owner's request, the four older artist photos were moved to [artist-photos/legacy/pre-2026-10-25/](../../artist-photos/legacy/pre-2026-10-25/) and changed from `selected` to `archived`. They depict an obsolete character design and must not be reused as current artist photos.
 
 The source was the extracted `KAZEX_Aerial_Gravities_GitHub_Import_2026-10-25` folder on the desktop. No images were substituted or regenerated.
 
