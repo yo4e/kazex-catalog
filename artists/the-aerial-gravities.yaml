@@ -76,7 +76,7 @@ genres: []
 
 platforms:
   spotify_artist_url: "https://open.spotify.com/intl-ja/artist/26VmtM7je1d3PqWMW5ZXzc"
-  apple_music_artist_url: null
+  apple_music_artist_url: "https://music.apple.com/lu/artist/the-aerial-gravities/1838453123"
   youtube_artist_url: null
 
 social:
@@ -199,3 +199,5 @@ notes_public: >
   旧版は履歴参照用であり、現行キャラクターデザインのアー写として再利用しない。
   同日制作の縦長プロモーション用生成アー写4点をChatGPT Libraryから元PNGのまま追加。
   現行リファレンスを参照して生成された候補として用途・寸法を登録し、代表アー写は未指定のまま維持。
+  2026-10-26のGhost Velocity公開配信ページ調査で確認済みのApple Music Artist URLを登録。
+  確認済みのLUストアURLを保持。YouTube公式artist URLは未確認のためnullを維持。

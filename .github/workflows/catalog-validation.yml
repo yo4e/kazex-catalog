@@ -37,7 +37,7 @@ jobs:
           python scripts/render_browser_task.py priority-pitch unseen-dragon > /tmp/priority-pitch.txt
           python scripts/render_browser_task.py spotify-profile mri-music-resonance-imaging > /tmp/spotify-profile.txt
           grep -q "Browser Task Packet — Too Lost Priority Pitch" /tmp/priority-pitch.txt
-          grep -q "BLOCKED — DO NOT SUBMIT" /tmp/priority-pitch.txt
+          grep -q "READY FOR FORM ENTRY" /tmp/priority-pitch.txt
           grep -q "Browser Task Packet — Spotify for Artists" /tmp/spotify-profile.txt
-          grep -q "CLAIM / SET UP ACCESS" /tmp/spotify-profile.txt
-          grep -q "BLOCKED — DO NOT CLAIM" /tmp/spotify-profile.txt
+          grep -q "UPDATE EXISTING PROFILE" /tmp/spotify-profile.txt
+          grep -q "READY FOR PROFILE UPDATE" /tmp/spotify-profile.txt

@@ -3,7 +3,7 @@ title: Ghost Velocity
 artist_id: the-aerial-gravities
 release_type: album
 release_date: 2026-08-24
-status: upcoming
+status: released
 
 genres:
   - Jazz
@@ -29,8 +29,8 @@ cover:
   drive_url: null
 
 links:
-  spotify: null
-  apple_music: null
+  spotify: "https://open.spotify.com/album/6mbDVw5ILYJQn2h4HltiVv"
+  apple_music: "https://music.apple.com/lu/album/ghost-velocity/6800608556"
   youtube: null
 
 generation:
@@ -40,26 +40,48 @@ generation:
 tracks:
   - title: Ghost Velocity
     isrc: "QZPEW0848423"
+    links:
+      spotify: "https://open.spotify.com/track/502oqF0do3oY9aF4UN6ZEW"
   - title: Slipstream Memorial
     isrc: "QZPEW0848424"
+    links:
+      spotify: "https://open.spotify.com/track/11QijLoxpBVnWhxmzgmjP1"
   - title: Static in the Dive
     isrc: "QZPEW0848425"
+    links:
+      spotify: "https://open.spotify.com/track/5B8vHcHnJKkQ1MryBwxuFO"
   - title: Blueburn Transit
     isrc: "QZPEW0848426"
+    links:
+      spotify: "https://open.spotify.com/track/5plHJBXK99Xj3LOYuhyXiE"
   - title: Phantom Turnaround
     isrc: "QZPEW0848427"
+    links:
+      spotify: "https://open.spotify.com/track/6eQ0zbHTEeECC1K8K64a3e"
   - title: Terminal Vectors
     isrc: "QZPEW0848428"
+    links:
+      spotify: "https://open.spotify.com/track/5DTXye7hL5dHyTTNJC3tYF"
   - title: Afterimage Mechanics
     isrc: "QZPEW0848429"
+    links:
+      spotify: "https://open.spotify.com/track/0qacNRUMqYlgkhpJVV2IBM"
   - title: Nocturne for Falling Metal
     isrc: "QZPEW0848430"
+    links:
+      spotify: "https://open.spotify.com/track/5YFihi3RNWDoiyGWIccnAc"
   - title: Scatter Signal Parade
     isrc: "QZPEW0848431"
+    links:
+      spotify: "https://open.spotify.com/track/1XpaqZ2Ho4nDFBRceAlnJ0"
   - title: Airspeed of the Absent
     isrc: "QZPEW0848432"
+    links:
+      spotify: "https://open.spotify.com/track/0MGU0PhF6QxqQnXhilbC2a"
   - title: Landing on Invisible Fire
     isrc: "QZPEW0848433"
+    links:
+      spotify: "https://open.spotify.com/track/6q2hbkfjhAKGLuG3sROnyH"
 
 credits: {}
 
@@ -110,7 +132,7 @@ notes_public: >
   2026-08-18時点でToo Lost登録情報から、リリース日、ジャンル、レーベル、
   カタログ番号、C/Pライン、歌詞なし、11曲分のISRCを反映。
   Too Lost画面上では「配信済み11トラック」と表示されていたが、
-  リリース日は2026-08-24のため、catalog statusはupcomingのまま維持。
+  当時はリリース日2026-08-24より前のため、catalog statusをupcomingとしていた。
   Suno公開プレイリストを制作元として登録。各曲の公開creative promptは
   プレイリストから追補可能。
   初期設定資料からアルバム全体のコンセプト説明とPriority Pitch用Release Summaryを反映。
@@ -120,3 +142,8 @@ notes_public: >
   Spotify Canvas制作予定をMarketing Elementsのvisual content strategyとして登録。
   2026-08-18にルートInboxへ追加された画像をGhost Velocityの正式ジャケットとして分類登録。
   2026-08-18にToo Lost Priority PitchへGhost Velocityを実申請。statusをsubmittedへ更新。
+  2026-10-26にSpotify／Apple Musicの公開作品ページで作品名・アーティスト・
+  リリース日・11曲・KazeX Recordsを照合した調査結果から、statusをreleasedへ更新。
+  アルバムのSpotify／Apple Musicリンクと全11曲のSpotifyリンクを反映。
+  Apple Musicは確認済みのLUストアURLを保持。YouTube／smartlinkは未確認。
+  既存識別子、website.publish、Priority Pitchのstatusは維持。

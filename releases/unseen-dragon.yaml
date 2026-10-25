@@ -3,10 +3,11 @@ title: Unseen Dragon
 artist_id: mri-music-resonance-imaging
 release_type: album
 release_date: 2026-08-22
-status: upcoming
+status: released
 
 identifiers:
-  upc_ean: null
+  upc_ean: "0682286638421"
+  catalog_number: "TOOLOST3001303312"
 
 cover:
   github_path: assets/releases/unseen-dragon/cover/Unseen_Dragon_Cover.png
@@ -14,9 +15,10 @@ cover:
   drive_url: null
 
 links:
-  spotify: null
-  apple_music: null
-  youtube: null
+  smartlink: "https://too.fm/unseendragon"
+  spotify: "https://open.spotify.com/album/5BBpcVZquIXcNO5UoRIkZg"
+  apple_music: "https://music.apple.com/us/album/unseen-dragon/6799996113"
+  youtube: "https://www.youtube.com/playlist?list=OLAK5uy_m_CLZoDgzQmH5pPL5IKAeRVOMg23RXnLU"
 
 generation:
   provider: suno
@@ -24,53 +26,98 @@ generation:
 
 tracks:
   - title: MRI_Music Resonance Imaging
-    isrc: null
+    isrc: "QZPEW0826527"
+    links:
+      spotify: "https://open.spotify.com/track/1G7kgTeW6K89WiLG5oGAR4"
+      youtube: "https://www.youtube.com/watch?v=eC9Z4qQ6QNQ"
     creative_prompt: &unseen_dragon_prompt >
       industrial techno, techno percussion, classical piano solo, prepared piano stabs,
       metallic percussion, found-object hits, sub bass pulses, distorted kick, gated reverb,
       abrupt silence, syncopated toms, glitch edits, dry spoken delivery, monotone cadence,
       cold urgency, 128 BPM, live percussion, stereo hammering, dark machine funk
   - title: Remove All Metal
-    isrc: null
+    isrc: "QZPEW0826528"
+    links:
+      spotify: "https://open.spotify.com/track/76wH3dp5jGljDuIkBnadBz"
+      youtube: "https://www.youtube.com/watch?v=omGtc0aASTY"
     creative_prompt: *unseen_dragon_prompt
   - title: Table Feed
-    isrc: null
+    isrc: "QZPEW0826529"
+    links:
+      spotify: "https://open.spotify.com/track/0q8VptgwElZH2ys9b5cc7C"
+      youtube: "https://www.youtube.com/watch?v=7RE-Oc_qxDo"
     creative_prompt: *unseen_dragon_prompt
   - title: Bore Mouth
-    isrc: null
+    isrc: "QZPEW0826530"
+    links:
+      spotify: "https://open.spotify.com/track/4kA9etD4E1L2T6kB5WH8Cu"
+      youtube: "https://www.youtube.com/watch?v=ubpMWBSRcko"
     creative_prompt: *unseen_dragon_prompt
   - title: Gradient Hammer
-    isrc: null
+    isrc: "QZPEW0826531"
+    links:
+      spotify: "https://open.spotify.com/track/4vbc4Jk07DenwlRfh5OGIt"
+      youtube: "https://www.youtube.com/watch?v=3ECmdRGFJn8"
     creative_prompt: *unseen_dragon_prompt
   - title: Hospital Piano
-    isrc: null
+    isrc: "QZPEW0826532"
+    links:
+      spotify: "https://open.spotify.com/track/7rniEoJYt4vRziHuRpaMtg"
+      youtube: "https://www.youtube.com/watch?v=-GfcCMZMHOw"
     creative_prompt: *unseen_dragon_prompt
   - title: Out of Sync
-    isrc: null
+    isrc: "QZPEW0826533"
+    links:
+      spotify: "https://open.spotify.com/track/2EBUlOncT9YzqUE01Q7fGN"
+      youtube: "https://www.youtube.com/watch?v=hqmaLSoJZd4"
     creative_prompt: *unseen_dragon_prompt
   - title: Slice Selection
-    isrc: null
+    isrc: "QZPEW0826534"
+    links:
+      spotify: "https://open.spotify.com/track/2loP6YhYWuGPbxOIpTGcjS"
+      youtube: "https://www.youtube.com/watch?v=CMimBV8SB0w"
     creative_prompt: *unseen_dragon_prompt
   - title: Signal Void
-    isrc: null
+    isrc: "QZPEW0826535"
+    links:
+      spotify: "https://open.spotify.com/track/7oudzgZVjvblY3PKb5leCc"
+      youtube: "https://www.youtube.com/watch?v=LMpivIC23so"
     creative_prompt: *unseen_dragon_prompt
   - title: The Third Disc
-    isrc: null
+    isrc: "QZPEW0826536"
+    links:
+      spotify: "https://open.spotify.com/track/2mJTCuHs9c1zOFWPweEN8H"
+      youtube: "https://www.youtube.com/watch?v=bCGyls2-ZNU"
     creative_prompt: *unseen_dragon_prompt
   - title: Nerve Root
-    isrc: null
+    isrc: "QZPEW0826537"
+    links:
+      spotify: "https://open.spotify.com/track/0sA4tUeGIBT0dFm8GCJUwz"
+      youtube: "https://www.youtube.com/watch?v=3DP69vEKuwQ"
     creative_prompt: *unseen_dragon_prompt
   - title: Unseen Dragon
-    isrc: null
+    isrc: "QZPEW0826538"
+    links:
+      spotify: "https://open.spotify.com/track/5NrxuGQGHzAoXHqw3u9aNh"
+      youtube: "https://www.youtube.com/watch?v=vF5DykTw4js"
     creative_prompt: *unseen_dragon_prompt
   - title: Gated Silence
-    isrc: null
+    isrc: "QZPEW0826539"
+    links:
+      spotify: "https://open.spotify.com/track/2UxeupCNXmTOkmPVHb5Qhx"
+      youtube: "https://www.youtube.com/watch?v=NMRTD-HbFgI"
     creative_prompt: *unseen_dragon_prompt
   - title: Image Reconstruction
-    isrc: null
+    isrc: "QZPEW0826540"
+    links:
+      spotify: "https://open.spotify.com/track/1Sdsow0XPH30aGFdmtGNyP"
+      youtube: "https://www.youtube.com/watch?v=yl_vWnKF8Dc"
     creative_prompt: *unseen_dragon_prompt
   - title: Resonance After the Machine
-    isrc: null
+    isrc: "QZPEW0826541"
+    links:
+      spotify: "https://open.spotify.com/track/7a1uXEumlQJzNm5Rf1oAEb"
+      youtube: "https://www.youtube.com/watch?v=6xooEAZdXY4"
     creative_prompt: *unseen_dragon_prompt
 
 credits: {}
@@ -114,7 +161,13 @@ website:
   featured: false
 
 notes_public: >
-  Priority Pitch用Release Summaryは2026-08-12作成。Spotify Artist情報、画像／EPK等は要確認。
+  Priority Pitch用Release Summaryは2026-08-12作成。画像／EPK等は要確認。
   Spotify Canvas等のビジュアル施策を予定しているためPriority PitchのMarketing Elementsに
   visual content strategyを登録。デビュー作品のため過去の受賞・リリース実績はなし。
   SunoプレイリストURLと制作チャットで確定した15曲の曲名・共通creative promptを登録。
+  2026-10-26にSpotify／Apple Musicの公開作品ページで作品名・アーティスト・
+  リリース日・15曲・KazeX Recordsを照合した調査結果から、statusをreleasedへ更新。
+  本人指定のsmartlink、アルバム配信リンク、全15曲のSpotify／YouTubeリンクを反映。
+  同日のToo Lost作品詳細で曲名ごとに直接照合したUPC/EAN・catalog number・15曲のISRCを登録。
+  配信サービス上のアーティスト表記は「MRI: Music Resonance Imaging」だが、catalogの名称は維持。
+  website.publishとPriority Pitchのstatusは変更しない。

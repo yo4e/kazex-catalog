@@ -20,8 +20,8 @@ genres:
   - experimental
 
 platforms:
-  spotify_artist_url: null
-  apple_music_artist_url: null
+  spotify_artist_url: "https://open.spotify.com/artist/4KSnCxQzmDLdmudSPAEAlF"
+  apple_music_artist_url: "https://music.apple.com/us/artist/mri-music-resonance-imaging/6799996116"
   youtube_artist_url: null
 
 social:
@@ -117,6 +117,9 @@ assets:
       height_px: 1672
 
 notes_public: >
-  初期登録。Spotify Artist情報、正式BIO、個別の宣材素材URLなどは未登録。
+  初期登録。正式BIO、個別の宣材素材URLなどは未登録。
   2026-08-12にGitHub公開素材中心の参照設計へ移行し、MRI公開画像4点を分類登録。
   正方形のDuoアーティスト写真を正式アー写として選定。
+  2026-10-26の公開配信ページ調査で確認済みのSpotify／Apple Music Artist URLを登録。
+  配信サービス上の表記は「MRI: Music Resonance Imaging」。catalogの名称は維持する。
+  YouTubeの共用Release - TopicはMRI専用の公式artist URLとして扱わず、未確認のためnullを維持。
