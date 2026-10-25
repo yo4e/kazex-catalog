@@ -119,7 +119,31 @@ assets:
       status: selected
     - github_path: assets/artists/the-aerial-gravities/artist-photos/The_Aerial_Gravities_Artist_Photo_04.jpeg
       status: selected
-  concept_art: []
+    - github_path: assets/artists/the-aerial-gravities/artist-photos/The_Aerial_Gravities_Band_Group_Candidate_2026-10-25.png
+      status: candidate
+      role: band-group
+  concept_art:
+    - github_path: assets/artists/the-aerial-gravities/concept-art/2026-10-25-reference-set/The_Aerial_Gravities_Band_Reference_Sheet_2026-10-25.png
+      status: candidate
+      role: band-reference-sheet
+    - github_path: assets/artists/the-aerial-gravities/concept-art/2026-10-25-reference-set/The_Aerial_Gravities_Vibraphone_Reference_2026-10-25.png
+      status: candidate
+      role: vibraphone-reference
+    - github_path: assets/artists/the-aerial-gravities/concept-art/2026-10-25-reference-set/The_Aerial_Gravities_Grand_Piano_Reference_2026-10-25.png
+      status: candidate
+      role: grand-piano-reference
+    - github_path: assets/artists/the-aerial-gravities/concept-art/2026-10-25-reference-set/The_Aerial_Gravities_Upright_Bass_Reference_2026-10-25.png
+      status: candidate
+      role: upright-bass-reference
+    - github_path: assets/artists/the-aerial-gravities/concept-art/2026-10-25-reference-set/The_Aerial_Gravities_Drum_Kit_Reference_2026-10-25.png
+      status: candidate
+      role: drum-kit-reference
+    - github_path: assets/artists/the-aerial-gravities/concept-art/2026-10-25-reference-set/The_Aerial_Gravities_Character_Reference_2026-10-25.png
+      status: candidate
+      role: character-reference
+    - github_path: assets/artists/the-aerial-gravities/concept-art/2026-10-25-reference-set/The_Aerial_Gravities_Helmet_Reference_2026-10-25.png
+      status: candidate
+      role: helmet-reference
 
 notes_public: >
   2026-08-12にGitHub公開素材中心の参照設計へ移行。
@@ -131,3 +155,5 @@ notes_public: >
   verified milestoneには含めず出典付き注記として保持する。
   2026-10-25にMJQをモチーフとした4人の名前・担当楽器・性格・共通外観を
   制作会話から整理してmembersとvisual_identityへ登録。
+  同日に集合アー写候補1点と関連リファレンス7点を元PNGのSHA-256照合後に登録。
+  新規8点はcandidateとし、既存selectedアー写4点と代表アー写未指定の状態を維持。
