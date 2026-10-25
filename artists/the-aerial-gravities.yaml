@@ -9,7 +9,68 @@ description:
     The Aerial Gravities are imaginary. The fall is not.
   long: null
 
-concept: null
+concept: >
+  Modern Jazz Quartet (MJQ) の四重奏編成と4人の人物像を出発点に、
+  メンバー名を空気・イオン・軌道・回転などのSF的な語彙と融合させた
+  架空のジャズカルテット。MJQへのオマージュであり、実在の4人そのものではない。
+  基本編成はヴィブラフォン、ピアノ、ウッドベース、ドラム。
+  楽曲ごとの追加楽器や編曲はこの基本編成に限定しない。
+
+# 2026-10-25の制作会話で決定した架空の4人のキャラクター設定。
+members:
+  - id: miltaer
+    name: Miltaer
+    name_ja: ミルテア
+    part: vibraphone
+    mjq_inspiration: Milt Jackson
+    name_origin: Milt + aer (air)
+    personality: >
+      普段は寡黙で物静かだが、演奏時には大胆で情熱的になる即興家。
+    role_in_group: >
+      自由、感情、即興を担う。旋律に浮遊感と熱をもたらす。
+  - id: jonion
+    name: Jonion
+    name_ja: ジョニオン
+    part: piano
+    mjq_inspiration: John Lewis
+    name_origin: John + ion
+    personality: >
+      穏やかで理知的。構造と美学を重んじる完璧主義者で、ユーモアもある。
+    role_in_group: >
+      作曲、構成、アレンジをまとめる音楽監督。四重奏の秩序を設計する。
+  - id: percigee
+    name: Percigee
+    name_ja: パーシジー
+    part: upright bass
+    mjq_inspiration: Percy Heath
+    name_origin: Percy + perigee (近地点)
+    personality: >
+      陽気で豪快、現実的で頼りがいがある。航空や航法にも詳しい。
+    role_in_group: >
+      リズムと低音の基盤を担い、四重奏を地に足のついたものにする。
+      物流や財務など実務面にも強い。
+  - id: coniolis
+    name: Coniolis
+    name_ja: コニオリス
+    part: drums
+    mjq_inspiration: Connie Kay
+    name_origin: Connie + Coriolis (コリオリ)
+    personality: >
+      控えめで飄々としており、観察力が鋭い。音色や機材の細部にこだわる職人肌。
+    role_in_group: >
+      時間、精密さ、微細なニュアンスを担う。ドラムセットの調整にも余念がない。
+
+# 4人に共通するビジュアル設定。個別の画像ファイルは別途登録する。
+visual_identity:
+  height_cm: 176
+  build: 4人の身長と体格をほぼ同一に揃える
+  clothing: 黒のスーツ、白シャツ、黒ネクタイ、黒革靴
+  helmet: >
+    白から淡い銀色のレトロなバイク用フルフェイス型。
+    黒いスモークシールドで顔を完全に覆い、
+    シェルと側面の円形ヒンジのディテールを揃える。
+    透明な宇宙服ドームではない。
+  face_visibility: concealed
 
 genres: []
 
@@ -68,3 +129,5 @@ notes_public: >
   NovelJam公式サイトでは2025年の東京・札幌・沖縄3拠点開催は確認できたが、
   現時点で同曲のofficial opening track指定までは独立確認できていないため、
   verified milestoneには含めず出典付き注記として保持する。
+  2026-10-25にMJQをモチーフとした4人の名前・担当楽器・性格・共通外観を
+  制作会話から整理してmembersとvisual_identityへ登録。
