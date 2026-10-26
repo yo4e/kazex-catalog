@@ -1,0 +1,127 @@
+id: orbital-debris
+title: Orbital Debris
+artist_id: the-aerial-gravities
+release_type: album
+release_date: '2025-12-23'
+status: released
+genres:
+  - Jazz
+label: KazeX Records
+identifiers:
+  upc_ean: "0609360343002"
+  catalog_number: "TOOLOST3000935130"
+  amazon_asin: null
+copyright:
+  c_line: GlamorousFan © 2025
+  p_line: KazeX Records ℗ 2025
+lyrics:
+  has_lyrics: false
+  language: null
+cover:
+  github_path: null
+  web_url: null
+  drive_url: null
+links:
+  spotify: "https://open.spotify.com/album/6ZKmvCJxWe1Bj2GReJdCr3"
+  apple_music: "https://music.apple.com/jp/album/orbital-debris/1862462910"
+  youtube: null
+  smartlink: "https://too.fm/orbitaldebris"
+generation:
+  provider: null
+  source_playlist_url: null
+tracks:
+  - title: Debris Field Spiral
+    isrc: "QT62V2574918"
+    links:
+      spotify: "https://open.spotify.com/track/1CTvBLORb1h0aQEIIbat3b"
+      apple_music: "https://music.apple.com/jp/song/debris-field-spiral/1862462914"
+  - title: Broken Orbit Choir
+    isrc: "QT62V2574919"
+    links:
+      spotify: "https://open.spotify.com/track/0nunuy7nDmgZLRwfvxHO20"
+      apple_music: "https://music.apple.com/jp/song/broken-orbit-choir/1862462915"
+  - title: Cold Scatter Phenomena
+    isrc: "QT62V2574920"
+    links:
+      spotify: "https://open.spotify.com/track/7Fdrdmp8u0Fcz0aLCB290o"
+      apple_music: "https://music.apple.com/jp/song/cold-scatter-phenomena/1862462918"
+  - title: Grain of the Astral Wind
+    isrc: "QT62V2574921"
+    links:
+      spotify: "https://open.spotify.com/track/4tV7EQ12O9oRcQe2btVscv"
+      apple_music: "https://music.apple.com/jp/song/grain-of-the-astral-wind/1862462919"
+  - title: Telemetry Without a Pulse
+    isrc: "QT62V2574922"
+    links:
+      spotify: "https://open.spotify.com/track/7ub6quIY4CoO9e6DjG7ZLs"
+      apple_music: "https://music.apple.com/jp/song/telemetry-without-a-pulse/1862462922"
+  - title: In the Wake of Silence
+    isrc: "QT62V2574923"
+    links:
+      spotify: "https://open.spotify.com/track/2WLi5cefR0ErwpSNMXhzVZ"
+      apple_music: "https://music.apple.com/jp/song/in-the-wake-of-silence/1862462927"
+  - title: Apex Debris Bloom
+    isrc: "QT62V2574924"
+    links:
+      spotify: "https://open.spotify.com/track/3bGUpirGz4iwIGUiGpLhj3"
+      apple_music: "https://music.apple.com/jp/song/apex-debris-bloom/1862462929"
+  - title: Vector Shards Remember
+    isrc: "QT62V2574925"
+    links:
+      spotify: "https://open.spotify.com/track/2pjW8qLGOI77ohyp2Cih5i"
+      apple_music: "https://music.apple.com/jp/song/vector-shards-remember/1862462931"
+  - title: Gravitational Ghostprints
+    isrc: "QT62V2574926"
+    links:
+      spotify: "https://open.spotify.com/track/4bbSHiSBlMlsqyaUSMnGr1"
+      apple_music: "https://music.apple.com/jp/song/gravitational-ghostprints/1862463151"
+  - title: Dustflow in Blue Darkness
+    isrc: "QT62V2574927"
+    links:
+      spotify: "https://open.spotify.com/track/3JvZQOT3CRGtEdU7Nq5yFZ"
+      apple_music: "https://music.apple.com/jp/song/dustflow-in-blue-darkness/1862463157"
+  - title: Orbital Debris
+    isrc: "QT62V2574928"
+    links:
+      spotify: "https://open.spotify.com/track/4HpRZODlGW3GTf6q2TMcOs"
+      apple_music: "https://music.apple.com/jp/song/orbital-debris/1862463170"
+credits: {}
+description:
+  short: null
+  long: null
+promotion:
+  priority_pitch:
+    status: null
+    selected_track: null
+    release_summary: null
+    spotify_artist: null
+    marketing_elements: []
+    past_awards_milestones: null
+    upcoming_tour_dates: null
+    social:
+      facebook: null
+      instagram: null
+      x: null
+      tiktok: null
+    attachments:
+      image_url: null
+      epk_url: null
+assets:
+  github_asset_dir: null
+  drive_folder_url: null
+  cover_drive_folder_url: null
+  visuals_drive_folder_url: null
+  other_assets_drive_folder_url: null
+website:
+  publish: false
+  publish_at: null
+  featured: false
+notes_public: |
+  2026-10-27にToo Lost作品詳細の作品名・名義・形式・登録日・UPC/EAN・catalog number・ジャンル・C/Pラインを確認した資料から登録。
+  全曲の曲名とISRCを行ごとに照合。ISRCを連番で推測せず、Too Lostの曲名表記をそのまま保持。
+  公開Spotify／Apple Musicで作品名・名義・発売日・曲数・曲順を照合。各曲リンクは当該アルバムページから取得。
+  smartlinkはToo Lost登録値と公開ページの作品名を照合。全遷移先の再生可否は未検証。
+  Priority Pitchの実施状態と正式素材は未確認。website.publishはfalse。
+  歌詞なしはToo Lostのlanguage欄のNo lyricsに基づく。UIのインストゥルメンタルバッジ単独から判定していない。
+  公開根拠: https://open.spotify.com/album/6ZKmvCJxWe1Bj2GReJdCr3
+  公開根拠: https://music.apple.com/jp/album/orbital-debris/1862462910

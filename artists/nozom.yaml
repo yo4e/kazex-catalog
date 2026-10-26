@@ -1,0 +1,49 @@
+id: nozom
+name: NoZom
+sort_name: NoZom
+status: active
+description:
+  short: KazeX Records公式サイトに掲載されているAIアーティスト。
+  long: null
+concept: null
+genres: []
+platforms:
+  spotify_artist_url: "https://open.spotify.com/artist/0Y4qDv7TJVg9993jkH8CMG"
+  apple_music_artist_url: "https://music.apple.com/jp/artist/nozom/1860957763"
+  youtube_artist_url: null
+social:
+  website: null
+  instagram: null
+  x: null
+  facebook: null
+  tiktok: null
+  bluesky: null
+milestones: []
+assets:
+  github_asset_dir: null
+  drive_folder_url: null
+  artist_photos_drive_folder_url: null
+  logos_drive_folder_url: null
+  epk_drive_folder_url: null
+  releases_drive_folder_url: null
+  artist_image:
+    github_path: null
+    web_url: null
+    drive_url: null
+  logo:
+    github_path: null
+    web_url: null
+    drive_url: null
+  epk:
+    github_path: null
+    web_url: null
+    drive_url: null
+  artist_photo_candidates: []
+  concept_art: []
+notes_public: |
+  2026-10-27にToo Lost登録情報と公開Spotify／Apple Musicの作品・アーティスト対応を照合して登録。
+  公開配信ページで名義を確認したものであり、Spotify for Artists等の管理権限取得状況を示すものではない。
+  レーベル公式サイト https://kazex.my.canva.site/ のNoZom表記とSpotifyリンクも照合。
+  Amazonの同名アーティストページには他の年代の作品が混在するため、公式artist URLとして採用しない。
+  配信ページ: https://open.spotify.com/album/5TDmEzZwJNVxOCarbS3LaH
+  配信ページ: https://music.apple.com/jp/album/%E3%82%BB%E3%83%B3%E3%82%B9-%E3%82%AA%E3%83%96-%E3%83%AF%E3%83%B3%E3%83%80%E3%83%BC-single/1828756910

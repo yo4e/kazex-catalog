@@ -1,0 +1,124 @@
+id: reliquary-i-brown-noise-litany
+title: 'Reliquary I: Brown Noise Litany'
+artist_id: satori-chandra
+release_type: album
+release_date: '2025-12-17'
+status: released
+genres:
+  - Ambient
+  - New Age
+  - Meditation
+label: KazeX Records
+identifiers:
+  upc_ean: "0609360341824"
+  catalog_number: "TOOLOST3000930441"
+  amazon_asin: null
+copyright:
+  c_line: GlamorousFan © 2025
+  p_line: KazeX Records ℗ 2025
+lyrics:
+  has_lyrics: false
+  language: null
+cover:
+  github_path: null
+  web_url: null
+  drive_url: null
+links:
+  spotify: "https://open.spotify.com/album/6EQXPCbMk8tfL7yPIfuREq"
+  apple_music: "https://music.apple.com/ca/album/reliquary-i-brown-noise-litany/1862148535"
+  youtube: null
+  smartlink: "https://too.fm/reliquary1"
+generation:
+  provider: null
+  source_playlist_url: null
+tracks:
+  - title: Intonation
+    isrc: "QT62V2574389"
+    links:
+      spotify: "https://open.spotify.com/track/5vvG02mAy31uw30UnXCMaj"
+      apple_music: "https://music.apple.com/ca/song/intonation/1862148539"
+  - title: Subvocal
+    isrc: "QT62V2574390"
+    links:
+      spotify: "https://open.spotify.com/track/0HUo9JstONsqqlBZPefzBM"
+      apple_music: "https://music.apple.com/ca/song/subvocal/1862148542"
+  - title: Glyph of Dust
+    isrc: "QT62V2574391"
+    links:
+      spotify: "https://open.spotify.com/track/1fQhX3tVcF1z6SJrPEGxDh"
+      apple_music: "https://music.apple.com/ca/song/glyph-of-dust/1862148665"
+  - title: Breath Reciting Itself
+    isrc: "QT62V2574392"
+    links:
+      spotify: "https://open.spotify.com/track/3yP4Ic38D7uQNB3FTxHb3A"
+      apple_music: "https://music.apple.com/ca/song/breath-reciting-itself/1862148673"
+  - title: Monochord Silence
+    isrc: "QT62V2574393"
+    links:
+      spotify: "https://open.spotify.com/track/5HJZ5B645wRLkDB0yPtPbP"
+      apple_music: "https://music.apple.com/ca/song/monochord-silence/1862148676"
+  - title: Syntax Veil
+    isrc: "QT62V2574394"
+    links:
+      spotify: "https://open.spotify.com/track/63vduNAxl4HoT9cSXydFwU"
+      apple_music: "https://music.apple.com/ca/song/syntax-veil/1862148677"
+  - title: Petal Litany
+    isrc: "QT62V2574395"
+    links:
+      spotify: "https://open.spotify.com/track/3DxEQxQQsdgSwl1TSVOrWr"
+      apple_music: "https://music.apple.com/ca/song/petal-litany/1862148679"
+  - title: Ash Benediction
+    isrc: "QT62V2574396"
+    links:
+      spotify: "https://open.spotify.com/track/5IRiy7bldoYCOmOLLNXMOW"
+      apple_music: "https://music.apple.com/ca/song/ash-benediction/1862148685"
+  - title: Obscure Psalm
+    isrc: "QT62V2574397"
+    links:
+      spotify: "https://open.spotify.com/track/7kPvZ8Q3lCeGyV4JVoClMb"
+      apple_music: "https://music.apple.com/ca/song/obscure-psalm/1862148689"
+  - title: 'Outro: Pale Requiem'
+    isrc: "QT62V2574398"
+    links:
+      spotify: "https://open.spotify.com/track/5Mgk684PvUlRxJxpswZ0og"
+      apple_music: "https://music.apple.com/ca/song/outro-pale-requiem/1862148691"
+credits: {}
+description:
+  short: null
+  long: null
+promotion:
+  priority_pitch:
+    status: null
+    selected_track: null
+    release_summary: null
+    spotify_artist: null
+    marketing_elements: []
+    past_awards_milestones: null
+    upcoming_tour_dates: null
+    social:
+      facebook: null
+      instagram: null
+      x: null
+      tiktok: null
+    attachments:
+      image_url: null
+      epk_url: null
+assets:
+  github_asset_dir: null
+  drive_folder_url: null
+  cover_drive_folder_url: null
+  visuals_drive_folder_url: null
+  other_assets_drive_folder_url: null
+website:
+  publish: false
+  publish_at: null
+  featured: false
+notes_public: |
+  2026-10-27にToo Lost作品詳細の作品名・名義・形式・登録日・UPC/EAN・catalog number・ジャンル・C/Pラインを確認した資料から登録。
+  全曲の曲名とISRCを行ごとに照合。ISRCを連番で推測せず、Too Lostの曲名表記をそのまま保持。
+  公開Spotify／Apple Musicで作品名・名義・発売日・曲数・曲順を照合。各曲リンクは当該アルバムページから取得。
+  smartlinkはToo Lost登録値と公開ページの作品名を照合。全遷移先の再生可否は未検証。
+  Priority Pitchの実施状態と正式素材は未確認。website.publishはfalse。
+  歌詞なしはToo Lostのlanguage欄のNo lyricsに基づく。UIのインストゥルメンタルバッジ単独から判定していない。
+  公開根拠: https://open.spotify.com/album/6EQXPCbMk8tfL7yPIfuREq
+  公開根拠: https://music.apple.com/ca/album/reliquary-i-brown-noise-litany/1862148535

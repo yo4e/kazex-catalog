@@ -1,0 +1,124 @@
+id: reliquary-ii-brown-noise-immersion
+title: 'Reliquary II: Brown Noise Immersion'
+artist_id: satori-chandra
+release_type: album
+release_date: '2026-03-18'
+status: released
+genres:
+  - Ambient
+  - New Age
+  - Meditation
+label: KazeX Records
+identifiers:
+  upc_ean: "0609360762674"
+  catalog_number: "TOOLOST3001007357"
+  amazon_asin: null
+copyright:
+  c_line: GlamorousFan © 2026
+  p_line: KazeX Records ℗ 2026
+lyrics:
+  has_lyrics: false
+  language: null
+cover:
+  github_path: null
+  web_url: null
+  drive_url: null
+links:
+  spotify: "https://open.spotify.com/album/3jjY9xckLf9X2HfTaV4G88"
+  apple_music: "https://music.apple.com/in/album/reliquary-ii-brown-noise-immersion/1882975577"
+  youtube: null
+  smartlink: "https://too.fm/reliquary2"
+generation:
+  provider: null
+  source_playlist_url: null
+tracks:
+  - title: Threshold Drift
+    isrc: "QZVEM2650661"
+    links:
+      spotify: "https://open.spotify.com/track/5JuHukRjjsvF5zBMxUtDsP"
+      apple_music: "https://music.apple.com/in/song/threshold-drift/1882975583"
+  - title: Gravity Pulse
+    isrc: "QZVEM2650662"
+    links:
+      spotify: "https://open.spotify.com/track/2Ib401kluio9pla0iYC8CF"
+      apple_music: "https://music.apple.com/in/song/gravity-pulse/1882975584"
+  - title: Warm Disintegration
+    isrc: "QZVEM2650663"
+    links:
+      spotify: "https://open.spotify.com/track/1q4X6QGTGtUsMYqbyasYRw"
+      apple_music: "https://music.apple.com/in/song/warm-disintegration/1882975587"
+  - title: Submerged Pattern
+    isrc: "QZVEM2650664"
+    links:
+      spotify: "https://open.spotify.com/track/7sH9PIbLAIFg6teUZlyoUn"
+      apple_music: "https://music.apple.com/in/song/submerged-pattern/1882975949"
+  - title: Pulse Without Origin
+    isrc: "QZVEM2650665"
+    links:
+      spotify: "https://open.spotify.com/track/4TCtrX5kR5x6aB9uuwgD1M"
+      apple_music: "https://music.apple.com/in/song/pulse-without-origin/1882975955"
+  - title: Tactile Fog
+    isrc: "QZVEM2650666"
+    links:
+      spotify: "https://open.spotify.com/track/56Am3unOxuBGLfHejOGXXT"
+      apple_music: "https://music.apple.com/in/song/tactile-fog/1882975957"
+  - title: Breathing in Frequencies
+    isrc: "QZVEM2650667"
+    links:
+      spotify: "https://open.spotify.com/track/7eWtQOJ1ZvLPsA3CYGRo2c"
+      apple_music: "https://music.apple.com/in/song/breathing-in-frequencies/1882975960"
+  - title: Depth Apparition
+    isrc: "QZVEM2650658"
+    links:
+      spotify: "https://open.spotify.com/track/5e0bXdAgH8djawGAFLKLnB"
+      apple_music: "https://music.apple.com/in/song/depth-apparition/1882975965"
+  - title: Reclining Signal
+    isrc: "QZVEM2650659"
+    links:
+      spotify: "https://open.spotify.com/track/1hoI40UGVKkEiKuPw3rv6Y"
+      apple_music: "https://music.apple.com/in/song/reclining-signal/1882975966"
+  - title: Outro_ Dissolve Me Kindly
+    isrc: "QZVEM2650660"
+    links:
+      spotify: "https://open.spotify.com/track/4StWsSE6zKgBCjpUyjKgpB"
+      apple_music: "https://music.apple.com/in/song/outro-dissolve-me-kindly/1882975967"
+credits: {}
+description:
+  short: null
+  long: null
+promotion:
+  priority_pitch:
+    status: null
+    selected_track: null
+    release_summary: null
+    spotify_artist: null
+    marketing_elements: []
+    past_awards_milestones: null
+    upcoming_tour_dates: null
+    social:
+      facebook: null
+      instagram: null
+      x: null
+      tiktok: null
+    attachments:
+      image_url: null
+      epk_url: null
+assets:
+  github_asset_dir: null
+  drive_folder_url: null
+  cover_drive_folder_url: null
+  visuals_drive_folder_url: null
+  other_assets_drive_folder_url: null
+website:
+  publish: false
+  publish_at: null
+  featured: false
+notes_public: |
+  2026-10-27にToo Lost作品詳細の作品名・名義・形式・登録日・UPC/EAN・catalog number・ジャンル・C/Pラインを確認した資料から登録。
+  全曲の曲名とISRCを行ごとに照合。ISRCを連番で推測せず、Too Lostの曲名表記をそのまま保持。
+  公開Spotify／Apple Musicで作品名・名義・発売日・曲数・曲順を照合。各曲リンクは当該アルバムページから取得。
+  smartlinkはToo Lost登録値と公開ページの作品名を照合。全遷移先の再生可否は未検証。
+  Priority Pitchの実施状態と正式素材は未確認。website.publishはfalse。
+  歌詞なしはToo Lostのlanguage欄のNo lyricsに基づく。UIのインストゥルメンタルバッジ単独から判定していない。
+  公開根拠: https://open.spotify.com/album/3jjY9xckLf9X2HfTaV4G88
+  公開根拠: https://music.apple.com/in/album/reliquary-ii-brown-noise-immersion/1882975577

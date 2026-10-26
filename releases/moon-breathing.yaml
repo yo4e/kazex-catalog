@@ -1,0 +1,124 @@
+id: moon-breathing
+title: Moon Breathing
+artist_id: satori-chandra
+release_type: album
+release_date: '2025-09-15'
+status: released
+genres:
+  - Ambient
+  - New Age
+  - Meditation
+label: KazeX Records
+identifiers:
+  upc_ean: "0609360026127"
+  catalog_number: "TOOLOST3000875988"
+  amazon_asin: null
+copyright:
+  c_line: GlamorousFan © 2025
+  p_line: KazeX Records ℗ 2025
+lyrics:
+  has_lyrics: false
+  language: null
+cover:
+  github_path: null
+  web_url: null
+  drive_url: null
+links:
+  spotify: "https://open.spotify.com/album/6RkKzmALX0QTDV2FddLsHB"
+  apple_music: "https://music.apple.com/in/album/moon-breathing/1840395478"
+  youtube: null
+  smartlink: "https://too.fm/moonbreathing"
+generation:
+  provider: null
+  source_playlist_url: null
+tracks:
+  - title: Opening the Silence
+    isrc: "QT4K42584589"
+    links:
+      spotify: "https://open.spotify.com/track/6netVH9ZVs0tMYwnaURzoQ"
+      apple_music: "https://music.apple.com/in/song/opening-the-silence/1840395691"
+  - title: Gravity Between Thoughts
+    isrc: "QT4K42584580"
+    links:
+      spotify: "https://open.spotify.com/track/7M3Trcmbx7dDP5SQc2VjAA"
+      apple_music: "https://music.apple.com/in/song/gravity-between-thoughts/1840395710"
+  - title: Echoes of a Vanishing Star
+    isrc: "QT4K42584581"
+    links:
+      spotify: "https://open.spotify.com/track/3G7iaEQj8lp5SG6Gpwis7P"
+      apple_music: "https://music.apple.com/in/song/echoes-of-a-vanishing-star/1840395712"
+  - title: One Breath Horizon
+    isrc: "QT4K42584582"
+    links:
+      spotify: "https://open.spotify.com/track/0cYaL2BrJ70p3DXwpAbZoH"
+      apple_music: "https://music.apple.com/in/song/one-breath-horizon/1840395713"
+  - title: Stillness in Orbit
+    isrc: "QT4K42584583"
+    links:
+      spotify: "https://open.spotify.com/track/1DAN1AkR9JPN4JPcgc6lzk"
+      apple_music: "https://music.apple.com/in/song/stillness-in-orbit/1840395715"
+  - title: Temple Dust, Cosmic Wind
+    isrc: "QT4K42584584"
+    links:
+      spotify: "https://open.spotify.com/track/2Zc7TEBkQ1cenfIVLtLQ9g"
+      apple_music: "https://music.apple.com/in/song/temple-dust-cosmic-wind/1840395716"
+  - title: Bell Without a Striker
+    isrc: "QT4K42584585"
+    links:
+      spotify: "https://open.spotify.com/track/4Hxo0f08AhxKTwrSzmH8iq"
+      apple_music: "https://music.apple.com/in/song/bell-without-a-striker/1840395780"
+  - title: Chandra Sleeps
+    isrc: "QT4K42584586"
+    links:
+      spotify: "https://open.spotify.com/track/47LImb4VV0jK0t6GEvgSfR"
+      apple_music: "https://music.apple.com/in/song/chandra-sleeps/1840395785"
+  - title: Void Garden
+    isrc: "QT4K42584587"
+    links:
+      spotify: "https://open.spotify.com/track/2KhGu5YmRAEISEoxdhOPbf"
+      apple_music: "https://music.apple.com/in/song/void-garden/1840395786"
+  - title: Moon Breathing
+    isrc: "QT4K42584588"
+    links:
+      spotify: "https://open.spotify.com/track/7zkZMk9HLgCm9jhveSTShI"
+      apple_music: "https://music.apple.com/in/song/moon-breathing/1840395795"
+credits: {}
+description:
+  short: null
+  long: null
+promotion:
+  priority_pitch:
+    status: null
+    selected_track: null
+    release_summary: null
+    spotify_artist: null
+    marketing_elements: []
+    past_awards_milestones: null
+    upcoming_tour_dates: null
+    social:
+      facebook: null
+      instagram: null
+      x: null
+      tiktok: null
+    attachments:
+      image_url: null
+      epk_url: null
+assets:
+  github_asset_dir: null
+  drive_folder_url: null
+  cover_drive_folder_url: null
+  visuals_drive_folder_url: null
+  other_assets_drive_folder_url: null
+website:
+  publish: false
+  publish_at: null
+  featured: false
+notes_public: |
+  2026-10-27にToo Lost作品詳細の作品名・名義・形式・登録日・UPC/EAN・catalog number・ジャンル・C/Pラインを確認した資料から登録。
+  全曲の曲名とISRCを行ごとに照合。ISRCを連番で推測せず、Too Lostの曲名表記をそのまま保持。
+  公開Spotify／Apple Musicで作品名・名義・発売日・曲数・曲順を照合。各曲リンクは当該アルバムページから取得。
+  smartlinkはToo Lost登録値と公開ページの作品名を照合。全遷移先の再生可否は未検証。
+  Priority Pitchの実施状態と正式素材は未確認。website.publishはfalse。
+  歌詞なしはToo Lostのlanguage欄のNo lyricsに基づく。UIのインストゥルメンタルバッジ単独から判定していない。
+  公開根拠: https://open.spotify.com/album/6RkKzmALX0QTDV2FddLsHB
+  公開根拠: https://music.apple.com/in/album/moon-breathing/1840395478

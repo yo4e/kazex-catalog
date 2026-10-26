@@ -1,0 +1,78 @@
+id: pulse
+title: パルス
+artist_id: templex-tsukino
+release_type: single
+release_date: '2025-08-12'
+status: released
+genres:
+  - Pop
+  - J-Pop
+label: KazeX Records
+identifiers:
+  upc_ean: "0692788888293"
+  catalog_number: "TOOLOST3000839536"
+  amazon_asin: null
+copyright:
+  c_line: ぐらまらすふぁん © 2025
+  p_line: カゼックスレコード ℗ 2025
+lyrics:
+  has_lyrics: true
+  language: Japanese
+cover:
+  github_path: null
+  web_url: null
+  drive_url: null
+links:
+  spotify: "https://open.spotify.com/album/1WZ9eWaANqpBiVOQiYNGjJ"
+  apple_music: "https://music.apple.com/jp/album/%E3%83%91%E3%83%AB%E3%82%B9-single/1831221485"
+  youtube: null
+  smartlink: "https://too.fm/pulse_templex"
+generation:
+  provider: null
+  source_playlist_url: null
+tracks:
+  - title: パルス
+    isrc: "QT4K42507024"
+    links:
+      spotify: "https://open.spotify.com/track/5WVjrJk7ORILGoCfCGyyXn"
+      apple_music: "https://music.apple.com/jp/song/%E3%83%91%E3%83%AB%E3%82%B9/1831221761"
+credits: {}
+description:
+  short: null
+  long: null
+promotion:
+  priority_pitch:
+    status: null
+    selected_track: null
+    release_summary: null
+    spotify_artist: null
+    marketing_elements: []
+    past_awards_milestones: null
+    upcoming_tour_dates: null
+    social:
+      facebook: null
+      instagram: null
+      x: null
+      tiktok: null
+    attachments:
+      image_url: null
+      epk_url: null
+assets:
+  github_asset_dir: null
+  drive_folder_url: null
+  cover_drive_folder_url: null
+  visuals_drive_folder_url: null
+  other_assets_drive_folder_url: null
+website:
+  publish: false
+  publish_at: null
+  featured: false
+notes_public: |
+  2026-10-27にToo Lost作品詳細の作品名・名義・形式・登録日・UPC/EAN・catalog number・ジャンル・C/Pラインを確認した資料から登録。
+  全曲の曲名とISRCを行ごとに照合。ISRCを連番で推測せず、Too Lostの曲名表記をそのまま保持。
+  公開Spotify／Apple Musicで作品名・名義・発売日・曲数・曲順を照合。各曲リンクは当該アルバムページから取得。
+  smartlinkはToo Lost登録値と公開ページの作品名を照合。全遷移先の再生可否は未検証。
+  Priority Pitchの実施状態と正式素材は未確認。website.publishはfalse。
+  Too Lost曲詳細で歌詞ありを確認。作詞者欄は「テンプレクス 月野」「ぐらまらす ふぁん」、クレジット欄は「影音」と表示。原表記を保持し、名寄せや役割の追加推定は行わない。
+  公開根拠: https://open.spotify.com/album/1WZ9eWaANqpBiVOQiYNGjJ
+  公開根拠: https://music.apple.com/jp/album/%E3%83%91%E3%83%AB%E3%82%B9-single/1831221485

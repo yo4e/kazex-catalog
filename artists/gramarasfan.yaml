@@ -1,0 +1,74 @@
+id: gramarasfan
+name: ぐらまらすふぁん
+sort_name: ぐらまらすふぁん
+status: active
+description:
+  short: null
+  long: null
+concept: null
+genres: []
+platforms:
+  spotify_artist_url: "https://open.spotify.com/artist/1z831fr1m23UeMdi6cT1mY"
+  apple_music_artist_url: "https://music.apple.com/jp/artist/%E3%81%90%E3%82%89%E3%81%BE%E3%82%89%E3%81%99%E3%81%B5%E3%81%81%E3%82%93/1841316520"
+  youtube_artist_url: null
+social:
+  website: null
+  instagram: null
+  x: null
+  facebook: null
+  tiktok: null
+  bluesky: null
+milestones: []
+assets:
+  github_asset_dir: assets/artists/gramarasfan/
+  drive_folder_url: null
+  artist_photos_drive_folder_url: null
+  logos_drive_folder_url: null
+  epk_drive_folder_url: null
+  releases_drive_folder_url: null
+  artist_image:
+    github_path: null
+    web_url: null
+    drive_url: null
+  logo:
+    github_path: null
+    web_url: null
+    drive_url: null
+  epk:
+    github_path: null
+    web_url: null
+    drive_url: null
+  artist_photo_candidates:
+    - github_path: assets/artists/gramarasfan/artist-photos/gramarasfan-artist-photo-candidate-01.png
+      status: candidate
+      role: null
+    - github_path: assets/artists/gramarasfan/artist-photos/gramarasfan-artist-photo-candidate-02.png
+      status: candidate
+      role: null
+    - github_path: assets/artists/gramarasfan/artist-photos/gramarasfan-artist-photo-candidate-03.png
+      status: candidate
+      role: null
+    - github_path: assets/artists/gramarasfan/artist-photos/gramarasfan-artist-photo-candidate-04.png
+      status: candidate
+      role: null
+    - github_path: assets/artists/gramarasfan/artist-photos/gramarasfan-artist-photo-candidate-05.jpg
+      status: candidate
+      role: null
+    - github_path: assets/artists/gramarasfan/artist-photos/gramarasfan-artist-photo-candidate-06.jpg
+      status: candidate
+      role: null
+    - github_path: assets/artists/gramarasfan/artist-photos/gramarasfan-artist-photo-candidate-07.png
+      status: candidate
+      role: null
+    - github_path: assets/artists/gramarasfan/artist-photos/gramarasfan-artist-photo-candidate-08.jpg
+      status: candidate
+      role: null
+  concept_art: []
+notes_public: |
+  2026-10-27にToo Lost登録情報と公開Spotify／Apple Musicの作品・アーティスト対応を照合して登録。
+  公開配信ページで名義を確認したものであり、Spotify for Artists等の管理権限取得状況を示すものではない。
+  レーベル公式サイト https://kazex.my.canva.site/ と既存assetsのREADMEで同名義を照合。
+  既存のアー写候補8点をcandidateのまま参照。代表アー写・正式BIOは未指定。
+  パンダ兄弟はこの名義のシングルであり、独立アーティストとして登録しない。
+  配信ページ: https://open.spotify.com/album/7jYeZiJGTGeVoux5Z4qRgj
+  配信ページ: https://music.apple.com/jp/album/%E3%81%90%E3%82%89%E3%81%BE%E3%82%89%E3%81%99/1841316515

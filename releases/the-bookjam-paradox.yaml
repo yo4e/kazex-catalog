@@ -1,0 +1,127 @@
+id: the-bookjam-paradox
+title: The Bookjam Paradox
+artist_id: the-aerial-gravities
+release_type: album
+release_date: '2025-10-06'
+status: released
+genres:
+  - Jazz
+label: KazeX Records
+identifiers:
+  upc_ean: "0609360061906"
+  catalog_number: "TOOLOST3000882529"
+  amazon_asin: null
+copyright:
+  c_line: GlamorousFan © 2025
+  p_line: KazeX Records ℗ 2025
+lyrics:
+  has_lyrics: false
+  language: null
+cover:
+  github_path: null
+  web_url: null
+  drive_url: null
+links:
+  spotify: "https://open.spotify.com/album/6xTf3N2CN4nxINNbbtDJOU"
+  apple_music: "https://music.apple.com/jp/album/the-bookjam-paradox/1843124814"
+  youtube: null
+  smartlink: "https://too.fm/bookjam"
+generation:
+  provider: null
+  source_playlist_url: null
+tracks:
+  - title: Paradoxical Opening
+    isrc: "QT62U2503675"
+    links:
+      spotify: "https://open.spotify.com/track/0ujhhHvjcPbUfgW1QMihms"
+      apple_music: "https://music.apple.com/jp/song/paradoxical-opening/1843124816"
+  - title: Team Alchemy
+    isrc: "QT62U2503665"
+    links:
+      spotify: "https://open.spotify.com/track/3kxYb14DciiAR9PWy3n8Zu"
+      apple_music: "https://music.apple.com/jp/song/team-alchemy/1843124818"
+  - title: Plot Constellations
+    isrc: "QT62U2503666"
+    links:
+      spotify: "https://open.spotify.com/track/63inRCQfeWkPexF3WUbGzD"
+      apple_music: "https://music.apple.com/jp/song/plot-constellations/1843124820"
+  - title: First Ink, Last Sleep
+    isrc: "QT62U2503667"
+    links:
+      spotify: "https://open.spotify.com/track/3z1rEUUFEqCKVJgtQdIuhU"
+      apple_music: "https://music.apple.com/jp/song/first-ink-last-sleep/1843124824"
+  - title: Syntax Overdrive
+    isrc: "QT62U2503668"
+    links:
+      spotify: "https://open.spotify.com/track/6C4UAW8PoKWPvh6P6rizj4"
+      apple_music: "https://music.apple.com/jp/song/syntax-overdrive/1843124825"
+  - title: Margins of Doubt
+    isrc: "QT62U2503669"
+    links:
+      spotify: "https://open.spotify.com/track/5JQzDXt8jMuoYlLZ4H7AqS"
+      apple_music: "https://music.apple.com/jp/song/margins-of-doubt/1843125126"
+  - title: Binding Ritual
+    isrc: "QT62U2503670"
+    links:
+      spotify: "https://open.spotify.com/track/6y8de1810VbL6Tx7rGrvB9"
+      apple_music: "https://music.apple.com/jp/song/binding-ritual/1843125129"
+  - title: Prepress Echoes
+    isrc: "QT62U2503671"
+    links:
+      spotify: "https://open.spotify.com/track/6ZCvIQqAB7DcjJwpVyL5KD"
+      apple_music: "https://music.apple.com/jp/song/prepress-echoes/1843125131"
+  - title: Judged by Silence
+    isrc: "QT62U2503672"
+    links:
+      spotify: "https://open.spotify.com/track/2DHyCvMRnYug4GA46m1TFp"
+      apple_music: "https://music.apple.com/jp/song/judged-by-silence/1843125133"
+  - title: Applause Refracted
+    isrc: "QT62U2503673"
+    links:
+      spotify: "https://open.spotify.com/track/6dklGVeLxTKoeREik9M1It"
+      apple_music: "https://music.apple.com/jp/song/applause-refracted/1843125135"
+  - title: The Bookjam Paradox
+    isrc: "QT62U2503674"
+    links:
+      spotify: "https://open.spotify.com/track/2ubtvHxV0FTVPLfUAEJdeY"
+      apple_music: "https://music.apple.com/jp/song/the-bookjam-paradox/1843125137"
+credits: {}
+description:
+  short: null
+  long: null
+promotion:
+  priority_pitch:
+    status: null
+    selected_track: null
+    release_summary: null
+    spotify_artist: null
+    marketing_elements: []
+    past_awards_milestones: null
+    upcoming_tour_dates: null
+    social:
+      facebook: null
+      instagram: null
+      x: null
+      tiktok: null
+    attachments:
+      image_url: null
+      epk_url: null
+assets:
+  github_asset_dir: null
+  drive_folder_url: null
+  cover_drive_folder_url: null
+  visuals_drive_folder_url: null
+  other_assets_drive_folder_url: null
+website:
+  publish: false
+  publish_at: null
+  featured: false
+notes_public: |
+  2026-10-27にToo Lost作品詳細の作品名・名義・形式・登録日・UPC/EAN・catalog number・ジャンル・C/Pラインを確認した資料から登録。
+  全曲の曲名とISRCを行ごとに照合。ISRCを連番で推測せず、Too Lostの曲名表記をそのまま保持。
+  公開Spotify／Apple Musicで作品名・名義・発売日・曲数・曲順を照合。各曲リンクは当該アルバムページから取得。
+  smartlinkはToo Lost登録値と公開ページの作品名を照合。全遷移先の再生可否は未検証。
+  Priority Pitchの実施状態と正式素材は未確認。website.publishはfalse。
+  歌詞なしはToo Lostのlanguage欄のNo lyricsに基づく。UIのインストゥルメンタルバッジ単独から判定していない。
+  公開根拠: https://open.spotify.com/album/6xTf3N2CN4nxINNbbtDJOU
+  公開根拠: https://music.apple.com/jp/album/the-bookjam-paradox/1843124814

@@ -1,0 +1,127 @@
+id: still-falling
+title: Still Falling
+artist_id: the-aerial-gravities
+release_type: album
+release_date: '2025-09-16'
+status: released
+genres:
+  - Jazz
+label: KazeX Records
+identifiers:
+  upc_ean: "0692788985459"
+  catalog_number: "TOOLOST3000867360"
+  amazon_asin: null
+copyright:
+  c_line: GlamorousFan © 2025
+  p_line: KazeX Records ℗ 2025
+lyrics:
+  has_lyrics: false
+  language: null
+cover:
+  github_path: null
+  web_url: null
+  drive_url: null
+links:
+  spotify: "https://open.spotify.com/album/261YeYdGBc1hBJSFpgOFcK"
+  apple_music: "https://music.apple.com/jp/album/still-falling/1838453121"
+  youtube: null
+  smartlink: "https://too.fm/stillfalling"
+generation:
+  provider: null
+  source_playlist_url: null
+tracks:
+  - title: Still Falling
+    isrc: "QT4K42565607"
+    links:
+      spotify: "https://open.spotify.com/track/6RQFbCHBJzcoKF0WgxtVQW"
+      apple_music: "https://music.apple.com/jp/song/still-falling/1838453124"
+  - title: Aphelion Waltz
+    isrc: "QT4K42565608"
+    links:
+      spotify: "https://open.spotify.com/track/7BvJKuQIns3IEOLqNcr3Ob"
+      apple_music: "https://music.apple.com/jp/song/aphelion-waltz/1838453132"
+  - title: Weightless by Design
+    isrc: "QT4K42565609"
+    links:
+      spotify: "https://open.spotify.com/track/7ccdlgZZ7TytnxNLvaPYzO"
+      apple_music: "https://music.apple.com/jp/song/weightless-by-design/1838453439"
+  - title: Elliptical Night
+    isrc: "QT4K42565610"
+    links:
+      spotify: "https://open.spotify.com/track/2d27bXrrSPD5mmsnPFfccS"
+      apple_music: "https://music.apple.com/jp/song/elliptical-night/1838453440"
+  - title: Brief Orbit
+    isrc: "QT4K42565611"
+    links:
+      spotify: "https://open.spotify.com/track/5xBoDOtv4HRCCqzDnBLfFN"
+      apple_music: "https://music.apple.com/jp/song/brief-orbit/1838453443"
+  - title: Descent in Silence
+    isrc: "QT4K42565612"
+    links:
+      spotify: "https://open.spotify.com/track/1pLKZXKgYix4TlbLqFh7RP"
+      apple_music: "https://music.apple.com/jp/song/descent-in-silence/1838453445"
+  - title: Drifted Light
+    isrc: "QT4K42565613"
+    links:
+      spotify: "https://open.spotify.com/track/26tgIA2Ylkz2q2dHwjnPQW"
+      apple_music: "https://music.apple.com/jp/song/drifted-light/1838453447"
+  - title: Minor Phase
+    isrc: "QT4K42565614"
+    links:
+      spotify: "https://open.spotify.com/track/4JM5orkLMMAQyGm5Tdujnr"
+      apple_music: "https://music.apple.com/jp/song/minor-phase/1838453448"
+  - title: Vacuum Lullaby
+    isrc: "QT4K42565615"
+    links:
+      spotify: "https://open.spotify.com/track/6rRwr42IWov1HfoLyjjgSQ"
+      apple_music: "https://music.apple.com/jp/song/vacuum-lullaby/1838453449"
+  - title: In the Slowest Spin
+    isrc: "QT4K42565616"
+    links:
+      spotify: "https://open.spotify.com/track/2aTbXejx2IyxwHClMRW2zC"
+      apple_music: "https://music.apple.com/jp/song/in-the-slowest-spin/1838453450"
+  - title: Landing, Eventually
+    isrc: "QT4K42565606"
+    links:
+      spotify: "https://open.spotify.com/track/6U0DxfOfNId97GCMrBZiuw"
+      apple_music: "https://music.apple.com/jp/song/landing-eventually/1838453452"
+credits: {}
+description:
+  short: null
+  long: null
+promotion:
+  priority_pitch:
+    status: null
+    selected_track: null
+    release_summary: null
+    spotify_artist: null
+    marketing_elements: []
+    past_awards_milestones: null
+    upcoming_tour_dates: null
+    social:
+      facebook: null
+      instagram: null
+      x: null
+      tiktok: null
+    attachments:
+      image_url: null
+      epk_url: null
+assets:
+  github_asset_dir: null
+  drive_folder_url: null
+  cover_drive_folder_url: null
+  visuals_drive_folder_url: null
+  other_assets_drive_folder_url: null
+website:
+  publish: false
+  publish_at: null
+  featured: false
+notes_public: |
+  2026-10-27にToo Lost作品詳細の作品名・名義・形式・登録日・UPC/EAN・catalog number・ジャンル・C/Pラインを確認した資料から登録。
+  全曲の曲名とISRCを行ごとに照合。ISRCを連番で推測せず、Too Lostの曲名表記をそのまま保持。
+  公開Spotify／Apple Musicで作品名・名義・発売日・曲数・曲順を照合。各曲リンクは当該アルバムページから取得。
+  smartlinkはToo Lost登録値と公開ページの作品名を照合。全遷移先の再生可否は未検証。
+  Priority Pitchの実施状態と正式素材は未確認。website.publishはfalse。
+  歌詞なしはToo Lostのlanguage欄のNo lyricsに基づく。UIのインストゥルメンタルバッジ単独から判定していない。
+  公開根拠: https://open.spotify.com/album/261YeYdGBc1hBJSFpgOFcK
+  公開根拠: https://music.apple.com/jp/album/still-falling/1838453121

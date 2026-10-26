@@ -1,0 +1,47 @@
+id: satori-chandra
+name: Satori Chandra
+sort_name: Satori Chandra
+status: active
+description:
+  short: null
+  long: null
+concept: null
+genres: []
+platforms:
+  spotify_artist_url: "https://open.spotify.com/artist/1D7ZQ49ugLjyrsx0KIzDJd"
+  apple_music_artist_url: "https://music.apple.com/in/artist/satori-chandra/1840395690"
+  youtube_artist_url: null
+social:
+  website: null
+  instagram: null
+  x: null
+  facebook: null
+  tiktok: null
+  bluesky: null
+milestones: []
+assets:
+  github_asset_dir: null
+  drive_folder_url: null
+  artist_photos_drive_folder_url: null
+  logos_drive_folder_url: null
+  epk_drive_folder_url: null
+  releases_drive_folder_url: null
+  artist_image:
+    github_path: null
+    web_url: null
+    drive_url: null
+  logo:
+    github_path: null
+    web_url: null
+    drive_url: null
+  epk:
+    github_path: null
+    web_url: null
+    drive_url: null
+  artist_photo_candidates: []
+  concept_art: []
+notes_public: |
+  2026-10-27にToo Lost登録情報と公開Spotify／Apple Musicの作品・アーティスト対応を照合して登録。
+  公開配信ページで名義を確認したものであり、Spotify for Artists等の管理権限取得状況を示すものではない。
+  配信ページ: https://open.spotify.com/album/6RkKzmALX0QTDV2FddLsHB
+  配信ページ: https://music.apple.com/in/album/moon-breathing/1840395478

@@ -1,0 +1,124 @@
+id: slow-light-garden
+title: Slow Light Garden
+artist_id: satori-chandra
+release_type: album
+release_date: '2025-10-21'
+status: released
+genres:
+  - Ambient
+  - New Age
+  - Meditation
+label: KazeX Records
+identifiers:
+  upc_ean: "0609360124243"
+  catalog_number: "TOOLOST3000891307"
+  amazon_asin: null
+copyright:
+  c_line: GlamorousFan © 2025
+  p_line: KazeX Records ℗ 2025
+lyrics:
+  has_lyrics: false
+  language: null
+cover:
+  github_path: null
+  web_url: null
+  drive_url: null
+links:
+  spotify: "https://open.spotify.com/album/3mc2zwXcXstFo1TqmxU9kv"
+  apple_music: "https://music.apple.com/in/album/slow-light-garden/1846559995"
+  youtube: null
+  smartlink: "https://too.fm/slowlightgarden"
+generation:
+  provider: null
+  source_playlist_url: null
+tracks:
+  - title: Photosphere Drift
+    isrc: "QT62U2544118"
+    links:
+      spotify: "https://open.spotify.com/track/0P1pYo8fekQbZxf8qRukIO"
+      apple_music: "https://music.apple.com/in/song/photosphere-drift/1846559998"
+  - title: The Soil Remembers
+    isrc: "QT62U2544119"
+    links:
+      spotify: "https://open.spotify.com/track/7lTSwsA8xl7DZKKiSJLxlR"
+      apple_music: "https://music.apple.com/in/song/the-soil-remembers/1846560001"
+  - title: Leaf by Leaf
+    isrc: "QT62U2544120"
+    links:
+      spotify: "https://open.spotify.com/track/2elzWGzpirlRuUllFOZcuR"
+      apple_music: "https://music.apple.com/in/song/leaf-by-leaf/1846560003"
+  - title: Gravity Slows the Rain
+    isrc: "QT62U2544121"
+    links:
+      spotify: "https://open.spotify.com/track/0nuD7SZrc36Qp9Zq0WFlo8"
+      apple_music: "https://music.apple.com/in/song/gravity-slows-the-rain/1846560004"
+  - title: Between Breath and Moss
+    isrc: "QT62U2544122"
+    links:
+      spotify: "https://open.spotify.com/track/69coyygRmAKUPUfrn4A3IF"
+      apple_music: "https://music.apple.com/in/song/between-breath-and-moss/1846560007"
+  - title: Polaris Beneath Skin
+    isrc: "QT62U2544123"
+    links:
+      spotify: "https://open.spotify.com/track/0UeFEMNs6sMQvxyljDyhXM"
+      apple_music: "https://music.apple.com/in/song/polaris-beneath-skin/1846560130"
+  - title: Soft Roots, Distant Bells
+    isrc: "QT62U2544124"
+    links:
+      spotify: "https://open.spotify.com/track/0CxbQYlY6fGb4cOWOtWCHp"
+      apple_music: "https://music.apple.com/in/song/soft-roots-distant-bells/1846560133"
+  - title: Garden Sleeps With You
+    isrc: "QT62U2544125"
+    links:
+      spotify: "https://open.spotify.com/track/0fQZrZW1PUDEmpOdh2bOkR"
+      apple_music: "https://music.apple.com/in/song/garden-sleeps-with-you/1846560135"
+  - title: Light No Longer Moving
+    isrc: "QT62U2544126"
+    links:
+      spotify: "https://open.spotify.com/track/6NWWzynD7IKvg34cKLKhGB"
+      apple_music: "https://music.apple.com/in/song/light-no-longer-moving/1846560139"
+  - title: Slow Light Garden
+    isrc: "QT62U2544127"
+    links:
+      spotify: "https://open.spotify.com/track/7oMxGsQ4nanDe5Q4L6NSZT"
+      apple_music: "https://music.apple.com/in/song/slow-light-garden/1846560141"
+credits: {}
+description:
+  short: null
+  long: null
+promotion:
+  priority_pitch:
+    status: null
+    selected_track: null
+    release_summary: null
+    spotify_artist: null
+    marketing_elements: []
+    past_awards_milestones: null
+    upcoming_tour_dates: null
+    social:
+      facebook: null
+      instagram: null
+      x: null
+      tiktok: null
+    attachments:
+      image_url: null
+      epk_url: null
+assets:
+  github_asset_dir: null
+  drive_folder_url: null
+  cover_drive_folder_url: null
+  visuals_drive_folder_url: null
+  other_assets_drive_folder_url: null
+website:
+  publish: false
+  publish_at: null
+  featured: false
+notes_public: |
+  2026-10-27にToo Lost作品詳細の作品名・名義・形式・登録日・UPC/EAN・catalog number・ジャンル・C/Pラインを確認した資料から登録。
+  全曲の曲名とISRCを行ごとに照合。ISRCを連番で推測せず、Too Lostの曲名表記をそのまま保持。
+  公開Spotify／Apple Musicで作品名・名義・発売日・曲数・曲順を照合。各曲リンクは当該アルバムページから取得。
+  smartlinkはToo Lost登録値と公開ページの作品名を照合。全遷移先の再生可否は未検証。
+  Priority Pitchの実施状態と正式素材は未確認。website.publishはfalse。
+  歌詞なしはToo Lostのlanguage欄のNo lyricsに基づく。UIのインストゥルメンタルバッジ単独から判定していない。
+  公開根拠: https://open.spotify.com/album/3mc2zwXcXstFo1TqmxU9kv
+  公開根拠: https://music.apple.com/in/album/slow-light-garden/1846559995

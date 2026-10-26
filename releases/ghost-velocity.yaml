@@ -29,6 +29,7 @@ cover:
   drive_url: null
 
 links:
+  smartlink: "https://too.fm/ghostvelocity"
   spotify: "https://open.spotify.com/album/6mbDVw5ILYJQn2h4HltiVv"
   apple_music: "https://music.apple.com/lu/album/ghost-velocity/6800608556"
   youtube: null
@@ -42,46 +43,57 @@ tracks:
     isrc: "QZPEW0848423"
     links:
       spotify: "https://open.spotify.com/track/502oqF0do3oY9aF4UN6ZEW"
+      apple_music: "https://music.apple.com/jp/song/ghost-velocity/6800608558"
   - title: Slipstream Memorial
     isrc: "QZPEW0848424"
     links:
       spotify: "https://open.spotify.com/track/11QijLoxpBVnWhxmzgmjP1"
+      apple_music: "https://music.apple.com/jp/song/slipstream-memorial/6800608562"
   - title: Static in the Dive
     isrc: "QZPEW0848425"
     links:
       spotify: "https://open.spotify.com/track/5B8vHcHnJKkQ1MryBwxuFO"
+      apple_music: "https://music.apple.com/jp/song/static-in-the-dive/6800608568"
   - title: Blueburn Transit
     isrc: "QZPEW0848426"
     links:
       spotify: "https://open.spotify.com/track/5plHJBXK99Xj3LOYuhyXiE"
+      apple_music: "https://music.apple.com/jp/song/blueburn-transit/6800608573"
   - title: Phantom Turnaround
     isrc: "QZPEW0848427"
     links:
       spotify: "https://open.spotify.com/track/6eQ0zbHTEeECC1K8K64a3e"
+      apple_music: "https://music.apple.com/jp/song/phantom-turnaround/6800608575"
   - title: Terminal Vectors
     isrc: "QZPEW0848428"
     links:
       spotify: "https://open.spotify.com/track/5DTXye7hL5dHyTTNJC3tYF"
+      apple_music: "https://music.apple.com/jp/song/terminal-vectors/6800608576"
   - title: Afterimage Mechanics
     isrc: "QZPEW0848429"
     links:
       spotify: "https://open.spotify.com/track/0qacNRUMqYlgkhpJVV2IBM"
+      apple_music: "https://music.apple.com/jp/song/afterimage-mechanics/6800608581"
   - title: Nocturne for Falling Metal
     isrc: "QZPEW0848430"
     links:
       spotify: "https://open.spotify.com/track/5YFihi3RNWDoiyGWIccnAc"
+      apple_music: "https://music.apple.com/jp/song/nocturne-for-falling-metal/6800608852"
   - title: Scatter Signal Parade
     isrc: "QZPEW0848431"
     links:
       spotify: "https://open.spotify.com/track/1XpaqZ2Ho4nDFBRceAlnJ0"
+      apple_music: "https://music.apple.com/jp/song/scatter-signal-parade/6800608856"
   - title: Airspeed of the Absent
     isrc: "QZPEW0848432"
     links:
       spotify: "https://open.spotify.com/track/0MGU0PhF6QxqQnXhilbC2a"
+      apple_music: "https://music.apple.com/jp/song/airspeed-of-the-absent/6800608862"
   - title: Landing on Invisible Fire
     isrc: "QZPEW0848433"
     links:
       spotify: "https://open.spotify.com/track/6q2hbkfjhAKGLuG3sROnyH"
+      apple_music: "https://music.apple.com/jp/song/landing-on-invisible-fire/6800608880"
 
 credits: {}
 
@@ -145,5 +157,8 @@ notes_public: >
   2026-10-26にSpotify／Apple Musicの公開作品ページで作品名・アーティスト・
   リリース日・11曲・KazeX Recordsを照合した調査結果から、statusをreleasedへ更新。
   アルバムのSpotify／Apple Musicリンクと全11曲のSpotifyリンクを反映。
-  Apple Musicは確認済みのLUストアURLを保持。YouTube／smartlinkは未確認。
+  Apple Musicアルバムリンクは確認済みのLUストアURLを保持。YouTubeは未確認。
   既存識別子、website.publish、Priority Pitchのstatusは維持。
+  2026-10-27にToo Lost登録smartlinkと公開ページの作品名を照合して追補。
+  公開Apple Music日本ストアの同一アルバムで曲順・曲名を照合し、11曲のApple Musicリンクを追補。
+  公開根拠: https://music.apple.com/jp/album/ghost-velocity/6800608556

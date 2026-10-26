@@ -1,0 +1,117 @@
+id: sayonara-singularity
+title: さよならシンギュラリティ
+artist_id: gramarasfan
+release_type: album
+release_date: '2025-12-31'
+status: released
+genres:
+  - Pop
+  - J-Pop
+label: カゼックスレコード
+identifiers:
+  upc_ean: "0609360366193"
+  catalog_number: "TOOLOST3000940007"
+  amazon_asin: null
+copyright:
+  c_line: ぐらまらすふぁん © 2025
+  p_line: カゼックスレコード ℗ 2025
+lyrics:
+  has_lyrics: null
+  language: Japanese
+cover:
+  github_path: null
+  web_url: null
+  drive_url: null
+links:
+  spotify: "https://open.spotify.com/album/6ZH6p14vtIuwca36ayikOQ"
+  apple_music: "https://music.apple.com/jp/album/%E3%81%95%E3%82%88%E3%81%AA%E3%82%89%E3%82%B7%E3%83%B3%E3%82%AE%E3%83%A5%E3%83%A9%E3%83%AA%E3%83%86%E3%82%A3/1863186943"
+  youtube: null
+  smartlink: "https://too.fm/sayonarasingularity"
+generation:
+  provider: null
+  source_playlist_url: null
+tracks:
+  - title: さよならシンギュラリティ
+    isrc: "QT62W2501678"
+    links:
+      spotify: "https://open.spotify.com/track/66qIzcthbIfkeg4Ugay1Or"
+      apple_music: "https://music.apple.com/jp/song/%E3%81%95%E3%82%88%E3%81%AA%E3%82%89%E3%82%B7%E3%83%B3%E3%82%AD-%E3%83%A5%E3%83%A9%E3%83%AA%E3%83%86%E3%82%A3/1863186944"
+  - title: 救世主になりたいな
+    isrc: "QT62W2501679"
+    links:
+      spotify: "https://open.spotify.com/track/1k8PXYyTEwjh4E9QZbbKi3"
+      apple_music: "https://music.apple.com/jp/song/%E6%95%91%E4%B8%96%E4%B8%BB%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%9F%E3%81%84%E3%81%AA/1863186945"
+  - title: 難易度の高い人生を送ってきました
+    isrc: "QT62W2501680"
+    links:
+      spotify: "https://open.spotify.com/track/5JcYlSMr2mj6AWUCYLlyUz"
+      apple_music: "https://music.apple.com/jp/song/%E9%9B%A3%E6%98%93%E5%BA%A6%E3%81%AE%E9%AB%98%E3%81%84%E4%BA%BA%E7%94%9F%E3%82%92%E9%80%81%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F/1863186946"
+  - title: 理性は幽体離脱
+    isrc: "QT62W2501681"
+    links:
+      spotify: "https://open.spotify.com/track/0iBw2c6Pf5rqpJd7j6ctM4"
+      apple_music: "https://music.apple.com/jp/song/%E7%90%86%E6%80%A7%E3%81%AF%E5%B9%BD%E4%BD%93%E9%9B%A2%E8%84%B1/1863186947"
+  - title: 死んでるけど ON AIR
+    isrc: "QT62W2501682"
+    links:
+      spotify: "https://open.spotify.com/track/2wE1WukwMHG5NyECOk7ZUc"
+      apple_music: "https://music.apple.com/jp/song/%E6%AD%BB%E3%82%93%E3%81%A6-%E3%82%8B%E3%81%91%E3%81%A8-on-air/1863186948"
+  - title: シンタックスフィリア
+    isrc: "QT62W2501683"
+    links:
+      spotify: "https://open.spotify.com/track/14Uudyg4hQ34JWlfBZvtDF"
+      apple_music: "https://music.apple.com/jp/song/%E3%82%B7%E3%83%B3%E3%82%BF%E3%83%83%E3%82%AF%E3%82%B9%E3%83%95%E3%82%A3%E3%83%AA%E3%82%A2/1863186949"
+  - title: なんでなんでなんでなんで
+    isrc: "QT62W2501684"
+    links:
+      spotify: "https://open.spotify.com/track/1FogdwEZrwr1timrqMh681"
+      apple_music: "https://music.apple.com/jp/song/%E3%81%AA%E3%82%93%E3%81%A6-%E3%81%AA%E3%82%93%E3%81%A6-%E3%81%AA%E3%82%93%E3%81%A6-%E3%81%AA%E3%82%93%E3%81%A6/1863187313"
+  - title: ドミノエフェクト
+    isrc: "QT62W2501685"
+    links:
+      spotify: "https://open.spotify.com/track/4cmGfiW8mI20dmFHpqwYoZ"
+      apple_music: "https://music.apple.com/jp/song/%E3%83%88-%E3%83%9F%E3%83%8E%E3%82%A8%E3%83%95%E3%82%A7%E3%82%AF%E3%83%88/1863187317"
+  - title: あたしでよかった
+    isrc: "QT62W2501686"
+    links:
+      spotify: "https://open.spotify.com/track/4WYDxTm66LtR9sBgNWS6Ad"
+      apple_music: "https://music.apple.com/jp/song/%E3%81%82%E3%81%9F%E3%81%97%E3%81%A6-%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F/1863187319"
+credits: {}
+description:
+  short: null
+  long: null
+promotion:
+  priority_pitch:
+    status: null
+    selected_track: null
+    release_summary: null
+    spotify_artist: null
+    marketing_elements: []
+    past_awards_milestones: null
+    upcoming_tour_dates: null
+    social:
+      facebook: null
+      instagram: null
+      x: null
+      tiktok: null
+    attachments:
+      image_url: null
+      epk_url: null
+assets:
+  github_asset_dir: null
+  drive_folder_url: null
+  cover_drive_folder_url: null
+  visuals_drive_folder_url: null
+  other_assets_drive_folder_url: null
+website:
+  publish: false
+  publish_at: null
+  featured: false
+notes_public: |
+  2026-10-27にToo Lost作品詳細の作品名・名義・形式・登録日・UPC/EAN・catalog number・ジャンル・C/Pラインを確認した資料から登録。
+  全曲の曲名とISRCを行ごとに照合。ISRCを連番で推測せず、Too Lostの曲名表記をそのまま保持。
+  公開Spotify／Apple Musicで作品名・名義・発売日・曲数・曲順を照合。各曲リンクは当該アルバムページから取得。
+  smartlinkはToo Lost登録値と公開ページの作品名を照合。全遷移先の再生可否は未検証。
+  Priority Pitchの実施状態と正式素材は未確認。website.publishはfalse。
+  公開根拠: https://open.spotify.com/album/6ZH6p14vtIuwca36ayikOQ
+  公開根拠: https://music.apple.com/jp/album/%E3%81%95%E3%82%88%E3%81%AA%E3%82%89%E3%82%B7%E3%83%B3%E3%82%AE%E3%83%A5%E3%83%A9%E3%83%AA%E3%83%86%E3%82%A3/1863186943
