@@ -9,6 +9,9 @@ identifiers:
   upc_ean: "0682286638421"
   catalog_number: "TOOLOST3001303312"
 
+lyrics:
+  index_path: lyrics/unseen-dragon/index.yaml
+
 cover:
   github_path: assets/releases/unseen-dragon/cover/Unseen_Dragon_Cover.png
   web_url: null
@@ -22,7 +25,7 @@ links:
 
 generation:
   provider: suno
-  source_playlist_url: "https://suno.com/playlist/b17330f8-23ff-451e-b0a4-eb8fbcf929a4"
+  source_playlist_url: null
 
 tracks:
   - title: MRI_Music Resonance Imaging

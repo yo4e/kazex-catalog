@@ -24,6 +24,7 @@ copyright:
 lyrics:
   has_lyrics: null
   language: null
+  index_path: null # lyrics/<release-id>/index.yaml。採用済み本文のみ参照する。
 
 cover:
   github_path: null

@@ -8,6 +8,8 @@ from pathlib import Path
 
 import yaml
 
+from validate_lyrics import validate_lyrics
+
 ROOT = Path(__file__).resolve().parents[1]
 ID_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -191,6 +193,8 @@ for path in release_files:
         validate_asset_dir(path, assets.get("github_asset_dir"), "assets.github_asset_dir")
 
     validate_pitch(path, data)
+
+errors.extend(validate_lyrics(ROOT, release_files))
 
 if errors:
     print("Catalog validation failed:")

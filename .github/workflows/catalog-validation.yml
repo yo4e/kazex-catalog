@@ -24,6 +24,9 @@ jobs:
       - name: Validate catalog
         run: python scripts/validate_catalog.py
 
+      - name: Test adopted lyric validation
+        run: python -m unittest discover -s tests -p 'test_lyrics.py'
+
       - name: Smoke test readiness checks
         run: |
           python scripts/check_readiness.py release unseen-dragon > /tmp/release-readiness.txt

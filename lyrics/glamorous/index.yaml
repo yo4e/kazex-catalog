@@ -1,0 +1,48 @@
+schema_version: 2
+release_id: glamorous
+tracks:
+  - isrc: QT4K42587541
+    status: pending_selection
+    text_path: null
+    sha256: null
+    adoption: null
+  - isrc: QT4K42587533
+    status: pending_selection
+    text_path: null
+    sha256: null
+    adoption: null
+  - isrc: QT4K42587534
+    status: pending_selection
+    text_path: null
+    sha256: null
+    adoption: null
+  - isrc: QT4K42587535
+    status: pending_selection
+    text_path: null
+    sha256: null
+    adoption: null
+  - isrc: QT4K42587536
+    status: pending_selection
+    text_path: null
+    sha256: null
+    adoption: null
+  - isrc: QT4K42587537
+    status: pending_selection
+    text_path: null
+    sha256: null
+    adoption: null
+  - isrc: QT4K42587539
+    status: pending_selection
+    text_path: null
+    sha256: null
+    adoption: null
+  - isrc: QT4K42587538
+    status: pending_selection
+    text_path: null
+    sha256: null
+    adoption: null
+  - isrc: QT4K42587540
+    status: pending_selection
+    text_path: null
+    sha256: null
+    adoption: null

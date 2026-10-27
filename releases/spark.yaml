@@ -16,6 +16,7 @@ copyright:
   c_line: ぐらまらすふぁん © 2025
   p_line: カゼックスレコード ℗ 2025
 lyrics:
+  index_path: lyrics/spark/index.yaml
   has_lyrics: null
   language: Japanese
 cover:

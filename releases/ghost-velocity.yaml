@@ -36,7 +36,7 @@ links:
 
 generation:
   provider: suno
-  source_playlist_url: "https://suno.com/playlist/a542b111-24f7-4489-a31c-cbda94a6c3a3"
+  source_playlist_url: null
 
 tracks:
   - title: Ghost Velocity

@@ -1,0 +1,76 @@
+schema_version: 2
+release_id: koufuku-kairo
+tracks:
+  - isrc: QT62U2565518
+    status: adopted
+    text_path: lyrics/koufuku-kairo/qt62u2565518.txt
+    sha256: c7ff5fbb665948efaa9e38b2a115fe8ce921e93a0d847da753835d720cccc74b
+    adoption:
+      basis: completed_submission_record
+      verified_on: '2026-10-27'
+  - isrc: QT62U2565519
+    status: pending_selection
+    text_path: null
+    sha256: null
+    adoption: null
+  - isrc: QT62U2565520
+    status: adopted
+    text_path: lyrics/koufuku-kairo/qt62u2565520.txt
+    sha256: 1a4520f1562c5893b801bfd8cc6315cdc1191c41e553d3b511342778107f4ecf
+    adoption:
+      basis: completed_submission_record
+      verified_on: '2026-10-27'
+  - isrc: QT62U2565521
+    status: adopted
+    text_path: lyrics/koufuku-kairo/qt62u2565521.txt
+    sha256: 9d29fb947d0c0bb554e40b28c034e838c1c4d158d2f8566e75d4fbfeeb8229c8
+    adoption:
+      basis: completed_submission_record
+      verified_on: '2026-10-27'
+  - isrc: QT62U2565522
+    status: adopted
+    text_path: lyrics/koufuku-kairo/qt62u2565522.txt
+    sha256: ca6459aa0a008f49b463a8b9a5689d59568bbbebfcba58e8ef7799640a7d8404
+    adoption:
+      basis: completed_submission_record
+      verified_on: '2026-10-27'
+  - isrc: QT62U2565523
+    status: pending_selection
+    text_path: null
+    sha256: null
+    adoption: null
+  - isrc: QT62U2565524
+    status: adopted
+    text_path: lyrics/koufuku-kairo/qt62u2565524.txt
+    sha256: 919efc885b63635e6e02e218e6983b161f4d8e436d37be29d0c2c885793f248e
+    adoption:
+      basis: completed_submission_record
+      verified_on: '2026-10-27'
+  - isrc: QT62U2565525
+    status: adopted
+    text_path: lyrics/koufuku-kairo/qt62u2565525.txt
+    sha256: 098c3349e71d00a15b78b9e26e7dbfa34dc4f69e9efa1741f3aac53833c254c8
+    adoption:
+      basis: completed_submission_record
+      verified_on: '2026-10-27'
+  - isrc: QT62U2565526
+    status: adopted
+    text_path: lyrics/koufuku-kairo/qt62u2565526.txt
+    sha256: 9633a5016e1c1ce9f0569f66a0195bc7a1eba90ee300bf4fb6c7c2d4cce6427e
+    adoption:
+      basis: completed_submission_record
+      verified_on: '2026-10-27'
+  - isrc: QT62U2565527
+    status: adopted
+    text_path: lyrics/koufuku-kairo/qt62u2565527.txt
+    sha256: 93819698f044387eadf17fa5fe828129d61e00dae88ee28237fc45e532cd71ab
+    adoption:
+      basis: completed_submission_record
+      verified_on: '2026-10-27'
+  - isrc: QT62U2565528
+    status: adopted
+    text_path: lyrics/koufuku-kairo/qt62u2565528.txt
+    sha256: c00674af7d39ab50dddb4746086e2bf58dad9b595c4dbc80d400bbff3e8b9d1b
+    adoption:
+      basis: completed_submission_record
+      verified_on: '2026-10-27'
