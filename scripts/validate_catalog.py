@@ -188,6 +188,15 @@ for path in release_files:
             isrc = track.get("isrc")
             if isrc is not None and not isinstance(isrc, str):
                 error(path, f"tracks[{index}].isrc must be a string or null")
+            duration = track.get("duration_seconds")
+            if duration is not None and (type(duration) is not int or duration <= 0):
+                error(path, f"tracks[{index}].duration_seconds must be a positive integer or null")
+            credits = track.get("credits", {})
+            if not isinstance(credits, dict):
+                error(path, f"tracks[{index}].credits must be a mapping")
+            elif "songwriters" in credits and (not isinstance(credits["songwriters"], list)
+                    or any(not isinstance(name, str) or not name.strip() for name in credits["songwriters"])):
+                error(path, f"tracks[{index}].credits.songwriters must be a list of nonempty names")
 
     cover = data.get("cover", {})
     if not isinstance(cover, dict):

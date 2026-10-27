@@ -67,7 +67,8 @@ def validate_export(directory: Path):
         raise ValueError('Public export cannot enable private candidates')
     adopted = 0
     for track in tracks.values():
-        if set(track) != {'key', 'number', 'title', 'isrc', 'status', 'candidate_count', 'spotify_id', 'adopted'}:
+        if set(track) != {'key', 'number', 'title', 'isrc', 'status', 'candidate_count', 'spotify_id', 'adopted',
+                         'duration_seconds', 'songwriters', 'links'}:
             raise ValueError('Unexpected track fields in public export')
         if track['candidate_count'] != 0:
             raise ValueError('Public export cannot contain private candidate counts')

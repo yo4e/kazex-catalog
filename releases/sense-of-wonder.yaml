@@ -11,7 +11,7 @@ label: カゼックスレコード
 identifiers:
   upc_ean: "0692788852683"
   catalog_number: "TOOLOST3000839468"
-  amazon_asin: null
+  amazon_asin: "B0FJTPVPSJ"
 copyright:
   c_line: ぐらまらすふぁん © 2025
   p_line: カゼックスレコード ℗ 2025
@@ -20,7 +20,7 @@ lyrics:
   has_lyrics: true
   language: Japanese
 cover:
-  github_path: null
+  github_path: assets/releases/sense-of-wonder/cover/sense-of-wonder-registered.jpeg
   web_url: null
   drive_url: null
 links:
@@ -28,15 +28,21 @@ links:
   apple_music: "https://music.apple.com/jp/album/%E3%82%BB%E3%83%B3%E3%82%B9-%E3%82%AA%E3%83%96-%E3%83%AF%E3%83%B3%E3%83%80%E3%83%BC-single/1828756910"
   youtube: null
   smartlink: "https://too.fm/llwmo1n"
+  amazon_music: "https://music.amazon.com/albums/B0FJTPVPSJ"
 generation:
   provider: null
   source_playlist_url: null
 tracks:
   - title: センス・オブ・ワンダー
     isrc: "QT4K52590984"
+    duration_seconds: 158
+    credits:
+      songwriters:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/38xxHlPbd4FnMQExUXGvBv"
       apple_music: "https://music.apple.com/jp/song/%E3%82%BB%E3%83%B3%E3%82%B9-%E3%82%AA%E3%83%96-%E3%83%AF%E3%83%B3%E3%83%80%E3%83%BC/1828756914"
+      amazon_music: "https://music.amazon.com/tracks/B0FJV1JHVF"
 credits: {}
 description:
   short: null
@@ -59,7 +65,7 @@ promotion:
       image_url: null
       epk_url: null
 assets:
-  github_asset_dir: null
+  github_asset_dir: assets/releases/sense-of-wonder/
   drive_folder_url: null
   cover_drive_folder_url: null
   visuals_drive_folder_url: null
@@ -73,9 +79,16 @@ notes_public: |
   全曲の曲名とISRCを行ごとに照合。ISRCを連番で推測せず、Too Lostの曲名表記をそのまま保持。
   公開Spotify／Apple Musicで作品名・名義・発売日・曲数・曲順を照合。各曲リンクは当該アルバムページから取得。
   smartlinkはToo Lost登録値と公開ページの作品名を照合。全遷移先の再生可否は未検証。
-  Priority Pitchの実施状態と正式素材は未確認。website.publishはfalse。
+  Priority Pitchの実施状態は未確認。website.publishはfalse。
   2026-10-27の本人判断により、release_dateはToo Lost登録日・Amazon表示の2025-07-19で確定。Spotify／Apple Music表示とも一致。
   レーベル公式サイト https://kazex.my.canva.site/ の旧告知には2025-07-25 Releaseと記載されていたため、採用日との旧差異を根拠記録として保持。公式サイトは変更していない。
   Too Lost曲詳細で歌詞あり、Spotify URI、Apple曲IDを確認。作詞者欄の原表記は「ぐらまらす ふぁん」。名寄せ・作曲者の推定は行わない。
+  2026-10-28補完: tracks[].credits.songwritersはToo Lost確認資料のsongwriters_ui原表記を保持し、作詞・作曲への役割分割を行わない。
+  duration_secondsはApple Music構造化データのPT2M38Sを採用。Spotifyとsmartlinkも2:38表示。Amazonは2:39表示で、DSP間の表示差を保持する。音源原本の厳密な長さを示す値ではない。
+  Amazon作品URLとASINはsmartlink登録先を公開ページの作品名・名義・発売日・C/Pラインで照合。UK版には別ASIN B0FJTBTCJ5があるが、ここではsmartlinkの米国版を参照する。
+  登録ジャケットはsmartlink公開画像の未加工コピー。Spotify掲載画像および保管原本と構図・文字を目視照合。詳細とSHA256はassets/releases/sense-of-wonder/cover/README.mdを参照。
+  公開根拠: https://too.fm/llwmo1n
+  公開根拠: https://music.amazon.com/albums/B0FJTPVPSJ
+  公開根拠: https://music.amazon.com/tracks/B0FJV1JHVF
   公開根拠: https://open.spotify.com/album/5TDmEzZwJNVxOCarbS3LaH
   公開根拠: https://music.apple.com/jp/album/%E3%82%BB%E3%83%B3%E3%82%B9-%E3%82%AA%E3%83%96-%E3%83%AF%E3%83%B3%E3%83%80%E3%83%BC-single/1828756910

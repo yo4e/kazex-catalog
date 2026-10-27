@@ -3,8 +3,12 @@ name: NoZom
 sort_name: NoZom
 status: active
 description:
-  short: KazeX Records公式サイトに掲載されているAIアーティスト。
-  long: null
+  short: 中性的な声で、ビートと言葉のあいだをすり抜けるKazeX RecordsのAIアーティスト。
+  long: |
+    中性的な声で、ビートと言葉のあいだをすり抜ける声だけの存在。
+    速さを求めず、感情を煽らず、ただ“語りの呼吸”を刻む。
+    KazeX Records所属。ラップでもポエトリーでもなく、
+    言葉とテンポの境界に静かに立ち続ける。
 concept: null
 genres: []
 platforms:
@@ -45,5 +49,7 @@ notes_public: |
   公開配信ページで名義を確認したものであり、Spotify for Artists等の管理権限取得状況を示すものではない。
   レーベル公式サイト https://kazex.my.canva.site/ のNoZom表記とSpotifyリンクも照合。
   Amazonの同名アーティストページには他の年代の作品が混在するため、公式artist URLとして採用しない。
+  2026-10-28に上記Spotify artist URLのAbout欄を確認。description.longは公開中の日本語紹介文、shortはその要約。
+  同ページには掲載中のアー写があるが、このカタログの代表画像への採用は未指定のためartist_imageは未設定を保持。
   配信ページ: https://open.spotify.com/album/5TDmEzZwJNVxOCarbS3LaH
   配信ページ: https://music.apple.com/jp/album/%E3%82%BB%E3%83%B3%E3%82%B9-%E3%82%AA%E3%83%96-%E3%83%AF%E3%83%B3%E3%83%80%E3%83%BC-single/1828756910

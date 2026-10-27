@@ -35,6 +35,8 @@ links:
   spotify: null
   apple_music: null
   youtube: null
+  smartlink: null
+  amazon_music: null
 
 generation:
   provider: null
@@ -45,6 +47,13 @@ tracks: []
 # tracks:
 #   - title: Example Track
 #     isrc: null
+#     duration_seconds: null # DSP表示秒。根拠・表示差はnotes_publicへ。
+#     credits:
+#       songwriters: [] # 登録原表記。作詞・作曲の役割を推定しない。
+#     links:
+#       spotify: null
+#       apple_music: null
+#       amazon_music: null
 #     creative_prompt: >
 #       制作時に使用した公開可能なmusic / style promptを保存する。
 

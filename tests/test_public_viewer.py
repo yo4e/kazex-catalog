@@ -4,6 +4,7 @@ from pathlib import Path
 import shutil
 import sys
 import unittest
+import yaml
 
 import test_viewer
 
@@ -71,3 +72,23 @@ class PublicViewerTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'never overwritten'):
             export(self.root, self.destination)
         self.assertEqual((self.destination / 'keep.txt').read_text(), 'retain')
+
+    def test_new_profile_and_release_facts_do_not_export_unreviewed_fields(self):
+        artist = yaml.safe_load((self.root / 'artists/example.yaml').read_text())
+        artist['description'] = {'short': 'Public summary', 'long': 'Public biography', 'draft': 'NEVER_EXPORT'}
+        artist['platforms'] = {'spotify_artist_url': 'https://open.spotify.com/artist/' + 'A' * 22,
+                               'private_source': 'NEVER_EXPORT'}
+        self.fixture.write('artists/example.yaml', artist)
+        release = yaml.safe_load((self.root / 'releases/example.yaml').read_text())
+        release['tracks'][0]['credits'] = {'songwriters': ['Original Name'], 'private_proof': 'NEVER_EXPORT'}
+        release['links'] = {'amazon_music': 'https://music.amazon.com/albums/B0FJTPVPSJ',
+                            'private_source': 'NEVER_EXPORT'}
+        self.fixture.write('releases/example.yaml', release)
+        export(self.root, self.destination)
+        raw = (self.destination / 'data/catalog.json').read_text()
+        data = json.loads(raw)
+        self.assertEqual(data['artists'][0]['biography'], 'Public biography')
+        self.assertIsNone(data['artists'][0]['portrait'])
+        self.assertEqual(data['releases'][0]['tracks'][0]['songwriters'], ['Original Name'])
+        self.assertNotIn('NEVER_EXPORT', raw)
+        self.assertEqual(data['releases'][0]['tracks'][0]['candidate_count'], 0)

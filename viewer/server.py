@@ -29,6 +29,32 @@ def release_smartlink(value):
     return value if re.fullmatch(r'https://too\.fm/[A-Za-z0-9_-]+', value or '') else None
 
 
+def service_links(values, kind):
+    """Only canonical public service URLs; never export arbitrary URL fields."""
+    spotify_kind = {'artist': 'artist', 'release': 'album', 'track': 'track'}[kind]
+    apple_kind = {'artist': 'artist', 'release': 'album', 'track': 'song'}[kind]
+    amazon_kind = {'artist': 'artists', 'release': 'albums', 'track': 'tracks'}[kind]
+    formats = {
+        'spotify': ('Spotify', rf'https://open\.spotify\.com/{spotify_kind}/[A-Za-z0-9]{{22}}'),
+        'apple_music': ('Apple Music', rf'https://music\.apple\.com/jp/{apple_kind}/(?:[^/?#\s]+/)?[0-9]+'),
+        'amazon_music': ('Amazon Music', rf'https://music\.amazon\.(?:com|co\.jp|co\.uk)/{amazon_kind}/[A-Z0-9]{{10}}'),
+    }
+    result = []
+    for key, (label, pattern) in formats.items():
+        value = values.get(key)
+        if isinstance(value, str) and re.fullmatch(pattern, value):
+            result.append({'service': key, 'label': label, 'url': value})
+    return result
+
+
+def text_fields(values, fields):
+    return {key: values.get(key) if isinstance(values.get(key), str) else None for key in fields}
+
+
+def text_list(value):
+    return [item for item in value if isinstance(item, str)] if isinstance(value, list) else []
+
+
 def contained(root: Path, value: str) -> Path:
     target = (root / value).resolve()
     if not target.is_relative_to(root.resolve()):
@@ -134,6 +160,9 @@ class Catalog:
                 lyric_defaults[data['id']] = (data.get('lyrics') or {}).get('default_has_lyrics')
                 artists.append({'id': data['id'], 'name': data['name'],
                                 'description': (data.get('description') or {}).get('short'), 'images': pictures,
+                                'biography': (data.get('description') or {}).get('long'),
+                                'links': service_links({key: (data.get('platforms') or {}).get(field) for key, field in
+                                    [('spotify', 'spotify_artist_url'), ('apple_music', 'apple_music_artist_url')]}, 'artist'),
                                 'portrait': portrait, 'default_has_lyrics': lyric_defaults[data['id']]})
             releases = []
             for path in sorted((self.root / 'releases').glob('*.yaml')):
@@ -153,6 +182,9 @@ class Catalog:
                     status = 'no_lyrics' if has_lyrics is False else saved.get('status') or 'not_collected'
                     public = {'key': key, 'number': number, 'title': track['title'], 'isrc': isrc,
                               'status': status, 'candidate_count': len(self.private.versions.get(key, [])),
+                              'duration_seconds': track.get('duration_seconds'),
+                              'songwriters': text_list((track.get('credits') or {}).get('songwriters')),
+                              'links': service_links(track.get('links') or {}, 'track'),
                               'spotify_id': spotify_track_id((track.get('links') or {}).get('spotify'))}
                     tracks.append(public)
                     adopted = None
@@ -166,6 +198,10 @@ class Catalog:
                 releases.append({'id': data['id'], 'title': data['title'], 'artist_id': data['artist_id'],
                                  'release_date': str(data.get('release_date') or ''), 'type': data.get('release_type'),
                                  'cover': cover, 'tracks': tracks,
+                                 'links': service_links(data.get('links') or {}, 'release'),
+                                 'metadata': {'genres': text_list(data.get('genres')), 'label': data.get('label'),
+                                     'identifiers': text_fields(data.get('identifiers') or {}, ['upc_ean', 'catalog_number', 'amazon_asin']),
+                                     'copyright': text_fields(data.get('copyright') or {}, ['c_line', 'p_line'])},
                                  'smartlink': release_smartlink((data.get('links') or {}).get('smartlink'))})
             brand = {'name': 'KazeX Records', 'logo': None, 'colors': {}}
             if (self.root / 'assets/label/brand.yaml').is_file():

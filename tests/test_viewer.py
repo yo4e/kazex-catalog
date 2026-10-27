@@ -11,7 +11,7 @@ import unittest
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'viewer'))
-from server import Catalog, PrivateCandidates, ReviewServer, spotify_track_id, release_smartlink
+from server import Catalog, PrivateCandidates, ReviewServer, spotify_track_id, release_smartlink, service_links
 
 
 class LocalReviewTests(unittest.TestCase):
@@ -246,6 +246,41 @@ class LocalReviewTests(unittest.TestCase):
         self.assertIn('frame-src https://open.spotify.com;', headers['Content-Security-Policy'])
         self.assertIn("connect-src 'self';", headers['Content-Security-Policy'])
         self.assertIn("frame-ancestors 'none';", headers['Content-Security-Policy'])
+
+    def test_service_links_reject_wrong_identity_kind_queries_and_foreign_hosts(self):
+        good = 'https://open.spotify.com/album/' + 'A' * 22
+        self.assertEqual(service_links({'spotify': good}, 'release')[0]['url'], good)
+        self.assertEqual(service_links({'spotify': good}, 'track'), [])
+        for value in [good + '?private=example', good + '#secret', good.replace('.com/', '.com.evil/'),
+                      'javascript:alert(1)', 'https://user:password@open.spotify.com/album/' + 'A' * 22]:
+            self.assertEqual(service_links({'spotify': value}, 'release'), [])
+        apple = 'https://music.apple.com/jp/song/example/12345'
+        amazon = 'https://music.amazon.com/tracks/B0FJV1JHVF'
+        self.assertEqual(len(service_links({'apple_music': apple, 'amazon_music': amazon}, 'track')), 2)
+        self.assertEqual(service_links({'apple_music': apple, 'amazon_music': amazon}, 'artist'), [])
+        self.assertEqual(service_links({'unreviewed': good}, 'release'), [])
+
+    def test_catalog_facts_refresh_from_yaml_without_private_supporting_fields(self):
+        path = self.repo / 'releases/example.yaml'
+        release = yaml.safe_load(path.read_text())
+        release.update({'genres': ['J-Pop'], 'label': 'Example Label',
+                        'identifiers': {'upc_ean': '0123456789012', 'private_note': 'NEVER_EXPORT'},
+                        'copyright': {'c_line': 'PUBLIC_CREDIT'}, 'notes_public': 'NEVER_EXPORT'})
+        release['tracks'][0].update({'duration_seconds': 158,
+            'credits': {'songwriters': ['原 表記'], 'supporting_document': 'NEVER_EXPORT'},
+            'links': {'apple_music': 'https://music.apple.com/jp/song/example/12345'}})
+        self.write('releases/example.yaml', release)
+        server = self.start()
+        _, _, body = self.get(server, '/api/catalog')
+        data = json.loads(body)['releases'][0]
+        self.assertEqual(data['metadata']['identifiers']['upc_ean'], '0123456789012')
+        self.assertEqual(data['tracks'][0]['duration_seconds'], 158)
+        self.assertEqual(data['tracks'][0]['songwriters'], ['原 表記'])
+        self.assertNotIn(b'NEVER_EXPORT', body)
+        release['tracks'][0]['duration_seconds'] = 159
+        self.write('releases/example.yaml', release)
+        _, _, body = self.get(server, '/api/catalog')
+        self.assertEqual(json.loads(body)['releases'][0]['tracks'][0]['duration_seconds'], 159)
 
 
 if __name__ == '__main__':
