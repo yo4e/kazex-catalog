@@ -50,6 +50,27 @@ class AdoptedLyricsValidationTests(unittest.TestCase):
         (self.root / self.body_path).write_text('変更された本文')
         self.assertTrue(any('SHA256 mismatch' in x for x in self.check()))
 
+    def test_confirmed_no_lyrics_is_distinct_from_missing(self):
+        self.catalog['lyrics']['has_lyrics'] = False
+        for track in self.index['tracks']:
+            track.update(status='no_lyrics', text_path=None, sha256=None, adoption=None)
+        (self.root / self.body_path).unlink()
+        self.write(self.release, self.catalog)
+        self.write(self.index_path, self.index)
+        self.write(self.root / 'lyrics/collection.yaml', {'schema_version': 2, 'publication_scope': 'adopted_lyrics_only',
+            'counts': {'adopted_tracks': 0, 'pending_selection_tracks': 0, 'not_collected_tracks': 0, 'no_lyrics_tracks': 3}})
+        self.assertEqual([], self.check())
+
+    def test_no_lyrics_cannot_be_inferred_from_missing_text(self):
+        self.index['tracks'][2]['status'] = 'no_lyrics'
+        self.write(self.index_path, self.index)
+        self.assertTrue(any('requires release lyrics.has_lyrics=false' in x for x in self.check()))
+
+    def test_no_lyrics_release_cannot_keep_missing_tasks(self):
+        self.catalog['lyrics']['has_lyrics'] = False
+        self.write(self.release, self.catalog)
+        self.assertTrue(any('index status differs' in x for x in self.check()))
+
     def test_isrc_order_mismatch(self):
         self.index['tracks'].reverse()
         self.write(self.index_path, self.index)

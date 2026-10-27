@@ -24,8 +24,8 @@ jobs:
       - name: Validate catalog
         run: python scripts/validate_catalog.py
 
-      - name: Test adopted lyric validation
-        run: python -m unittest discover -s tests -p 'test_lyrics.py'
+      - name: Test catalog, viewer and public export
+        run: python -m unittest discover -s tests
 
       - name: Smoke test readiness checks
         run: |

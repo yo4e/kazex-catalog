@@ -72,10 +72,14 @@ def validate_lyrics(root: Path, release_files: list[Path]) -> list[str]:
             isrc, status = track.get('isrc'), track.get('status')
             if not isinstance(isrc, str):
                 continue
-            if status not in {'adopted', 'pending_selection', 'not_collected'}:
+            if status not in {'adopted', 'pending_selection', 'not_collected', 'no_lyrics'}:
                 error(path, f'{isrc}: invalid status')
                 continue
-            counts[status + '_tracks'] += 1
+            counts[status + '_tracks'] = counts.get(status + '_tracks', 0) + 1
+            if status == 'no_lyrics' and lyrics.get('has_lyrics') is not False:
+                error(path, f'{isrc}: no_lyrics requires release lyrics.has_lyrics=false')
+            if lyrics.get('has_lyrics') is False and status != 'no_lyrics':
+                error(path, f'{isrc}: release declares no lyrics but index status differs')
             if status != 'adopted':
                 if any(track.get(k) is not None for k in ('text_path', 'sha256', 'adoption')):
                     error(path, f'{isrc}: unadopted or uncollected tracks must not expose text or adoption metadata')

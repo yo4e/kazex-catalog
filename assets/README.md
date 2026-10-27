@@ -44,3 +44,5 @@ Gitは空ディレクトリを保持しないため、各サブディレクト�
 
 - [MRI — Instagram宣伝用の生成オフショット](artists/mri-music-resonance-imaging/concept-art/generated-offshots/README.md)
   — 休憩・スタジオ制作を描いたAI生成画像。プレビューとPNGへのリンクを掲載。
+
+- [KazeX Records — レーベルロゴと配色](label/README.md)

@@ -2,77 +2,77 @@ schema_version: 2
 release_id: unseen-dragon
 tracks:
   - isrc: QZPEW0826527
-    status: not_collected
+    status: no_lyrics
     text_path: null
     sha256: null
     adoption: null
   - isrc: QZPEW0826528
-    status: not_collected
+    status: no_lyrics
     text_path: null
     sha256: null
     adoption: null
   - isrc: QZPEW0826529
-    status: not_collected
+    status: no_lyrics
     text_path: null
     sha256: null
     adoption: null
   - isrc: QZPEW0826530
-    status: not_collected
+    status: no_lyrics
     text_path: null
     sha256: null
     adoption: null
   - isrc: QZPEW0826531
-    status: not_collected
+    status: no_lyrics
     text_path: null
     sha256: null
     adoption: null
   - isrc: QZPEW0826532
-    status: not_collected
+    status: no_lyrics
     text_path: null
     sha256: null
     adoption: null
   - isrc: QZPEW0826533
-    status: not_collected
+    status: no_lyrics
     text_path: null
     sha256: null
     adoption: null
   - isrc: QZPEW0826534
-    status: not_collected
+    status: no_lyrics
     text_path: null
     sha256: null
     adoption: null
   - isrc: QZPEW0826535
-    status: not_collected
+    status: no_lyrics
     text_path: null
     sha256: null
     adoption: null
   - isrc: QZPEW0826536
-    status: not_collected
+    status: no_lyrics
     text_path: null
     sha256: null
     adoption: null
   - isrc: QZPEW0826537
-    status: not_collected
+    status: no_lyrics
     text_path: null
     sha256: null
     adoption: null
   - isrc: QZPEW0826538
-    status: not_collected
+    status: no_lyrics
     text_path: null
     sha256: null
     adoption: null
   - isrc: QZPEW0826539
-    status: not_collected
+    status: no_lyrics
     text_path: null
     sha256: null
     adoption: null
   - isrc: QZPEW0826540
-    status: not_collected
+    status: no_lyrics
     text_path: null
     sha256: null
     adoption: null
   - isrc: QZPEW0826541
-    status: not_collected
+    status: no_lyrics
     text_path: null
     sha256: null
     adoption: null

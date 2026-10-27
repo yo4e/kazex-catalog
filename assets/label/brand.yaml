@@ -1,0 +1,13 @@
+name: KazeX Records
+logo:
+  github_path: assets/label/logos/kazex-records-logo.jpg
+  width_px: 908
+  height_px: 908
+  provided_on: "2026-10-27"
+colors:
+  accent: "#73b4b6"
+  background: "#d9e9d9"
+notes: >
+  本人提供のロゴ画像を原寸・無加工で保存。
+  アクセントは画像の外周20pxで最も多いRGB(115,180,182)から取得。
+  背景の緑はカタログ確認画面用。ロゴ原本の色は変更しない。

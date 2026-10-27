@@ -3,6 +3,12 @@ name: The Aerial Gravities
 sort_name: The Aerial Gravities
 status: active
 
+lyrics:
+  default_has_lyrics: false
+  basis: owner_confirmation
+  confirmed_on: "2026-10-27"
+  notes: "基本は全作品歌詞なし。例外は本人の個別指定で更新する。"
+
 description:
   short: >
     This music was not played. It was prompted, assembled, curated.

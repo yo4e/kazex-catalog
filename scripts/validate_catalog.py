@@ -146,6 +146,15 @@ for path in artist_files:
     validate_selected_asset(path, assets.get("epk"), "assets.epk")
     validate_candidate_assets(path, assets.get("artist_photo_candidates", []), "assets.artist_photo_candidates")
     validate_candidate_assets(path, assets.get("concept_art", []), "assets.concept_art")
+    lyrics = data.get("lyrics", {})
+    if not isinstance(lyrics, dict):
+        error(path, "lyrics must be a mapping")
+    elif lyrics:
+        if type(lyrics.get("default_has_lyrics")) is not bool:
+            error(path, "lyrics.default_has_lyrics must be a boolean")
+        if lyrics.get("basis") != "owner_confirmation":
+            error(path, "artist lyrics default requires owner_confirmation")
+        validate_date(path, lyrics.get("confirmed_on"), "lyrics.confirmed_on")
 
 release_ids: set[str] = set()
 for path in release_files:
@@ -195,6 +204,15 @@ for path in release_files:
     validate_pitch(path, data)
 
 errors.extend(validate_lyrics(ROOT, release_files))
+
+brand_path = ROOT / "assets/label/brand.yaml"
+if brand_path.is_file():
+    brand = load_yaml(brand_path)
+    validate_selected_asset(brand_path, brand.get("logo"), "logo")
+    for key in ("accent", "background"):
+        value = brand.get("colors", {}).get(key)
+        if not isinstance(value, str) or not re.fullmatch(r"#[0-9a-fA-F]{6}", value):
+            error(brand_path, f"colors.{key} must be a six-digit hex color")
 
 if errors:
     print("Catalog validation failed:")

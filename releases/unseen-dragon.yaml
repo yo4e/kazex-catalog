@@ -10,6 +10,9 @@ identifiers:
   catalog_number: "TOOLOST3001303312"
 
 lyrics:
+  has_lyrics: false
+  basis: owner_confirmation
+  confirmed_on: "2026-10-27"
   index_path: lyrics/unseen-dragon/index.yaml
 
 cover:

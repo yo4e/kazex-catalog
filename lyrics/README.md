@@ -1,6 +1,6 @@
 # 歌詞索引
 
-採用記録を確認できた歌詞だけを収録します。現在9曲を収録、36曲は採用版確認待ち、15曲は本文未取得です。
+採用記録を確認できた歌詞だけを収録します。現在9曲を収録、36曲は採用版確認待ちです。MRIの15曲は本人確認により歌詞なし（収集対象外）です。
 採用前の別版・制作サービスの出典リンク・私的原稿はこの索引に含めません。
 
 [歌詞管理仕様](../docs/LYRICS.md) / [収録状況](collection.yaml)
@@ -99,19 +99,19 @@
 
 [作品情報](../releases/unseen-dragon.yaml) / [歌詞データ](unseen-dragon/index.yaml)
 
-- 01. MRI_Music Resonance Imaging — 本文未取得
-- 02. Remove All Metal — 本文未取得
-- 03. Table Feed — 本文未取得
-- 04. Bore Mouth — 本文未取得
-- 05. Gradient Hammer — 本文未取得
-- 06. Hospital Piano — 本文未取得
-- 07. Out of Sync — 本文未取得
-- 08. Slice Selection — 本文未取得
-- 09. Signal Void — 本文未取得
-- 10. The Third Disc — 本文未取得
-- 11. Nerve Root — 本文未取得
-- 12. Unseen Dragon — 本文未取得
-- 13. Gated Silence — 本文未取得
-- 14. Image Reconstruction — 本文未取得
-- 15. Resonance After the Machine — 本文未取得
+- 01. MRI_Music Resonance Imaging — 歌詞なし（本人確認済み）
+- 02. Remove All Metal — 歌詞なし（本人確認済み）
+- 03. Table Feed — 歌詞なし（本人確認済み）
+- 04. Bore Mouth — 歌詞なし（本人確認済み）
+- 05. Gradient Hammer — 歌詞なし（本人確認済み）
+- 06. Hospital Piano — 歌詞なし（本人確認済み）
+- 07. Out of Sync — 歌詞なし（本人確認済み）
+- 08. Slice Selection — 歌詞なし（本人確認済み）
+- 09. Signal Void — 歌詞なし（本人確認済み）
+- 10. The Third Disc — 歌詞なし（本人確認済み）
+- 11. Nerve Root — 歌詞なし（本人確認済み）
+- 12. Unseen Dragon — 歌詞なし（本人確認済み）
+- 13. Gated Silence — 歌詞なし（本人確認済み）
+- 14. Image Reconstruction — 歌詞なし（本人確認済み）
+- 15. Resonance After the Machine — 歌詞なし（本人確認済み）
 
