@@ -31,7 +31,7 @@ cover:
 links:
   smartlink: "https://too.fm/ghostvelocity"
   spotify: "https://open.spotify.com/album/6mbDVw5ILYJQn2h4HltiVv"
-  apple_music: "https://music.apple.com/lu/album/ghost-velocity/6800608556"
+  apple_music: "https://music.apple.com/jp/album/ghost-velocity/6800608556"
   youtube: null
 
 generation:
@@ -41,66 +41,110 @@ generation:
 tracks:
   - title: Ghost Velocity
     isrc: "QZPEW0848423"
+    duration_seconds: 225
+    credits:
+      songwriters:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/502oqF0do3oY9aF4UN6ZEW"
       apple_music: "https://music.apple.com/jp/song/ghost-velocity/6800608558"
   - title: Slipstream Memorial
     isrc: "QZPEW0848424"
+    duration_seconds: 195
+    credits:
+      songwriters:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/11QijLoxpBVnWhxmzgmjP1"
       apple_music: "https://music.apple.com/jp/song/slipstream-memorial/6800608562"
   - title: Static in the Dive
     isrc: "QZPEW0848425"
+    duration_seconds: 233
+    credits:
+      songwriters:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/5B8vHcHnJKkQ1MryBwxuFO"
       apple_music: "https://music.apple.com/jp/song/static-in-the-dive/6800608568"
   - title: Blueburn Transit
     isrc: "QZPEW0848426"
+    duration_seconds: 195
+    credits:
+      songwriters:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/5plHJBXK99Xj3LOYuhyXiE"
       apple_music: "https://music.apple.com/jp/song/blueburn-transit/6800608573"
   - title: Phantom Turnaround
     isrc: "QZPEW0848427"
+    duration_seconds: 177
+    credits:
+      songwriters:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/6eQ0zbHTEeECC1K8K64a3e"
       apple_music: "https://music.apple.com/jp/song/phantom-turnaround/6800608575"
   - title: Terminal Vectors
     isrc: "QZPEW0848428"
+    duration_seconds: 240
+    credits:
+      songwriters:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/5DTXye7hL5dHyTTNJC3tYF"
       apple_music: "https://music.apple.com/jp/song/terminal-vectors/6800608576"
   - title: Afterimage Mechanics
     isrc: "QZPEW0848429"
+    duration_seconds: 213
+    credits:
+      songwriters:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/0qacNRUMqYlgkhpJVV2IBM"
       apple_music: "https://music.apple.com/jp/song/afterimage-mechanics/6800608581"
   - title: Nocturne for Falling Metal
     isrc: "QZPEW0848430"
+    duration_seconds: 131
+    credits:
+      songwriters:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/5YFihi3RNWDoiyGWIccnAc"
       apple_music: "https://music.apple.com/jp/song/nocturne-for-falling-metal/6800608852"
   - title: Scatter Signal Parade
     isrc: "QZPEW0848431"
+    duration_seconds: 232
+    credits:
+      songwriters:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/1XpaqZ2Ho4nDFBRceAlnJ0"
       apple_music: "https://music.apple.com/jp/song/scatter-signal-parade/6800608856"
   - title: Airspeed of the Absent
     isrc: "QZPEW0848432"
+    duration_seconds: 183
+    credits:
+      songwriters:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/0MGU0PhF6QxqQnXhilbC2a"
       apple_music: "https://music.apple.com/jp/song/airspeed-of-the-absent/6800608862"
   - title: Landing on Invisible Fire
     isrc: "QZPEW0848433"
+    duration_seconds: 309
+    credits:
+      songwriters:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/6q2hbkfjhAKGLuG3sROnyH"
@@ -173,3 +217,16 @@ notes_public: >
   2026-10-27にToo Lost登録smartlinkと公開ページの作品名を照合して追補。
   公開Apple Music日本ストアの同一アルバムで曲順・曲名を照合し、11曲のApple Musicリンクを追補。
   公開根拠: https://music.apple.com/jp/album/ghost-velocity/6800608556
+  2026-10-28補完: Apple MusicとSpotifyの公開アルバムデータで曲順・曲名・
+  登録済みの各曲IDを全11曲照合し、両サービスのdurationミリ秒値が全曲一致することを確認。
+  duration_secondsはApple MusicのMusicRecording構造化データにある秒単位表記を採用。
+  smartlinkの丸め表示はBlueburn Transitが3:16、Nocturne for Falling Metalが2:12、
+  Scatter Signal Paradeが3:53、Airspeed of the Absentが3:04、Landing on Invisible Fireが5:10で、
+  採用値より各1秒長い。音源原本の厳密な長さとは区別する。
+  全11曲のcredits.songwritersはApple Music公開アルバムデータのcomposer欄にある
+  Glamorous Fanを原表記で記録。作曲者としての登録情報であり、作詞・演奏・制作担当は推定しない。
+  GlamorousFan等の他表記との名寄せは行わず、既存C/Pラインは保持。
+  Apple Music作品URLは同一album IDを確認済みの日本ストアURLへ更新。
+  配信日・UPC・ISRC・Instrumental確認・画像候補・website.publish・pitchは変更していない。
+  公開根拠: https://open.spotify.com/album/6mbDVw5ILYJQn2h4HltiVv
+  公開根拠: https://too.fm/ghostvelocity

@@ -11,9 +11,11 @@ lyrics:
 
 description:
   short: >
+    KazeX Recordsの架空のジャズ・アーティスト。
+    音楽はプロンプトから組み立て、キュレーションされる。
+  long: |
     This music was not played. It was prompted, assembled, curated.
     The Aerial Gravities are imaginary. The fall is not.
-  long: null
 
 concept: >
   Modern Jazz Quartet (MJQ) の四重奏編成と4人の人物像を出発点に、
@@ -81,8 +83,8 @@ visual_identity:
 genres: []
 
 platforms:
-  spotify_artist_url: "https://open.spotify.com/intl-ja/artist/26VmtM7je1d3PqWMW5ZXzc"
-  apple_music_artist_url: "https://music.apple.com/lu/artist/the-aerial-gravities/1838453123"
+  spotify_artist_url: "https://open.spotify.com/artist/26VmtM7je1d3PqWMW5ZXzc"
+  apple_music_artist_url: "https://music.apple.com/jp/artist/the-aerial-gravities/1838453123"
   youtube_artist_url: null
 
 social:
@@ -207,3 +209,12 @@ notes_public: >
   現行リファレンスを参照して生成された候補として用途・寸法を登録し、代表アー写は未指定のまま維持。
   2026-10-26のGhost Velocity公開配信ページ調査で確認済みのApple Music Artist URLを登録。
   確認済みのLUストアURLを保持。YouTube公式artist URLは未確認のためnullを維持。
+  2026-10-28補完: description.longはSpotify公開BIOの紹介部分を原文で収録。
+  shortは同紹介文と既存の公開名義・ジャンル・レーベル情報による日本語要約。
+  BIOに残るNovelJam 2025のUpcoming告知は過去の記述であり、
+  official opening track指定の独立確認も未了のため、今回のプロフィール本文には含めない。
+  内部の人物設定を公開BIOへ転用していない。
+  Spotifyは同一artist IDの正規URL、Apple MusicはGhost Velocityの日本ストアから
+  同一artist ID・作品対応を確認した日本ストアURLへ更新。配信サービス側の内容は変更していない。
+  公開根拠: https://open.spotify.com/artist/26VmtM7je1d3PqWMW5ZXzc
+  公開根拠: https://music.apple.com/jp/artist/the-aerial-gravities/1838453123
