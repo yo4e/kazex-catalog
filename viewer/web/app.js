@@ -36,7 +36,12 @@ function gallery(a) {
   if(!a?.images.length)return '';
   return `<details class="image-section"><summary>画像を確認 <span class="muted small">${a.images.filter(i=>i.status!=='archived').length}点</span></summary><div class="gallery" data-gallery>${a.images.filter(i=>i.status!=='archived').map(imageCard).join('')}</div>${a.images.some(i=>i.status==='archived')?'<label class="archive-control"><input type="checkbox" id="show-archived"> 旧版・保管画像も表示する</label>':''}</details>`;
 }
-function imageCard(i) {return `<div class="image-card${i.kind==='アー写'?' artist-photo':''}">${badge(i.status)}<a href="${i.url}" target="_blank" rel="noreferrer"><img src="${i.url}" alt="${esc(i.title)}${isPending(i.status)?'（確認待ち）':''}" loading="lazy"></a><p>${esc(i.kind)} · ${esc(i.title)}</p></div>`;}
+function imageCard(i) {
+  const title=String(i.title||'').replaceAll('アー写','アーティスト画像');
+  const kind=i.kind==='アー写'?'アーティスト画像':i.kind==='参考画像'?'':i.kind;
+  const caption=[kind,title].filter(Boolean).join(' · ');
+  return `<div class="image-card${i.kind==='アー写'?' artist-photo':''}">${badge(i.status)}<a href="${i.url}" target="_blank" rel="noreferrer"><img src="${i.url}" alt="${esc(title)}${isPending(i.status)?'（確認待ち）':''}" loading="lazy"></a><p>${esc(caption)}</p></div>`;
+}
 function wireGallery(a) {
   const toggle=document.querySelector('#show-archived');if(toggle)toggle.onchange=()=>{document.querySelector('[data-gallery]').innerHTML=a.images.filter(i=>toggle.checked||i.status!=='archived').map(imageCard).join('');};
 }
@@ -58,7 +63,7 @@ function trackInfo(track) {
 }
 function artistHeading(a) {
   const hasCandidates=a.images.some(i=>i.kind==='アー写'&&i.status==='candidate');
-  const state=a.portrait?'アーティスト画像':hasCandidates?'アーティスト画像は未選択':'アー写は未登録';
+  const state=a.portrait?'アーティスト画像':hasCandidates?'アーティスト画像は未選択':'アーティスト画像は未登録';
   return `<div class="artist-heading"><div class="artist-portrait">${a.portrait?`<img src="${a.portrait.url}" alt="${esc(a.name)}のアーティスト画像">`:`<div class="portrait-placeholder"><span>${esc(a.name.slice(0,1))}</span><small>${state}</small></div>`}</div><div class="artist-intro"><p class="eyebrow">KAZEX RECORDS / ARTIST</p><h1>${esc(a.name)}</h1>${a.description?`<p class="artist-description">${esc(a.description)}</p>`:''}${a.biography?`<details class="artist-biography"><summary>プロフィールを読む</summary><p>${esc(a.biography)}</p></details>`:''}${serviceLinks(a.links,'アーティストの配信ページ')}<p class="portrait-state">${state}${hasCandidates&&!a.portrait?' · 下の「画像を確認」から候補を見られます。':''}</p></div></div>`;
 }
 function listView(params) {
@@ -103,6 +108,7 @@ async function detailView(rid,params,myToken) {
 function renderReading(params,privateAvailable) {
   const {r,track,versions}=detail;const target=document.querySelector('#reading');
   if(!versions.length){
+    if(track.instrumental===true){target.innerHTML='<div class="status-message">Instrumental</div>';return;}
     if(track.status==='no_lyrics'){target.replaceChildren();return;}
     const message=track.status==='pending_selection'
       ? (publicMode?'歌詞は確認待ちです。':privateAvailable?'この曲の歌詞候補はまだありません。':'私的候補を接続していません。')

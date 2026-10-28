@@ -73,6 +73,20 @@ class PublicViewerTests(unittest.TestCase):
             export(self.root, self.destination)
         self.assertEqual((self.destination / 'keep.txt').read_text(), 'retain')
 
+    def test_export_instrumental_requires_per_track_confirmation(self):
+        release = yaml.safe_load((self.root / 'releases/example.yaml').read_text())
+        release['lyrics']['has_lyrics'] = False
+        release['tracks'][0]['instrumental'] = {'basis': 'owner_confirmation', 'confirmed_on': '2026-10-28'}
+        release['tracks'].append({'title': 'New unconfirmed track', 'isrc': 'AA1234567891'})
+        self.fixture.write('releases/example.yaml', release)
+        export(self.root, self.destination)
+        raw = (self.destination / 'data/tracks.json').read_text()
+        tracks = json.loads(raw)
+        self.assertTrue(tracks[self.fixture.key]['instrumental'])
+        self.assertIsNone(tracks['example:AA1234567891']['instrumental'])
+        self.assertNotIn('owner_confirmation', raw)
+        self.assertNotIn('confirmed_on', raw)
+
     def test_new_profile_and_release_facts_do_not_export_unreviewed_fields(self):
         artist = yaml.safe_load((self.root / 'artists/example.yaml').read_text())
         artist['description'] = {'short': 'Public summary', 'long': 'Public biography', 'draft': 'NEVER_EXPORT'}

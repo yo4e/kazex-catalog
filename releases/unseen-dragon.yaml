@@ -33,6 +33,7 @@ generation:
 tracks:
   - title: MRI_Music Resonance Imaging
     isrc: "QZPEW0826527"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/1G7kgTeW6K89WiLG5oGAR4"
       youtube: "https://www.youtube.com/watch?v=eC9Z4qQ6QNQ"
@@ -43,84 +44,98 @@ tracks:
       cold urgency, 128 BPM, live percussion, stereo hammering, dark machine funk
   - title: Remove All Metal
     isrc: "QZPEW0826528"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/76wH3dp5jGljDuIkBnadBz"
       youtube: "https://www.youtube.com/watch?v=omGtc0aASTY"
     creative_prompt: *unseen_dragon_prompt
   - title: Table Feed
     isrc: "QZPEW0826529"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/0q8VptgwElZH2ys9b5cc7C"
       youtube: "https://www.youtube.com/watch?v=7RE-Oc_qxDo"
     creative_prompt: *unseen_dragon_prompt
   - title: Bore Mouth
     isrc: "QZPEW0826530"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/4kA9etD4E1L2T6kB5WH8Cu"
       youtube: "https://www.youtube.com/watch?v=ubpMWBSRcko"
     creative_prompt: *unseen_dragon_prompt
   - title: Gradient Hammer
     isrc: "QZPEW0826531"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/4vbc4Jk07DenwlRfh5OGIt"
       youtube: "https://www.youtube.com/watch?v=3ECmdRGFJn8"
     creative_prompt: *unseen_dragon_prompt
   - title: Hospital Piano
     isrc: "QZPEW0826532"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/7rniEoJYt4vRziHuRpaMtg"
       youtube: "https://www.youtube.com/watch?v=-GfcCMZMHOw"
     creative_prompt: *unseen_dragon_prompt
   - title: Out of Sync
     isrc: "QZPEW0826533"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/2EBUlOncT9YzqUE01Q7fGN"
       youtube: "https://www.youtube.com/watch?v=hqmaLSoJZd4"
     creative_prompt: *unseen_dragon_prompt
   - title: Slice Selection
     isrc: "QZPEW0826534"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/2loP6YhYWuGPbxOIpTGcjS"
       youtube: "https://www.youtube.com/watch?v=CMimBV8SB0w"
     creative_prompt: *unseen_dragon_prompt
   - title: Signal Void
     isrc: "QZPEW0826535"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/7oudzgZVjvblY3PKb5leCc"
       youtube: "https://www.youtube.com/watch?v=LMpivIC23so"
     creative_prompt: *unseen_dragon_prompt
   - title: The Third Disc
     isrc: "QZPEW0826536"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/2mJTCuHs9c1zOFWPweEN8H"
       youtube: "https://www.youtube.com/watch?v=bCGyls2-ZNU"
     creative_prompt: *unseen_dragon_prompt
   - title: Nerve Root
     isrc: "QZPEW0826537"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/0sA4tUeGIBT0dFm8GCJUwz"
       youtube: "https://www.youtube.com/watch?v=3DP69vEKuwQ"
     creative_prompt: *unseen_dragon_prompt
   - title: Unseen Dragon
     isrc: "QZPEW0826538"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/5NrxuGQGHzAoXHqw3u9aNh"
       youtube: "https://www.youtube.com/watch?v=vF5DykTw4js"
     creative_prompt: *unseen_dragon_prompt
   - title: Gated Silence
     isrc: "QZPEW0826539"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/2UxeupCNXmTOkmPVHb5Qhx"
       youtube: "https://www.youtube.com/watch?v=NMRTD-HbFgI"
     creative_prompt: *unseen_dragon_prompt
   - title: Image Reconstruction
     isrc: "QZPEW0826540"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/1Sdsow0XPH30aGFdmtGNyP"
       youtube: "https://www.youtube.com/watch?v=yl_vWnKF8Dc"
     creative_prompt: *unseen_dragon_prompt
   - title: Resonance After the Machine
     isrc: "QZPEW0826541"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/7a1uXEumlQJzNm5Rf1oAEb"
       youtube: "https://www.youtube.com/watch?v=6xooEAZdXY4"

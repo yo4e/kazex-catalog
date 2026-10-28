@@ -66,6 +66,27 @@ class AdoptedLyricsValidationTests(unittest.TestCase):
         self.write(self.index_path, self.index)
         self.assertTrue(any('requires release lyrics.has_lyrics=false' in x for x in self.check()))
 
+    def test_instrumental_confirmation_is_checked_without_a_lyrics_index(self):
+        extra = self.root / 'releases/instrumental.yaml'
+        release = {'lyrics': {'has_lyrics': False}, 'tracks': [{'isrc': 'AA1234567893',
+            'instrumental': {'basis': 'owner_confirmation', 'confirmed_on': '2026-10-28'}}]}
+        self.write(extra, release)
+        self.assertEqual([], validate_lyrics(self.root, [self.release, extra]))
+        for value in [True, {'basis': 'inferred', 'confirmed_on': '2026-10-28'},
+                      {'basis': 'owner_confirmation', 'confirmed_on': '2026-02-30'}]:
+            with self.subTest(value=value):
+                release['tracks'][0]['instrumental'] = value
+                self.write(extra, release)
+                self.assertTrue(any('instrumental' in x for x in validate_lyrics(self.root, [self.release, extra])))
+
+    def test_instrumental_confirmation_cannot_conflict_with_lyric_adoption(self):
+        self.catalog['tracks'][0]['instrumental'] = {'basis': 'owner_confirmation', 'confirmed_on': '2026-10-28'}
+        self.catalog['lyrics']['has_lyrics'] = True
+        self.write(self.release, self.catalog)
+        errors = self.check()
+        self.assertTrue(any('conflicts with has_lyrics=true' in x for x in errors))
+        self.assertTrue(any('requires no_lyrics in the index' in x for x in errors))
+
     def test_no_lyrics_release_cannot_keep_missing_tasks(self):
         self.catalog['lyrics']['has_lyrics'] = False
         self.write(self.release, self.catalog)

@@ -41,56 +41,67 @@ generation:
 tracks:
   - title: Ghost Velocity
     isrc: "QZPEW0848423"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/502oqF0do3oY9aF4UN6ZEW"
       apple_music: "https://music.apple.com/jp/song/ghost-velocity/6800608558"
   - title: Slipstream Memorial
     isrc: "QZPEW0848424"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/11QijLoxpBVnWhxmzgmjP1"
       apple_music: "https://music.apple.com/jp/song/slipstream-memorial/6800608562"
   - title: Static in the Dive
     isrc: "QZPEW0848425"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/5B8vHcHnJKkQ1MryBwxuFO"
       apple_music: "https://music.apple.com/jp/song/static-in-the-dive/6800608568"
   - title: Blueburn Transit
     isrc: "QZPEW0848426"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/5plHJBXK99Xj3LOYuhyXiE"
       apple_music: "https://music.apple.com/jp/song/blueburn-transit/6800608573"
   - title: Phantom Turnaround
     isrc: "QZPEW0848427"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/6eQ0zbHTEeECC1K8K64a3e"
       apple_music: "https://music.apple.com/jp/song/phantom-turnaround/6800608575"
   - title: Terminal Vectors
     isrc: "QZPEW0848428"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/5DTXye7hL5dHyTTNJC3tYF"
       apple_music: "https://music.apple.com/jp/song/terminal-vectors/6800608576"
   - title: Afterimage Mechanics
     isrc: "QZPEW0848429"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/0qacNRUMqYlgkhpJVV2IBM"
       apple_music: "https://music.apple.com/jp/song/afterimage-mechanics/6800608581"
   - title: Nocturne for Falling Metal
     isrc: "QZPEW0848430"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/5YFihi3RNWDoiyGWIccnAc"
       apple_music: "https://music.apple.com/jp/song/nocturne-for-falling-metal/6800608852"
   - title: Scatter Signal Parade
     isrc: "QZPEW0848431"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/1XpaqZ2Ho4nDFBRceAlnJ0"
       apple_music: "https://music.apple.com/jp/song/scatter-signal-parade/6800608856"
   - title: Airspeed of the Absent
     isrc: "QZPEW0848432"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/0MGU0PhF6QxqQnXhilbC2a"
       apple_music: "https://music.apple.com/jp/song/airspeed-of-the-absent/6800608862"
   - title: Landing on Invisible Fire
     isrc: "QZPEW0848433"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/6q2hbkfjhAKGLuG3sROnyH"
       apple_music: "https://music.apple.com/jp/song/landing-on-invisible-fire/6800608880"

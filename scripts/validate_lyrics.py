@@ -41,6 +41,26 @@ def validate_lyrics(root: Path, release_files: list[Path]) -> list[str]:
         if not isinstance(lyrics, dict):
             error(release_path, "lyrics must be a mapping")
             continue
+        catalog = release.get('tracks', [])
+        if not isinstance(catalog, list):
+            error(release_path, 'tracks must be a list')
+            continue
+        for track in catalog:
+            if not isinstance(track, dict) or track.get('instrumental') is None:
+                continue
+            confirmation = track['instrumental']
+            if not isinstance(confirmation, dict):
+                error(release_path, 'instrumental must be a confirmation mapping or null')
+                continue
+            fields(release_path, confirmation, {'basis', 'confirmed_on'})
+            if confirmation.get('basis') != 'owner_confirmation':
+                error(release_path, 'instrumental requires owner_confirmation')
+            try:
+                dt.date.fromisoformat(confirmation.get('confirmed_on'))
+            except (TypeError, ValueError):
+                error(release_path, 'instrumental confirmed_on must be an ISO date string')
+            if lyrics.get('has_lyrics') is True:
+                error(release_path, 'instrumental confirmation conflicts with has_lyrics=true')
         ref = lyrics.get("index_path")
         if ref is None:
             continue
@@ -76,6 +96,9 @@ def validate_lyrics(root: Path, release_files: list[Path]) -> list[str]:
                 error(path, f'{isrc}: invalid status')
                 continue
             counts[status + '_tracks'] = counts.get(status + '_tracks', 0) + 1
+            if status != 'no_lyrics' and any(t.get('isrc') == isrc and t.get('instrumental') is not None
+                                           for t in catalog if isinstance(t, dict)):
+                error(path, f'{isrc}: instrumental confirmation requires no_lyrics in the index')
             if status == 'no_lyrics' and lyrics.get('has_lyrics') is not False:
                 error(path, f'{isrc}: no_lyrics requires release lyrics.has_lyrics=false')
             if lyrics.get('has_lyrics') is False and status != 'no_lyrics':

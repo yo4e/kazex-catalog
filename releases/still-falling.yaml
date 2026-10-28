@@ -32,56 +32,67 @@ generation:
 tracks:
   - title: Still Falling
     isrc: "QT4K42565607"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/6RQFbCHBJzcoKF0WgxtVQW"
       apple_music: "https://music.apple.com/jp/song/still-falling/1838453124"
   - title: Aphelion Waltz
     isrc: "QT4K42565608"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/7BvJKuQIns3IEOLqNcr3Ob"
       apple_music: "https://music.apple.com/jp/song/aphelion-waltz/1838453132"
   - title: Weightless by Design
     isrc: "QT4K42565609"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/7ccdlgZZ7TytnxNLvaPYzO"
       apple_music: "https://music.apple.com/jp/song/weightless-by-design/1838453439"
   - title: Elliptical Night
     isrc: "QT4K42565610"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/2d27bXrrSPD5mmsnPFfccS"
       apple_music: "https://music.apple.com/jp/song/elliptical-night/1838453440"
   - title: Brief Orbit
     isrc: "QT4K42565611"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/5xBoDOtv4HRCCqzDnBLfFN"
       apple_music: "https://music.apple.com/jp/song/brief-orbit/1838453443"
   - title: Descent in Silence
     isrc: "QT4K42565612"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/1pLKZXKgYix4TlbLqFh7RP"
       apple_music: "https://music.apple.com/jp/song/descent-in-silence/1838453445"
   - title: Drifted Light
     isrc: "QT4K42565613"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/26tgIA2Ylkz2q2dHwjnPQW"
       apple_music: "https://music.apple.com/jp/song/drifted-light/1838453447"
   - title: Minor Phase
     isrc: "QT4K42565614"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/4JM5orkLMMAQyGm5Tdujnr"
       apple_music: "https://music.apple.com/jp/song/minor-phase/1838453448"
   - title: Vacuum Lullaby
     isrc: "QT4K42565615"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/6rRwr42IWov1HfoLyjjgSQ"
       apple_music: "https://music.apple.com/jp/song/vacuum-lullaby/1838453449"
   - title: In the Slowest Spin
     isrc: "QT4K42565616"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/2aTbXejx2IyxwHClMRW2zC"
       apple_music: "https://music.apple.com/jp/song/in-the-slowest-spin/1838453450"
   - title: Landing, Eventually
     isrc: "QT4K42565606"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/6U0DxfOfNId97GCMrBZiuw"
       apple_music: "https://music.apple.com/jp/song/landing-eventually/1838453452"

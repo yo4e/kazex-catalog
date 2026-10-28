@@ -32,56 +32,67 @@ generation:
 tracks:
   - title: Drift Logic
     isrc: "QT4K42594258"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/2jvTP6I0vJJf3na8GDDFnf"
       apple_music: "https://music.apple.com/jp/song/drift-logic/1841839785"
   - title: Terminal Whispers
     isrc: "QT4K42594254"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/0XDL3cjq4ppwo3djKyCUWv"
       apple_music: "https://music.apple.com/jp/song/terminal-whispers/1841839788"
   - title: Glassfall Sonata
     isrc: "QT4K42594261"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/7icRdasvslJL11bWpkxwUE"
       apple_music: "https://music.apple.com/jp/song/glassfall-sonata/1841839789"
   - title: Post-Gravity Halo
     isrc: "QT4K42594253"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/2S9b53VnjpNa6fNRpm7Uvk"
       apple_music: "https://music.apple.com/jp/song/post-gravity-halo/1841839793"
   - title: Velvet Discontinuity
     isrc: "QT4K42594257"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/14FNC4iog13NOR6QH7Mfhf"
       apple_music: "https://music.apple.com/jp/song/velvet-discontinuity/1841839794"
   - title: Echoes in Zero Air
     isrc: "QT4K42594260"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/1ZzDVj8QMvtgPxJljfH1Aq"
       apple_music: "https://music.apple.com/jp/song/echoes-in-zero-air/1841840336"
   - title: Logic Sleeps Here
     isrc: "QT4K42594255"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/17ioDnMl5bN17xiEO7VZUV"
       apple_music: "https://music.apple.com/jp/song/logic-sleeps-here/1841840337"
   - title: Liminal Machinery
     isrc: "QT4K42594252"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/2ZVm9WbsrgPGpFaHi0MFEZ"
       apple_music: "https://music.apple.com/jp/song/liminal-machinery/1841840339"
   - title: Fictional Physics
     isrc: "QT4K42594259"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/5PEzGpxmcrXI63OHsHaloo"
       apple_music: "https://music.apple.com/jp/song/fictional-physics/1841840341"
   - title: Asynchronous Sky
     isrc: "QT4K42594256"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/4gi5rA9qIF7U43Q1RIXC6I"
       apple_music: "https://music.apple.com/jp/song/asynchronous-sky/1841840343"
   - title: No Floor for the Falling
     isrc: "QT4K42594262"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/1f8iaJBS5L4PlJv2bvu1or"
       apple_music: "https://music.apple.com/jp/song/no-floor-for-the-falling/1841840345"

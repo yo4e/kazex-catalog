@@ -16,6 +16,7 @@ NoZomを最初の例として、既存のYAMLを正本に情報を補います�
 | 曲の表示時間 | `tracks[].duration_seconds` | 分:秒。正の整数、未確認なら省略またはnull |
 | Songwriter登録表記 | `tracks[].credits.songwriters` | 名前の配列。表記を保持し、作詞・作曲やartist IDを推定しない |
 | 歌詞 | `lyrics.index_path` → 曲ごとの状態と採用本文 | 採用済み／確認待ち／未取得／歌詞なしを区別 |
+| インスト確認 | `tracks[].instrumental` の本人確認と日付 | 明示確認された曲だけInstrumentalと表示。将来曲へ継承しない |
 | 確認元・差異 | `notes_public`、公開素材のREADME | 保守用根拠。サイト生成時は丸ごと転送しない |
 
 既存レコードに新しい任意フィールドがなくても読み込めます。リンク表示はサービス・対象種別・URL形式を許可リストで制限し、任意の出典URLや追跡クエリは表示しません。

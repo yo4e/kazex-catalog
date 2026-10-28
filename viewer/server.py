@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import collections
+import datetime as dt
 import hashlib
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import json
@@ -18,6 +19,16 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 WEB = Path(__file__).resolve().parent / 'web'
 HASH = lambda data: hashlib.sha256(data).hexdigest()
+
+
+def confirmed_instrumental(value):
+    if not isinstance(value, dict) or value.get('basis') != 'owner_confirmation':
+        return None
+    try:
+        dt.date.fromisoformat(value.get('confirmed_on'))
+    except (TypeError, ValueError):
+        return None
+    return True
 
 
 def spotify_track_id(value):
@@ -182,6 +193,7 @@ class Catalog:
                     status = 'no_lyrics' if has_lyrics is False else saved.get('status') or 'not_collected'
                     public = {'key': key, 'number': number, 'title': track['title'], 'isrc': isrc,
                               'status': status, 'candidate_count': len(self.private.versions.get(key, [])),
+                              'instrumental': confirmed_instrumental(track.get('instrumental')),
                               'duration_seconds': track.get('duration_seconds'),
                               'songwriters': text_list((track.get('credits') or {}).get('songwriters')),
                               'links': service_links(track.get('links') or {}, 'track'),

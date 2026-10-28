@@ -32,56 +32,67 @@ generation:
 tracks:
   - title: Paradoxical Opening
     isrc: "QT62U2503675"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/0ujhhHvjcPbUfgW1QMihms"
       apple_music: "https://music.apple.com/jp/song/paradoxical-opening/1843124816"
   - title: Team Alchemy
     isrc: "QT62U2503665"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/3kxYb14DciiAR9PWy3n8Zu"
       apple_music: "https://music.apple.com/jp/song/team-alchemy/1843124818"
   - title: Plot Constellations
     isrc: "QT62U2503666"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/63inRCQfeWkPexF3WUbGzD"
       apple_music: "https://music.apple.com/jp/song/plot-constellations/1843124820"
   - title: First Ink, Last Sleep
     isrc: "QT62U2503667"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/3z1rEUUFEqCKVJgtQdIuhU"
       apple_music: "https://music.apple.com/jp/song/first-ink-last-sleep/1843124824"
   - title: Syntax Overdrive
     isrc: "QT62U2503668"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/6C4UAW8PoKWPvh6P6rizj4"
       apple_music: "https://music.apple.com/jp/song/syntax-overdrive/1843124825"
   - title: Margins of Doubt
     isrc: "QT62U2503669"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/5JQzDXt8jMuoYlLZ4H7AqS"
       apple_music: "https://music.apple.com/jp/song/margins-of-doubt/1843125126"
   - title: Binding Ritual
     isrc: "QT62U2503670"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/6y8de1810VbL6Tx7rGrvB9"
       apple_music: "https://music.apple.com/jp/song/binding-ritual/1843125129"
   - title: Prepress Echoes
     isrc: "QT62U2503671"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/6ZCvIQqAB7DcjJwpVyL5KD"
       apple_music: "https://music.apple.com/jp/song/prepress-echoes/1843125131"
   - title: Judged by Silence
     isrc: "QT62U2503672"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/2DHyCvMRnYug4GA46m1TFp"
       apple_music: "https://music.apple.com/jp/song/judged-by-silence/1843125133"
   - title: Applause Refracted
     isrc: "QT62U2503673"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/6dklGVeLxTKoeREik9M1It"
       apple_music: "https://music.apple.com/jp/song/applause-refracted/1843125135"
   - title: The Bookjam Paradox
     isrc: "QT62U2503674"
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/2ubtvHxV0FTVPLfUAEJdeY"
       apple_music: "https://music.apple.com/jp/song/the-bookjam-paradox/1843125137"

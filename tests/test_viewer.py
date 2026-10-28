@@ -221,11 +221,32 @@ class LocalReviewTests(unittest.TestCase):
         server = self.start()
         _, _, body = self.get(server, '/api/catalog')
         self.assertEqual(json.loads(body)['releases'][0]['tracks'][0]['status'], 'no_lyrics')
+        self.assertIsNone(json.loads(body)['releases'][0]['tracks'][0]['instrumental'])
         release = yaml.safe_load((self.repo / 'releases/example.yaml').read_text())
         release['lyrics']['has_lyrics'] = True
         self.write('releases/example.yaml', release)
         _, _, body = self.get(server, '/api/catalog')
         self.assertEqual(json.loads(body)['releases'][0]['tracks'][0]['status'], 'pending_selection')
+
+    def test_instrumental_confirmation_does_not_apply_to_future_tracks(self):
+        release = yaml.safe_load((self.repo / 'releases/example.yaml').read_text())
+        release['lyrics']['has_lyrics'] = False
+        release['tracks'][0]['instrumental'] = {'basis': 'owner_confirmation', 'confirmed_on': '2026-10-28'}
+        release['tracks'].append({'title': 'New unconfirmed track', 'isrc': 'AA1234567891'})
+        self.write('releases/example.yaml', release)
+        server = self.start(private=False)
+        _, _, body = self.get(server, '/api/catalog')
+        tracks = json.loads(body)['releases'][0]['tracks']
+        self.assertTrue(tracks[0]['instrumental'])
+        self.assertIsNone(tracks[1]['instrumental'])
+        self.assertEqual([t['status'] for t in tracks], ['no_lyrics', 'no_lyrics'])
+        for value in [True, {'basis': 'inferred', 'confirmed_on': '2026-10-28'},
+                      {'basis': 'owner_confirmation', 'confirmed_on': '2026-02-30'}]:
+            with self.subTest(value=value):
+                release['tracks'][0]['instrumental'] = value
+                self.write('releases/example.yaml', release)
+                _, _, body = self.get(server, '/api/catalog')
+                self.assertIsNone(json.loads(body)['releases'][0]['tracks'][0]['instrumental'])
 
     def test_listening_links_use_only_exact_registered_service_formats(self):
         ident = 'A' * 22
