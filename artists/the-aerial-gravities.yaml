@@ -107,7 +107,7 @@ assets:
   epk_drive_folder_url: "https://drive.google.com/drive/folders/1A_cBBDzFw9Ki3R5h-YxpSTeo4uWX2hR3"
   releases_drive_folder_url: "https://drive.google.com/drive/folders/16Iops57vn-5pdXh2P9f8ax1-PciTTTdv"
   artist_image:
-    github_path: null
+    github_path: assets/artists/the-aerial-gravities/artist-photos/The_Aerial_Gravities_Band_Group_Candidate_2026-10-25.png
     web_url: null
     drive_url: null
   logo:
@@ -120,7 +120,7 @@ assets:
     drive_url: null
   artist_photo_candidates:
     - github_path: assets/artists/the-aerial-gravities/artist-photos/The_Aerial_Gravities_Band_Group_Candidate_2026-10-25.png
-      status: candidate
+      status: selected
       role: band-group
     - github_path: assets/artists/the-aerial-gravities/artist-photos/2026-10-25-vertical-promotion/The_Aerial_Gravities_Instagram_01_Backstage_2026-10-25.png
       status: candidate
