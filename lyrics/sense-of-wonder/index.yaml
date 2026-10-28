@@ -2,7 +2,9 @@ schema_version: 2
 release_id: sense-of-wonder
 tracks:
   - isrc: QT4K52590984
-    status: pending_selection
-    text_path: null
-    sha256: null
-    adoption: null
+    status: adopted
+    text_path: lyrics/sense-of-wonder/qt4k52590984.txt
+    sha256: c5f2a8265737118bbfbfd9ac90de4bb725857703147895f25496b3625d4aa32d
+    adoption:
+      basis: owner_confirmation
+      verified_on: '2026-10-28'
