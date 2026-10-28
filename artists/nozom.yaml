@@ -46,7 +46,7 @@ assets:
     - github_path: assets/artists/nozom/artist-photos/nozom-representative-2026-10-28.png
       status: selected
       role: representative
-      description: 青い路地に立つNoZom。本人指定の代表アー写。
+      description: 青い路地に立つNoZom。本人指定のアーティスト画像。
       width_px: 1376
       height_px: 768
   concept_art: []

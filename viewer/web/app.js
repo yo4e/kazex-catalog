@@ -60,8 +60,8 @@ function trackInfo(track) {
 }
 function artistHeading(a) {
   const hasCandidates=a.images.some(i=>i.kind==='アー写'&&i.status==='candidate');
-  const state=a.portrait?'代表アー写':hasCandidates?'代表アー写は未選択':'アー写は未登録';
-  return `<div class="artist-heading"><div class="artist-portrait">${a.portrait?`<img src="${a.portrait.url}" alt="${esc(a.name)}の代表アー写">`:`<div class="portrait-placeholder"><span>${esc(a.name.slice(0,1))}</span><small>${state}</small></div>`}</div><div class="artist-intro"><p class="eyebrow">KAZEX RECORDS / ARTIST</p><h1>${esc(a.name)}</h1>${a.description?`<p class="artist-description">${esc(a.description)}</p>`:''}${a.biography?`<details class="artist-biography"><summary>プロフィールを読む</summary><p>${esc(a.biography)}</p></details>`:''}${serviceLinks(a.links,'アーティストの配信ページ')}<p class="portrait-state">${state}${hasCandidates&&!a.portrait?' · 下の「画像を確認」から候補を見られます。':''}</p>${a.default_has_lyrics===false?'<span class="badge no_lyrics">基本は歌詞なし · 例外は個別指定</span>':''}</div></div>`;
+  const state=a.portrait?'アーティスト画像':hasCandidates?'アーティスト画像は未選択':'アー写は未登録';
+  return `<div class="artist-heading"><div class="artist-portrait">${a.portrait?`<img src="${a.portrait.url}" alt="${esc(a.name)}のアーティスト画像">`:`<div class="portrait-placeholder"><span>${esc(a.name.slice(0,1))}</span><small>${state}</small></div>`}</div><div class="artist-intro"><p class="eyebrow">KAZEX RECORDS / ARTIST</p><h1>${esc(a.name)}</h1>${a.description?`<p class="artist-description">${esc(a.description)}</p>`:''}${a.biography?`<details class="artist-biography"><summary>プロフィールを読む</summary><p>${esc(a.biography)}</p></details>`:''}${serviceLinks(a.links,'アーティストの配信ページ')}<p class="portrait-state">${state}${hasCandidates&&!a.portrait?' · 下の「画像を確認」から候補を見られます。':''}</p>${a.default_has_lyrics===false?'<span class="badge no_lyrics">基本は歌詞なし · 例外は個別指定</span>':''}</div></div>`;
 }
 function listView(params) {
   const aid=params.get('artist')||'',query=params.get('q')||'',status=params.get('status')||'';
