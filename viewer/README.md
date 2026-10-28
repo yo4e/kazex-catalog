@@ -71,15 +71,14 @@ python scripts/validate_catalog.py
 
 ## レーベル表示と聴取先
 
-- `assets/label/brand.yaml` がロゴ・配色の参照元。ロゴは原寸のJPEGを保持し、画面だけ正方形枠とcontainで表示する。ジャケット・アー写も元の縦横比を保つ。
+- `assets/label/brand.yaml` がロゴ・配色の参照元。ロゴ・ジャケットは正方形枠のcontain表示。代表アー写と画像一覧のアー写は正方形枠をcoverで埋め、中央を基準に端を切り取る。原画像は変更しない。
 - アーティストのトップには `assets.artist_image.github_path` の指定済み画像を1枚表示する。candidateや複数selectedから勝手に代表を選ばない。未指定は未選択／未登録と表示する。
 - 公開プロフィールは `description.long` から折りたたみ表示する。「作品情報」はrelease YAMLの形式・ジャンル・レーベル・識別子・C/Pを表示する。曲の表示時間とSongwriter原表記もYAMLから読み、不明値は補わない。詳細は [カタログ補完手順](../docs/CATALOG_COMPLETION.md) を参照。
 - Spotify / Apple Music / Amazon Musicの作品・曲リンク、Spotify / Apple Musicのアーティストリンクは登録済みの正規URLのみ表示する。任意URLや追跡クエリ、原資料の出典リンクは転送しない。
 - MRI・TAG・Satori Chandraは本人指定により基本歌詞なし。作品の個別指定をアーティストの基本値より優先する。
 - Too Lostは `releases/*.yaml` の `links.smartlink` のみ使用する。Spotifyは各曲の正式な `tracks[].links.spotify` にあるtrack IDのみ。検索やアルバムIDからの推測を行わない。
-- Spotifyの公式iframeは「プレーヤーを表示」を押すまで作成しない。自動再生なし。別の曲に切り替えると破棄する。
-- iframeへ渡すのは公開track IDだけ。referrerを送らず、私的候補本文・出典・ローカルURLは渡さない。外部リンクもnoopener/noreferrer。CSPで許可するframe先は公式Spotifyのみ、ローカルAPIのHost/Origin制限は維持する。
-- 埋め込みの仕様根拠: [Spotify公式ドキュメント](https://developer.spotify.com/documentation/embeds/tutorials/creating-an-embed)。Spotify側の提供状態によっては埋め込みを読めない場合があり、そのときも通常の聴取リンクを利用できる。
+- 曲の聴取先は「Spotify ↗」「Apple Music ↗」「Amazon Music ↗」の順に、登録があるサービスだけを表示する。Spotifyのプレーヤーと重複導線は表示しない。
+- 外部リンクはnoopener/noreferrer、referrerpolicy=no-referrer。私的候補本文・出典・ローカルURLは渡さず、ローカルAPIのHost/Origin制限を維持する。
 
 ## GitHub Pages版
 

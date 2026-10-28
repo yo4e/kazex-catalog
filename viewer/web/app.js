@@ -37,7 +37,7 @@ function gallery(a) {
   if(!a?.images.length)return '';
   return `<details class="image-section"><summary>画像を確認 <span class="muted small">${a.images.filter(i=>i.status!=='archived').length}点 · 候補・採用状態を表示</span></summary><div class="gallery" data-gallery>${a.images.filter(i=>i.status!=='archived').map(imageCard).join('')}</div>${a.images.some(i=>i.status==='archived')?'<label class="archive-control"><input type="checkbox" id="show-archived"> 旧版・保管画像も表示する</label>':''}</details>`;
 }
-function imageCard(i) {return `<div class="image-card">${badge(i.status)}<a href="${i.url}" target="_blank" rel="noreferrer"><img src="${i.url}" alt="${esc(i.title)}（${esc(names[i.status])}）" loading="lazy"></a><p>${esc(i.kind)} · ${esc(i.title)}</p><button data-image="${i.id}">${i.status==='candidate'?'この画像の採用依頼をコピー':'この画像への確認依頼をコピー'}</button></div>`;}
+function imageCard(i) {return `<div class="image-card${i.kind==='アー写'?' artist-photo':''}">${badge(i.status)}<a href="${i.url}" target="_blank" rel="noreferrer"><img src="${i.url}" alt="${esc(i.title)}（${esc(names[i.status])}）" loading="lazy"></a><p>${esc(i.kind)} · ${esc(i.title)}</p><button data-image="${i.id}">${i.status==='candidate'?'この画像の採用依頼をコピー':'この画像への確認依頼をコピー'}</button></div>`;}
 function wireGallery(a) {
   const wire=()=>document.querySelectorAll('[data-image]').forEach(b=>b.onclick=()=>{const i=a.images.find(i=>i.id===b.dataset.image);request(`${i.status==='candidate'?'画像の採用依頼':'画像の確認依頼'}\nアーティスト：${a.name}\n画像ID：${i.id}\n画像：${i.path}\n現在の状態：${names[i.status]}\nSHA256：${i.sha256}\n\n${i.status==='candidate'?'この候補画像を採用してください。':'この画像について確認をお願いします。'}`);});
   wire();const toggle=document.querySelector('#show-archived');if(toggle)toggle.onchange=()=>{document.querySelector('[data-gallery]').innerHTML=a.images.filter(i=>toggle.checked||i.status!=='archived').map(imageCard).join('');wire();};
@@ -56,7 +56,7 @@ function releaseInfo(r) {
 function trackInfo(track) {
   const seconds=track.duration_seconds;
   const duration=Number.isInteger(seconds)&&seconds>0?`${Math.floor(seconds/60)}:${String(seconds%60).padStart(2,'0')}`:null;
-  return `${duration?`<p class="track-fact">配信表示の長さ：${duration}</p>`:''}${track.songwriters?.length?`<p class="track-fact">ソングライター（登録表記）：${esc(track.songwriters.join(' / '))}</p>`:''}${serviceLinks((track.links||[]).filter(link=>link.service!=='spotify'),'この曲の配信サービス')}`;
+  return `${duration?`<p class="track-fact">配信表示の長さ：${duration}</p>`:''}${track.songwriters?.length?`<p class="track-fact">ソングライター（登録表記）：${esc(track.songwriters.join(' / '))}</p>`:''}${serviceLinks(track.links,'この曲の配信サービス')}`;
 }
 function artistHeading(a) {
   const hasCandidates=a.images.some(i=>i.kind==='アー写'&&i.status==='candidate');
@@ -86,29 +86,12 @@ function diffIndices(left,right) {
   return [x,y];
 }
 function bodyHTML(v,changed,compare) {return `<section><p class="body-label">${esc(v.displayLabel)}</p>${compare?`<div class="lyric-copy" aria-label="${esc(v.displayLabel)}の歌詞">${v.body.split('\n').map((line,i)=>`<span class="lyric-line ${changed.has(i)?'changed':''}">${esc(line)||'\u00a0'}</span>`).join('')}</div>`:`<pre class="lyric-copy" aria-label="歌詞本文">${esc(v.body)}</pre>`}</section>`;}
-function listening(track) {
-  if(!track.spotify_id)return '<p class="small muted">Spotifyの曲リンクは未登録です。</p>';
-  return `<div class="listening"><div class="listen-actions"><button id="load-spotify">Spotifyプレーヤーを表示</button><a href="https://open.spotify.com/track/${track.spotify_id}" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Spotifyで開く ↗</a></div><p class="small muted">プレーヤーはクリック時に読み込みます。自動再生はしません。</p><div id="spotify-frame"></div></div>`;
-}
-function wirePlayer(track) {
-  const button=document.querySelector('#load-spotify');if(!button)return;
-  button.onclick=()=>{
-    const target=document.querySelector('#spotify-frame');
-    if(target.children.length){target.replaceChildren();button.textContent='Spotifyプレーヤーを表示';return;}
-    if(!/^[A-Za-z0-9]{22}$/.test(track.spotify_id))return;
-    const frame=document.createElement('iframe');
-    frame.src='https://open.spotify.com/embed/track/'+track.spotify_id;
-    frame.title=track.title+' — Spotify';frame.loading='lazy';frame.referrerPolicy='no-referrer';
-    frame.allow="encrypted-media; autoplay 'none'; camera 'none'; microphone 'none'; geolocation 'none'";frame.setAttribute('sandbox','allow-scripts allow-same-origin allow-popups');
-    target.append(frame);button.textContent='Spotifyプレーヤーを閉じる';
-  };
-}
 async function detailView(rid,params,myToken) {
   const r=catalog.releases.find(r=>r.id===rid);if(!r){shell('<div class="empty">作品が見つかりません。<a href="#/">一覧へ</a></div>');return;}
   const a=artist(r.artist_id),track=r.tracks.find(t=>String(t.isrc||t.number)===params.get('track'))||r.tracks[0];
   const back=sessionStorage.getItem('catalog-last-list')||'#/';
-  shell(`<div class="breadcrumbs"><a href="${esc(back)}">← 一覧に戻る</a><span>/</span><a href="${url('/',{artist:a.id})}">${esc(a.name)}</a><span>/</span><span>${esc(r.title)}</span></div><div class="release-hero">${cover(r,'hero-cover')}<div><p class="eyebrow">${esc(a.name)}</p><h1>${esc(r.title)}</h1><div class="hero-meta"><span>${esc(r.release_date)}</span><span>${r.tracks.length}曲</span><span>${publicMode?'公開カタログ':'ローカル確認用'}</span></div>${r.smartlink?`<a class="smartlink" href="${r.smartlink}" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Too Lost 配信リンク ↗</a>`:'<p class="small muted">配信リンク未登録</p>'}${serviceLinks(r.links,'作品の配信サービス')}</div></div>${releaseInfo(r)}${gallery(a)}<div class="album-layout"><ol class="track-list" aria-label="曲一覧">${r.tracks.map(t=>`<li><a class="track-row ${t.key===track.key?'active':''}" href="${url('/release/'+rid,{track:t.isrc||t.number})}" aria-current="${t.key===track.key?'true':'false'}"><span class="track-num">${String(t.number).padStart(2,'0')}</span><span><span class="track-name">${esc(t.title)}</span><br>${badge(t.status)}${t.candidate_count?`<span class="candidate-count">${t.candidate_count}候補</span>`:''}</span></a></li>`).join('')}</ol><article class="lyric-panel" aria-label="曲の確認"><div class="lyric-heading"><h2>${esc(track.title)}</h2>${badge(track.status)}</div><div class="identifier">ISRC: ${esc(track.isrc||'未登録')}<br><span class="mono">${esc(track.key)}</span></div>${trackInfo(track)}${listening(track)}<div id="reading"><p class="muted small">歌詞を読み込んでいます…</p></div></article></div>`,a.id);
-  wireGallery(a);wirePlayer(track);
+  shell(`<div class="breadcrumbs"><a href="${esc(back)}">← 一覧に戻る</a><span>/</span><a href="${url('/',{artist:a.id})}">${esc(a.name)}</a><span>/</span><span>${esc(r.title)}</span></div><div class="release-hero">${cover(r,'hero-cover')}<div><p class="eyebrow">${esc(a.name)}</p><h1>${esc(r.title)}</h1><div class="hero-meta"><span>${esc(r.release_date)}</span><span>${r.tracks.length}曲</span><span>${publicMode?'公開カタログ':'ローカル確認用'}</span></div>${r.smartlink?`<a class="smartlink" href="${r.smartlink}" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Too Lost 配信リンク ↗</a>`:'<p class="small muted">配信リンク未登録</p>'}${serviceLinks(r.links,'作品の配信サービス')}</div></div>${releaseInfo(r)}${gallery(a)}<div class="album-layout"><ol class="track-list" aria-label="曲一覧">${r.tracks.map(t=>`<li><a class="track-row ${t.key===track.key?'active':''}" href="${url('/release/'+rid,{track:t.isrc||t.number})}" aria-current="${t.key===track.key?'true':'false'}"><span class="track-num">${String(t.number).padStart(2,'0')}</span><span><span class="track-name">${esc(t.title)}</span><br>${badge(t.status)}${t.candidate_count?`<span class="candidate-count">${t.candidate_count}候補</span>`:''}</span></a></li>`).join('')}</ol><article class="lyric-panel" aria-label="曲の確認"><div class="lyric-heading"><h2>${esc(track.title)}</h2>${badge(track.status)}</div><div class="identifier">ISRC: ${esc(track.isrc||'未登録')}<br><span class="mono">${esc(track.key)}</span></div>${trackInfo(track)}<div id="reading"><p class="muted small">歌詞を読み込んでいます…</p></div></article></div>`,a.id);
+  wireGallery(a);
   try {
     const [publicTrack,privateTrack]=await Promise.all([fetchJSON('/api/track?'+new URLSearchParams({key:track.key})),fetchJSON('/api/candidates?'+new URLSearchParams({key:track.key}))]);
     if(myToken!==token)return;
