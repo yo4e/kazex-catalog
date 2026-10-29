@@ -34,6 +34,9 @@ generation:
 tracks:
   - title: SPARK
     isrc: "QT62V2574411"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/7vTQx0oU50yA10nfLqKUAR"
       apple_music: "https://music.apple.com/jp/song/spark/1862156779"
@@ -76,3 +79,7 @@ notes_public: |
   Priority Pitchの実施状態と正式素材は未確認。website.publishはfalse。
   公開根拠: https://open.spotify.com/album/5FoMOU73dWpgtJORrrZ66q
   公開根拠: https://music.apple.com/jp/album/spark-single/1862156776
+  2026-10-29補完: 保存済みApple Music公開アルバムデータのalbum ID・各track ID・
+  曲順・曲名・名義を正本と照合し、全曲のcomposer欄をcredits.composersへ原表記で記録。
+  作詞・歌唱・演奏担当への役割拡張や、別表記との名寄せは行っていない。
+  作曲クレジット公開根拠: https://music.apple.com/jp/album/spark-single/1862156776

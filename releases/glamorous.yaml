@@ -34,46 +34,73 @@ generation:
 tracks:
   - title: ぐらまらす
     isrc: "QT4K42587541"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/22jnz54sTMSN7SOdXjrHQB"
       apple_music: "https://music.apple.com/jp/song/%E3%81%8F-%E3%82%89%E3%81%BE%E3%82%89%E3%81%99/1841316521"
   - title: Watch the World Fall Apart
     isrc: "QT4K42587533"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/7F4e4v5M7BKLLCPu9ss49P"
       apple_music: "https://music.apple.com/jp/song/watch-the-world-fall-apart/1841316522"
   - title: パッパパラッパ
     isrc: "QT4K42587534"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/0Mw8kM0m7qg4rvbIuy0LYB"
       apple_music: "https://music.apple.com/jp/song/%E3%83%8F-%E3%83%83%E3%83%8F-%E3%83%8F-%E3%83%A9%E3%83%83%E3%83%8F/1841316524"
   - title: 怪物
     isrc: "QT4K42587535"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/5LnmVh2Uu8rmeteIKIybyj"
       apple_music: "https://music.apple.com/jp/song/%E6%80%AA%E7%89%A9/1841316525"
   - title: 猫がいたら教えて
     isrc: "QT4K42587536"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/0ZMsgILe9v72Y0CzYRxvfQ"
       apple_music: "https://music.apple.com/jp/song/%E7%8C%AB%E3%81%8B-%E3%81%84%E3%81%9F%E3%82%89%E6%95%99%E3%81%88%E3%81%A6/1841316526"
   - title: 宇宙人
     isrc: "QT4K42587537"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/6HooZqT78k3DqGlFemEUj4"
       apple_music: "https://music.apple.com/jp/song/%E5%AE%87%E5%AE%99%E4%BA%BA/1841316530"
   - title: ちょっとコンビニ行ってきます
     isrc: "QT4K42587539"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/2FhTMOyfEGzWpoiw2eT5J0"
       apple_music: "https://music.apple.com/jp/song/%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E3%82%B3%E3%83%B3%E3%83%92-%E3%83%8B%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%99/1841316531"
   - title: えもーしょんどんくらい
     isrc: "QT4K42587538"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/7oHhJ7QpxjAaKgMPCYleyS"
       apple_music: "https://music.apple.com/jp/song/%E3%81%88%E3%82%82%E3%83%BC%E3%81%97%E3%82%87%E3%82%93%E3%81%A8-%E3%82%93%E3%81%8F%E3%82%89%E3%81%84/1841316532"
   - title: 僕らの夢を食べ尽くして星になった
     isrc: "QT4K42587540"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/5adIrfn75RJaWhSIjxwl6J"
       apple_music: "https://music.apple.com/jp/song/%E5%83%95%E3%82%89%E3%81%AE%E5%A4%A2%E3%82%92%E9%A3%9F%E3%81%B8-%E5%B0%BD%E3%81%8F%E3%81%97%E3%81%A6%E6%98%9F%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%9F/1841316534"
@@ -116,3 +143,7 @@ notes_public: |
   Priority Pitchの実施状態と正式素材は未確認。website.publishはfalse。
   公開根拠: https://open.spotify.com/album/7jYeZiJGTGeVoux5Z4qRgj
   公開根拠: https://music.apple.com/jp/album/%E3%81%90%E3%82%89%E3%81%BE%E3%82%89%E3%81%99/1841316515
+  2026-10-29補完: 保存済みApple Music公開アルバムデータのalbum ID・各track ID・
+  曲順・曲名・名義を正本と照合し、全曲のcomposer欄をcredits.composersへ原表記で記録。
+  作詞・歌唱・演奏担当への役割拡張や、別表記との名寄せは行っていない。
+  作曲クレジット公開根拠: https://music.apple.com/jp/album/%E3%81%90%E3%82%89%E3%81%BE%E3%82%89%E3%81%99/1841316515

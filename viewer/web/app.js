@@ -25,7 +25,7 @@ const fetchJSON = async path => {
 };
 const setRoute = (path,values,replace=false) => {const next=url(path,values);if(replace){history.replaceState(null,'',next);render();}else if(location.hash===next){render();}else location.hash=next;};
 function cover(release, className='art-block') {
-  return `<div class="${className}">${release.cover ? `<img src="${release.cover.url}" alt="${esc(release.title)}の登録ジャケット" loading="lazy">` : `<div class="art-placeholder"><strong>${esc(release.title)}</strong><span>ジャケット未登録</span></div>`}</div>`;
+  return `<div class="${className} image-frame image-frame--artwork">${release.cover ? `<img src="${release.cover.url}" alt="${esc(release.title)}の登録ジャケット" loading="lazy">` : `<div class="art-placeholder"><strong>${esc(release.title)}</strong><span>ジャケット未登録</span></div>`}</div>`;
 }
 function shell(content, selected='') {
   const artists=[...catalog.artists].sort((a,b)=>artistOrder.indexOf(a.id)-artistOrder.indexOf(b.id));
@@ -40,7 +40,7 @@ function imageCard(i) {
   const title=String(i.title||'').replaceAll('アー写','アーティスト画像');
   const kind=i.kind==='アー写'?'アーティスト画像':i.kind==='参考画像'?'':i.kind;
   const caption=[kind,title].filter(Boolean).join(' · ');
-  return `<div class="image-card${i.kind==='アー写'?' artist-photo':''}">${badge(i.status)}<a href="${i.url}" target="_blank" rel="noreferrer"><img src="${i.url}" alt="${esc(title)}${isPending(i.status)?'（確認待ち）':''}" loading="lazy"></a><p>${esc(caption)}</p></div>`;
+  return `<div class="image-card"><a class="image-frame image-frame--${i.kind==='アー写'?'portrait':'artwork'}" href="${i.url}" target="_blank" rel="noreferrer"><img src="${i.url}" alt="${esc(title)}${isPending(i.status)?'（確認待ち）':''}" loading="lazy">${badge(i.status)}</a><p>${esc(caption)}</p></div>`;
 }
 function wireGallery(a) {
   const toggle=document.querySelector('#show-archived');if(toggle)toggle.onchange=()=>{document.querySelector('[data-gallery]').innerHTML=a.images.filter(i=>toggle.checked||i.status!=='archived').map(imageCard).join('');};
@@ -59,12 +59,19 @@ function releaseInfo(r) {
 function trackInfo(track) {
   const seconds=track.duration_seconds;
   const duration=Number.isInteger(seconds)&&seconds>0?`${Math.floor(seconds/60)}:${String(seconds%60).padStart(2,'0')}`:null;
-  return `${duration?`<p class="track-fact">配信表示の長さ：${duration}</p>`:''}${track.songwriters?.length?`<p class="track-fact">ソングライター（登録表記）：${esc(track.songwriters.join(' / '))}</p>`:''}${serviceLinks(track.links,'この曲の配信サービス')}`;
+  const roles=[['lyricists','作詞'],['composers','作曲'],['vocalists','歌唱']];
+  const credits=roles.map(([role,label])=>{
+    const names=track[role]||[];
+    const instrumental=track.instrumental===true&&role!=='composers';
+    const value=names.length?esc(names.join(' / ')):instrumental?'—（Instrumental）':'未登録';
+    return `<dt>${label}</dt><dd data-credit-role="${role}"${names.length?'':' class="muted"'}>${value}</dd>`;
+  }).join('');
+  return `${duration?`<p class="track-fact">配信表示の長さ：${duration}</p>`:''}<dl class="track-credits" aria-label="曲のクレジット">${credits}</dl>${track.songwriters?.length?`<p class="track-fact">ソングライター（役割未分離）：${esc(track.songwriters.join(' / '))}</p>`:''}${serviceLinks(track.links,'この曲の配信サービス')}`;
 }
 function artistHeading(a) {
   const hasCandidates=a.images.some(i=>i.kind==='アー写'&&i.status==='candidate');
   const state=a.portrait?'アーティスト画像':hasCandidates?'アーティスト画像は未選択':'アーティスト画像は未登録';
-  return `<div class="artist-heading"><div class="artist-portrait">${a.portrait?`<img src="${a.portrait.url}" alt="${esc(a.name)}のアーティスト画像">`:`<div class="portrait-placeholder"><span>${esc(a.name.slice(0,1))}</span><small>${state}</small></div>`}</div><div class="artist-intro"><p class="eyebrow">KAZEX RECORDS / ARTIST</p><h1>${esc(a.name)}</h1>${a.description?`<p class="artist-description">${esc(a.description)}</p>`:''}${a.biography?`<details class="artist-biography"><summary>プロフィールを読む</summary><p>${esc(a.biography)}</p></details>`:''}${serviceLinks(a.links,'アーティストの配信ページ')}<p class="portrait-state">${state}${hasCandidates&&!a.portrait?' · 下の「画像を確認」から候補を見られます。':''}</p></div></div>`;
+  return `<div class="artist-heading"><div class="artist-portrait image-frame image-frame--portrait">${a.portrait?`<img src="${a.portrait.url}" alt="${esc(a.name)}のアーティスト画像">`:`<div class="portrait-placeholder"><span>${esc(a.name.slice(0,1))}</span><small>${state}</small></div>`}</div><div class="artist-intro"><p class="eyebrow">KAZEX RECORDS / ARTIST</p><h1>${esc(a.name)}</h1>${a.description?`<p class="artist-description">${esc(a.description)}</p>`:''}${a.biography?`<details class="artist-biography"><summary>プロフィールを読む</summary><p>${esc(a.biography)}</p></details>`:''}${serviceLinks(a.links,'アーティストの配信ページ')}<p class="portrait-state">${state}${hasCandidates&&!a.portrait?' · 下の「画像を確認」から候補を見られます。':''}</p></div></div>`;
 }
 function listView(params) {
   const aid=params.get('artist')||'',query=params.get('q')||'',status=params.get('status')==='pending_selection'?'pending_selection':'';

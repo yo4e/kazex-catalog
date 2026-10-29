@@ -34,6 +34,9 @@ generation:
 tracks:
   - title: パルス
     isrc: "QT4K42507024"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/5WVjrJk7ORILGoCfCGyyXn"
       apple_music: "https://music.apple.com/jp/song/%E3%83%91%E3%83%AB%E3%82%B9/1831221761"
@@ -77,3 +80,7 @@ notes_public: |
   Too Lost曲詳細で歌詞ありを確認。作詞者欄は「テンプレクス 月野」「ぐらまらす ふぁん」、クレジット欄は「影音」と表示。原表記を保持し、名寄せや役割の追加推定は行わない。
   公開根拠: https://open.spotify.com/album/1WZ9eWaANqpBiVOQiYNGjJ
   公開根拠: https://music.apple.com/jp/album/%E3%83%91%E3%83%AB%E3%82%B9-single/1831221485
+  2026-10-29補完: 保存済みApple Music公開アルバムデータのalbum ID・各track ID・
+  曲順・曲名・名義を正本と照合し、全曲のcomposer欄をcredits.composersへ原表記で記録。
+  作詞・歌唱・演奏担当への役割拡張や、別表記との名寄せは行っていない。
+  作曲クレジット公開根拠: https://music.apple.com/jp/album/%E3%83%91%E3%83%AB%E3%82%B9-single/1831221485

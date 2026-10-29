@@ -51,6 +51,9 @@ tracks: []
 #     duration_seconds: null # DSP表示秒。根拠・表示差はnotes_publicへ。
 #     credits:
 #       songwriters: [] # 登録原表記。作詞・作曲の役割を推定しない。
+#       lyricists: [] # 作詞者。明示された役割と原表記のみ。
+#       composers: [] # 作曲者。
+#       vocalists: [] # 歌唱者。artist名・演奏者からの推定は禁止。
 #     links:
 #       spotify: null
 #       apple_music: null

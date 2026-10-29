@@ -32,66 +32,99 @@ generation:
 tracks:
   - title: Debris Field Spiral
     isrc: "QT62V2574918"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/1CTvBLORb1h0aQEIIbat3b"
       apple_music: "https://music.apple.com/jp/song/debris-field-spiral/1862462914"
   - title: Broken Orbit Choir
     isrc: "QT62V2574919"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/0nunuy7nDmgZLRwfvxHO20"
       apple_music: "https://music.apple.com/jp/song/broken-orbit-choir/1862462915"
   - title: Cold Scatter Phenomena
     isrc: "QT62V2574920"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/7Fdrdmp8u0Fcz0aLCB290o"
       apple_music: "https://music.apple.com/jp/song/cold-scatter-phenomena/1862462918"
   - title: Grain of the Astral Wind
     isrc: "QT62V2574921"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/4tV7EQ12O9oRcQe2btVscv"
       apple_music: "https://music.apple.com/jp/song/grain-of-the-astral-wind/1862462919"
   - title: Telemetry Without a Pulse
     isrc: "QT62V2574922"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/7ub6quIY4CoO9e6DjG7ZLs"
       apple_music: "https://music.apple.com/jp/song/telemetry-without-a-pulse/1862462922"
   - title: In the Wake of Silence
     isrc: "QT62V2574923"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/2WLi5cefR0ErwpSNMXhzVZ"
       apple_music: "https://music.apple.com/jp/song/in-the-wake-of-silence/1862462927"
   - title: Apex Debris Bloom
     isrc: "QT62V2574924"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/3bGUpirGz4iwIGUiGpLhj3"
       apple_music: "https://music.apple.com/jp/song/apex-debris-bloom/1862462929"
   - title: Vector Shards Remember
     isrc: "QT62V2574925"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/2pjW8qLGOI77ohyp2Cih5i"
       apple_music: "https://music.apple.com/jp/song/vector-shards-remember/1862462931"
   - title: Gravitational Ghostprints
     isrc: "QT62V2574926"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/4bbSHiSBlMlsqyaUSMnGr1"
       apple_music: "https://music.apple.com/jp/song/gravitational-ghostprints/1862463151"
   - title: Dustflow in Blue Darkness
     isrc: "QT62V2574927"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/3JvZQOT3CRGtEdU7Nq5yFZ"
       apple_music: "https://music.apple.com/jp/song/dustflow-in-blue-darkness/1862463157"
   - title: Orbital Debris
     isrc: "QT62V2574928"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/4HpRZODlGW3GTf6q2TMcOs"
@@ -136,3 +169,7 @@ notes_public: |
   歌詞なしはToo Lostのlanguage欄のNo lyricsに基づく。UIのインストゥルメンタルバッジ単独から判定していない。
   公開根拠: https://open.spotify.com/album/6ZKmvCJxWe1Bj2GReJdCr3
   公開根拠: https://music.apple.com/jp/album/orbital-debris/1862462910
+  2026-10-29補完: 保存済みApple Music公開アルバムデータのalbum ID・各track ID・
+  曲順・曲名・名義を正本と照合し、全曲のcomposer欄をcredits.composersへ原表記で記録。
+  作詞・歌唱・演奏担当への役割拡張や、別表記との名寄せは行っていない。
+  作曲クレジット公開根拠: https://music.apple.com/jp/album/orbital-debris/1862462910

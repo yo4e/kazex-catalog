@@ -34,56 +34,111 @@ generation:
 tracks:
   - title: ディスプレイの向こうで微笑んでる
     isrc: "QT62U2565518"
+    credits:
+      lyricists:
+        - 月野テンプレクス
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/6bDCLurCjQunYHjoM8y7dR"
       apple_music: "https://music.apple.com/jp/song/%E3%83%86-%E3%82%A3%E3%82%B9%E3%83%95-%E3%83%AC%E3%82%A4%E3%81%AE%E5%90%91%E3%81%93%E3%81%86%E3%81%A6-%E5%BE%AE%E7%AC%91%E3%82%93%E3%81%A6-%E3%82%8B/1848557857"
   - title: Alt Track
     isrc: "QT62U2565519"
+    credits:
+      lyricists:
+        - 月野テンプレクス
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/7m3Qocv7V4lNv0GmLgnTaY"
       apple_music: "https://music.apple.com/jp/song/alt-track/1848557858"
   - title: ぷんすか
     isrc: "QT62U2565520"
+    credits:
+      lyricists:
+        - 月野テンプレクス
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/0vBONfCG2dDNgIBbvZhcv4"
       apple_music: "https://music.apple.com/jp/song/%E3%81%B5-%E3%82%93%E3%81%99%E3%81%8B/1848557859"
   - title: 波打ち際のポケット
     isrc: "QT62U2565521"
+    credits:
+      lyricists:
+        - 月野テンプレクス
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/504dicaPkHUDK5HZTlGhDf"
       apple_music: "https://music.apple.com/jp/song/%E6%B3%A2%E6%89%93%E3%81%A1%E9%9A%9B%E3%81%AE%E3%83%9B-%E3%82%B1%E3%83%83%E3%83%88/1848557860"
   - title: 水中花火
     isrc: "QT62U2565522"
+    credits:
+      lyricists:
+        - 月野テンプレクス
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/7MSU6lEQjkp5agsLf3Amrn"
       apple_music: "https://music.apple.com/jp/song/%E6%B0%B4%E4%B8%AD%E8%8A%B1%E7%81%AB/1848557861"
   - title: 回路の呼吸
     isrc: "QT62U2565523"
+    credits:
+      lyricists:
+        - 月野テンプレクス
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/4HqhRG1iyNTWl4gdDBTjmT"
       apple_music: "https://music.apple.com/jp/song/%E5%9B%9E%E8%B7%AF%E3%81%AE%E5%91%BC%E5%90%B8/1848557863"
   - title: 君の歌はどこにも行かない
     isrc: "QT62U2565524"
+    credits:
+      lyricists:
+        - 月野テンプレクス
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/3a7DvNv7brtyD6uK6SFpKW"
       apple_music: "https://music.apple.com/jp/song/%E5%90%9B%E3%81%AE%E6%AD%8C%E3%81%AF%E3%81%A8-%E3%81%93%E3%81%AB%E3%82%82%E8%A1%8C%E3%81%8B%E3%81%AA%E3%81%84/1848557865"
   - title: 月の名前
     isrc: "QT62U2565525"
+    credits:
+      lyricists:
+        - 月野テンプレクス
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/5Ar586ysDvVIJSsVfaw0J7"
       apple_music: "https://music.apple.com/jp/song/%E6%9C%88%E3%81%AE%E5%90%8D%E5%89%8D/1848557866"
   - title: No Floor for the Falling
     isrc: "QT62U2565526"
+    credits:
+      lyricists:
+        - 月野テンプレクス
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/2irjHVUEawMU1r4VGfVU0S"
       apple_music: "https://music.apple.com/jp/song/no-floor-for-the-falling/1848557868"
   - title: 届かないまま、待っている詩
     isrc: "QT62U2565527"
+    credits:
+      lyricists:
+        - 月野テンプレクス
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/7bXrYfTTEsvYgq42gzfnuu"
       apple_music: "https://music.apple.com/jp/song/%E5%B1%8A%E3%81%8B%E3%81%AA%E3%81%84%E3%81%BE%E3%81%BE-%E5%BE%85%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E8%A9%A9/1848557869"
   - title: 幸福回路
     isrc: "QT62U2565528"
+    credits:
+      lyricists:
+        - 月野テンプレクス
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/1cOq2ijwlPglmvWWs7EEFs"
       apple_music: "https://music.apple.com/jp/song/%E5%B9%B8%E7%A6%8F%E5%9B%9E%E8%B7%AF/1848557870"
@@ -126,3 +181,10 @@ notes_public: |
   Priority Pitchの実施状態と正式素材は未確認。website.publishはfalse。
   公開根拠: https://open.spotify.com/album/2vwP1Ychd1EsmzIu5ZiW1x
   公開根拠: https://music.apple.com/jp/album/%E5%B9%B8%E7%A6%8F%E5%9B%9E%E8%B7%AF/1848557856
+  2026-10-29補完: 保存済みApple Music公開アルバムデータのalbum ID・各track ID・
+  曲順・曲名・名義を正本と照合し、全曲のcomposer欄をcredits.composersへ原表記で記録。
+  作詞・歌唱・演奏担当への役割拡張や、別表記との名寄せは行っていない。
+  作曲クレジット公開根拠: https://music.apple.com/jp/album/%E5%B9%B8%E7%A6%8F%E5%9B%9E%E8%B7%AF/1848557856
+  作詞者は既存のプチリリ登録完了アーカイブの「月野テンプレクス」を原表記で記録。
+  全11曲の曲名・曲順・ISRCと完了行を照合。投稿準備資料の別表記を自動で名寄せしたものではない。
+  歌詞本文の採用・確認待ち状態は変更していない。

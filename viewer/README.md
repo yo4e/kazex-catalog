@@ -71,7 +71,7 @@ python scripts/validate_catalog.py
 - `assets/label/brand.yaml` がロゴ・配色の参照元。ロゴ・ジャケットは正方形枠のcontain表示。代表アー写と画像一覧のアー写は正方形枠をcoverで埋め、中央を基準に端を切り取る。原画像は変更しない。
 - アーティストのトップには `assets.artist_image.github_path` の指定済み画像を1枚表示する。candidateや複数selectedから勝手に代表を選ばない。未指定は未選択／未登録と表示する。
 - 画像一覧では「アー写」を「アーティスト画像」と表示し、「参考画像」の分類接頭辞は省略して説明文・roleだけを表示する。説明文中の同じ呼び名も揃える。内部の分類・採用状態・原文は保持し、作成日は追加しない。
-- 公開プロフィールは `description.long` から折りたたみ表示する。「作品情報」はrelease YAMLの形式・ジャンル・レーベル・識別子・C/Pを表示する。曲の表示時間とSongwriter原表記もYAMLから読み、不明値は補わない。詳細は [カタログ補完手順](../docs/CATALOG_COMPLETION.md) を参照。
+- 公開プロフィールは `description.long` から折りたたみ表示する。「作品情報」はrelease YAMLの形式・ジャンル・レーベル・識別子・C/Pを表示する。曲の時間・作詞・作曲・歌唱はYAMLから読み、不明値は「未登録」とする。役割未分離のSongwriter原表記は別に保持し、役割を自動で割り当てない。本人確認済みInstrumental曲の作詞・歌唱の空欄は「—（Instrumental）」とする。詳細は [カタログ補完手順](../docs/CATALOG_COMPLETION.md) を参照。
 - Spotify / Apple Music / Amazon Musicの作品・曲リンク、Spotify / Apple Musicのアーティストリンクは登録済みの正規URLのみ表示する。任意URLや追跡クエリ、原資料の出典リンクは転送しない。
 - MRI・TAG・Satori Chandraは本人指定により基本歌詞なし。作品の個別指定をアーティストの基本値より優先する。
 - Too Lostは `releases/*.yaml` の `links.smartlink` のみ使用する。Spotifyは各曲の正式な `tracks[].links.spotify` にあるtrack IDのみ。検索やアルバムIDからの推測を行わない。

@@ -34,60 +34,90 @@ generation:
 tracks:
   - title: Intonation
     isrc: "QT62V2574389"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/5vvG02mAy31uw30UnXCMaj"
       apple_music: "https://music.apple.com/ca/song/intonation/1862148539"
   - title: Subvocal
     isrc: "QT62V2574390"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/0HUo9JstONsqqlBZPefzBM"
       apple_music: "https://music.apple.com/ca/song/subvocal/1862148542"
   - title: Glyph of Dust
     isrc: "QT62V2574391"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/1fQhX3tVcF1z6SJrPEGxDh"
       apple_music: "https://music.apple.com/ca/song/glyph-of-dust/1862148665"
   - title: Breath Reciting Itself
     isrc: "QT62V2574392"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/3yP4Ic38D7uQNB3FTxHb3A"
       apple_music: "https://music.apple.com/ca/song/breath-reciting-itself/1862148673"
   - title: Monochord Silence
     isrc: "QT62V2574393"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/5HJZ5B645wRLkDB0yPtPbP"
       apple_music: "https://music.apple.com/ca/song/monochord-silence/1862148676"
   - title: Syntax Veil
     isrc: "QT62V2574394"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/63vduNAxl4HoT9cSXydFwU"
       apple_music: "https://music.apple.com/ca/song/syntax-veil/1862148677"
   - title: Petal Litany
     isrc: "QT62V2574395"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/3DxEQxQQsdgSwl1TSVOrWr"
       apple_music: "https://music.apple.com/ca/song/petal-litany/1862148679"
   - title: Ash Benediction
     isrc: "QT62V2574396"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/5IRiy7bldoYCOmOLLNXMOW"
       apple_music: "https://music.apple.com/ca/song/ash-benediction/1862148685"
   - title: Obscure Psalm
     isrc: "QT62V2574397"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/7kPvZ8Q3lCeGyV4JVoClMb"
       apple_music: "https://music.apple.com/ca/song/obscure-psalm/1862148689"
   - title: 'Outro: Pale Requiem'
     isrc: "QT62V2574398"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/5Mgk684PvUlRxJxpswZ0og"
@@ -132,3 +162,7 @@ notes_public: |
   歌詞なしはToo Lostのlanguage欄のNo lyricsに基づく。UIのインストゥルメンタルバッジ単独から判定していない。
   公開根拠: https://open.spotify.com/album/6EQXPCbMk8tfL7yPIfuREq
   公開根拠: https://music.apple.com/ca/album/reliquary-i-brown-noise-litany/1862148535
+  2026-10-29補完: 保存済みApple Music公開アルバムデータのalbum ID・各track ID・
+  曲順・曲名・名義を正本と照合し、全曲のcomposer欄をcredits.composersへ原表記で記録。
+  作詞・歌唱・演奏担当への役割拡張や、別表記との名寄せは行っていない。
+  作曲クレジット公開根拠: https://music.apple.com/ca/album/reliquary-i-brown-noise-litany/1862148535

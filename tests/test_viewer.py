@@ -303,6 +303,38 @@ class LocalReviewTests(unittest.TestCase):
         _, _, body = self.get(server, '/api/catalog')
         self.assertEqual(json.loads(body)['releases'][0]['tracks'][0]['duration_seconds'], 159)
 
+    def test_credit_roles_are_independent_and_never_inferred_from_artist_or_songwriter(self):
+        release = yaml.safe_load((self.repo / 'releases/example.yaml').read_text())
+        release['tracks'][0]['credits'] = {'songwriters': ['登録名'], 'private_proof': 'NEVER_EXPORT'}
+        self.write('releases/example.yaml', release)
+        server = self.start()
+        _, _, body = self.get(server, '/api/track?key=' + self.key)
+        track = json.loads(body)
+        self.assertEqual(track['songwriters'], ['登録名'])
+        for role in ('lyricists', 'composers', 'vocalists'):
+            self.assertEqual(track[role], [])
+        release['tracks'][0]['credits'].update(lyricists=['作詞 登録名'], composers=['作曲 登録名'], vocalists=['歌唱 登録名'])
+        self.write('releases/example.yaml', release)
+        self.get(server, '/api/catalog')
+        _, _, body = self.get(server, '/api/track?key=' + self.key)
+        track = json.loads(body)
+        self.assertEqual(track['lyricists'], ['作詞 登録名'])
+        self.assertEqual(track['composers'], ['作曲 登録名'])
+        self.assertEqual(track['vocalists'], ['歌唱 登録名'])
+        self.assertNotIn(b'NEVER_EXPORT', body)
+
+    def test_instrumental_does_not_invent_credit_names(self):
+        release = yaml.safe_load((self.repo / 'releases/example.yaml').read_text())
+        release['lyrics']['has_lyrics'] = False
+        release['tracks'][0]['instrumental'] = {'basis': 'owner_confirmation', 'confirmed_on': '2026-10-28'}
+        self.write('releases/example.yaml', release)
+        server = self.start()
+        _, _, body = self.get(server, '/api/track?key=' + self.key)
+        track = json.loads(body)
+        self.assertTrue(track['instrumental'])
+        for role in ('songwriters', 'lyricists', 'composers', 'vocalists'):
+            self.assertEqual(track[role], [])
+
 
 if __name__ == '__main__':
     unittest.main()

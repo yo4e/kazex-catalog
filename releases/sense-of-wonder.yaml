@@ -39,6 +39,8 @@ tracks:
     credits:
       songwriters:
         - ぐらまらす ふぁん
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/38xxHlPbd4FnMQExUXGvBv"
       apple_music: "https://music.apple.com/jp/song/%E3%82%BB%E3%83%B3%E3%82%B9-%E3%82%AA%E3%83%96-%E3%83%AF%E3%83%B3%E3%83%80%E3%83%BC/1828756914"
@@ -92,3 +94,7 @@ notes_public: |
   公開根拠: https://music.amazon.com/tracks/B0FJV1JHVF
   公開根拠: https://open.spotify.com/album/5TDmEzZwJNVxOCarbS3LaH
   公開根拠: https://music.apple.com/jp/album/%E3%82%BB%E3%83%B3%E3%82%B9-%E3%82%AA%E3%83%96-%E3%83%AF%E3%83%B3%E3%83%80%E3%83%BC-single/1828756910
+  2026-10-29: 10月28日取得のApple Music公開アルバムデータを曲ID 1828756914・曲名で再照合し、
+  composer欄「ぐらまらす ふぁん」をcredits.composersに記録。Too Lostのsongwriters_uiとは独立した根拠。
+  同資料のartistNameは歌唱者の根拠としない。作詞者欄という確認メモは残すが、保存資料はsongwriters_uiのため、
+  作詞と作曲の役割分離をそのメモだけでは確定しない。歌唱者も未登録のまま。

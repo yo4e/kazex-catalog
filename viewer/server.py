@@ -195,7 +195,8 @@ class Catalog:
                               'status': status, 'candidate_count': len(self.private.versions.get(key, [])),
                               'instrumental': confirmed_instrumental(track.get('instrumental')),
                               'duration_seconds': track.get('duration_seconds'),
-                              'songwriters': text_list((track.get('credits') or {}).get('songwriters')),
+                              **{role: text_list((track.get('credits') or {}).get(role))
+                                 for role in ('songwriters', 'lyricists', 'composers', 'vocalists')},
                               'links': service_links(track.get('links') or {}, 'track'),
                               'spotify_id': spotify_track_id((track.get('links') or {}).get('spotify'))}
                     tracks.append(public)

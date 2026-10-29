@@ -32,66 +32,99 @@ generation:
 tracks:
   - title: Still Falling
     isrc: "QT4K42565607"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/6RQFbCHBJzcoKF0WgxtVQW"
       apple_music: "https://music.apple.com/jp/song/still-falling/1838453124"
   - title: Aphelion Waltz
     isrc: "QT4K42565608"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/7BvJKuQIns3IEOLqNcr3Ob"
       apple_music: "https://music.apple.com/jp/song/aphelion-waltz/1838453132"
   - title: Weightless by Design
     isrc: "QT4K42565609"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/7ccdlgZZ7TytnxNLvaPYzO"
       apple_music: "https://music.apple.com/jp/song/weightless-by-design/1838453439"
   - title: Elliptical Night
     isrc: "QT4K42565610"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/2d27bXrrSPD5mmsnPFfccS"
       apple_music: "https://music.apple.com/jp/song/elliptical-night/1838453440"
   - title: Brief Orbit
     isrc: "QT4K42565611"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/5xBoDOtv4HRCCqzDnBLfFN"
       apple_music: "https://music.apple.com/jp/song/brief-orbit/1838453443"
   - title: Descent in Silence
     isrc: "QT4K42565612"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/1pLKZXKgYix4TlbLqFh7RP"
       apple_music: "https://music.apple.com/jp/song/descent-in-silence/1838453445"
   - title: Drifted Light
     isrc: "QT4K42565613"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/26tgIA2Ylkz2q2dHwjnPQW"
       apple_music: "https://music.apple.com/jp/song/drifted-light/1838453447"
   - title: Minor Phase
     isrc: "QT4K42565614"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/4JM5orkLMMAQyGm5Tdujnr"
       apple_music: "https://music.apple.com/jp/song/minor-phase/1838453448"
   - title: Vacuum Lullaby
     isrc: "QT4K42565615"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/6rRwr42IWov1HfoLyjjgSQ"
       apple_music: "https://music.apple.com/jp/song/vacuum-lullaby/1838453449"
   - title: In the Slowest Spin
     isrc: "QT4K42565616"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/2aTbXejx2IyxwHClMRW2zC"
       apple_music: "https://music.apple.com/jp/song/in-the-slowest-spin/1838453450"
   - title: Landing, Eventually
     isrc: "QT4K42565606"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/6U0DxfOfNId97GCMrBZiuw"
@@ -136,3 +169,7 @@ notes_public: |
   歌詞なしはToo Lostのlanguage欄のNo lyricsに基づく。UIのインストゥルメンタルバッジ単独から判定していない。
   公開根拠: https://open.spotify.com/album/261YeYdGBc1hBJSFpgOFcK
   公開根拠: https://music.apple.com/jp/album/still-falling/1838453121
+  2026-10-29補完: 保存済みApple Music公開アルバムデータのalbum ID・各track ID・
+  曲順・曲名・名義を正本と照合し、全曲のcomposer欄をcredits.composersへ原表記で記録。
+  作詞・歌唱・演奏担当への役割拡張や、別表記との名寄せは行っていない。
+  作曲クレジット公開根拠: https://music.apple.com/jp/album/still-falling/1838453121

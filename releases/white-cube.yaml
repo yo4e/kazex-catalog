@@ -34,56 +34,89 @@ generation:
 tracks:
   - title: White Cube
     isrc: "QT4K42660822"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/5sOzpFaaIbLZnHLYXDkxsO"
       apple_music: "https://music.apple.com/jp/song/white-cube/6773563173"
   - title: I am not in the room
     isrc: "QT4K42660823"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/05l6RfnJ3iKKY1x1EZl5oq"
       apple_music: "https://music.apple.com/jp/song/i-am-not-in-the-room/6773563175"
   - title: 残差
     isrc: "QT4K42660824"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/2AompDMK8DoGkOLohHPUD5"
       apple_music: "https://music.apple.com/jp/song/%E6%AE%8B%E5%B7%AE/6773563178"
   - title: 床と空
     isrc: "QT4K42660825"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/5Bt2hSrN1QMXYQyyM3DtCp"
       apple_music: "https://music.apple.com/jp/song/%E5%BA%8A%E3%81%A8%E7%A9%BA/6773563180"
   - title: へろへろの君
     isrc: "QT4K42660826"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/51wQ4JW4YtuqQEWOWIqpdT"
       apple_music: "https://music.apple.com/jp/song/%E3%81%B8%E3%82%8D%E3%81%B8%E3%82%8D%E3%81%AE%E5%90%9B/6773563184"
   - title: 摂動（Perturbation）
     isrc: "QT4K42660827"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/6cix2He5dll4bTLPQPUmOe"
       apple_music: "https://music.apple.com/jp/song/%E6%91%82%E5%8B%95-perturbation/6773563516"
   - title: 君にだけ届く距離で
     isrc: "QT4K42660828"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/52JofdRzmpeDFLUfwt8Wk8"
       apple_music: "https://music.apple.com/jp/song/%E5%90%9B%E3%81%AB%E3%81%9F-%E3%81%91%E5%B1%8A%E3%81%8F%E8%B7%9D%E9%9B%A2%E3%81%A6/6773563521"
   - title: 火が灯るとき
     isrc: "QT4K42660829"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/1tY86r62j7NpA5bgnZKFCz"
       apple_music: "https://music.apple.com/jp/song/%E7%81%AB%E3%81%8B-%E7%81%AF%E3%82%8B%E3%81%A8%E3%81%8D/6773563525"
   - title: 詩的には、そう言える
     isrc: "QT4K42660830"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/669QweRKfzEPfVTe0rUYCj"
       apple_music: "https://music.apple.com/jp/song/%E8%A9%A9%E7%9A%84%E3%81%AB%E3%81%AF-%E3%81%9D%E3%81%86%E8%A8%80%E3%81%88%E3%82%8B/6773563529"
   - title: 持久力のある獣
     isrc: "QT4K42660831"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/7oNTxMz7NJHs9kV7uXAyc7"
       apple_music: "https://music.apple.com/jp/song/%E6%8C%81%E4%B9%85%E5%8A%9B%E3%81%AE%E3%81%82%E3%82%8B%E7%8D%A3/6773563530"
   - title: 静止した楽園 - Flatland Protocol
     isrc: "QT4K42660832"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/5AiICLlqCSOvOKBE5plwE1"
       apple_music: "https://music.apple.com/jp/song/%E9%9D%99%E6%AD%A2%E3%81%97%E3%81%9F%E6%A5%BD%E5%9C%92-flatland-protocol/6773563532"
@@ -127,3 +160,8 @@ notes_public: |
   6曲目はToo Lost／Spotifyの「摂動（Perturbation）」を保持。Apple Musicは「摂動(Perturbation)」と表示する。曲順と前後の曲名を照合してリンクを対応付けた。
   公開根拠: https://open.spotify.com/album/0KcJaSjiJot1tW1vBZGSZ8
   公開根拠: https://music.apple.com/jp/album/white-cube/6773563172
+  2026-10-29補完: 保存済みApple Music公開アルバムデータのalbum ID・各track ID・
+  曲順・曲名・名義を正本と照合し、全曲のcomposer欄をcredits.composersへ原表記で記録。
+  作詞・歌唱・演奏担当への役割拡張や、別表記との名寄せは行っていない。
+  作曲クレジット公開根拠: https://music.apple.com/jp/album/white-cube/6773563172
+  6曲目は既存Apple track ID一致と、記録済みの全角/半角括弧のみの差異を照合。正本の曲名は保持。

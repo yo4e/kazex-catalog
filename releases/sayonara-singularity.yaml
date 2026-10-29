@@ -34,46 +34,73 @@ generation:
 tracks:
   - title: さよならシンギュラリティ
     isrc: "QT62W2501678"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/66qIzcthbIfkeg4Ugay1Or"
       apple_music: "https://music.apple.com/jp/song/%E3%81%95%E3%82%88%E3%81%AA%E3%82%89%E3%82%B7%E3%83%B3%E3%82%AD-%E3%83%A5%E3%83%A9%E3%83%AA%E3%83%86%E3%82%A3/1863186944"
   - title: 救世主になりたいな
     isrc: "QT62W2501679"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/1k8PXYyTEwjh4E9QZbbKi3"
       apple_music: "https://music.apple.com/jp/song/%E6%95%91%E4%B8%96%E4%B8%BB%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%9F%E3%81%84%E3%81%AA/1863186945"
   - title: 難易度の高い人生を送ってきました
     isrc: "QT62W2501680"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/5JcYlSMr2mj6AWUCYLlyUz"
       apple_music: "https://music.apple.com/jp/song/%E9%9B%A3%E6%98%93%E5%BA%A6%E3%81%AE%E9%AB%98%E3%81%84%E4%BA%BA%E7%94%9F%E3%82%92%E9%80%81%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F/1863186946"
   - title: 理性は幽体離脱
     isrc: "QT62W2501681"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/0iBw2c6Pf5rqpJd7j6ctM4"
       apple_music: "https://music.apple.com/jp/song/%E7%90%86%E6%80%A7%E3%81%AF%E5%B9%BD%E4%BD%93%E9%9B%A2%E8%84%B1/1863186947"
   - title: 死んでるけど ON AIR
     isrc: "QT62W2501682"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/2wE1WukwMHG5NyECOk7ZUc"
       apple_music: "https://music.apple.com/jp/song/%E6%AD%BB%E3%82%93%E3%81%A6-%E3%82%8B%E3%81%91%E3%81%A8-on-air/1863186948"
   - title: シンタックスフィリア
     isrc: "QT62W2501683"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/14Uudyg4hQ34JWlfBZvtDF"
       apple_music: "https://music.apple.com/jp/song/%E3%82%B7%E3%83%B3%E3%82%BF%E3%83%83%E3%82%AF%E3%82%B9%E3%83%95%E3%82%A3%E3%83%AA%E3%82%A2/1863186949"
   - title: なんでなんでなんでなんで
     isrc: "QT62W2501684"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/1FogdwEZrwr1timrqMh681"
       apple_music: "https://music.apple.com/jp/song/%E3%81%AA%E3%82%93%E3%81%A6-%E3%81%AA%E3%82%93%E3%81%A6-%E3%81%AA%E3%82%93%E3%81%A6-%E3%81%AA%E3%82%93%E3%81%A6/1863187313"
   - title: ドミノエフェクト
     isrc: "QT62W2501685"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/4cmGfiW8mI20dmFHpqwYoZ"
       apple_music: "https://music.apple.com/jp/song/%E3%83%88-%E3%83%9F%E3%83%8E%E3%82%A8%E3%83%95%E3%82%A7%E3%82%AF%E3%83%88/1863187317"
   - title: あたしでよかった
     isrc: "QT62W2501686"
+    credits:
+      composers:
+        - ぐらまらす ふぁん
     links:
       spotify: "https://open.spotify.com/track/4WYDxTm66LtR9sBgNWS6Ad"
       apple_music: "https://music.apple.com/jp/song/%E3%81%82%E3%81%9F%E3%81%97%E3%81%A6-%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F/1863187319"
@@ -116,3 +143,7 @@ notes_public: |
   Priority Pitchの実施状態と正式素材は未確認。website.publishはfalse。
   公開根拠: https://open.spotify.com/album/6ZH6p14vtIuwca36ayikOQ
   公開根拠: https://music.apple.com/jp/album/%E3%81%95%E3%82%88%E3%81%AA%E3%82%89%E3%82%B7%E3%83%B3%E3%82%AE%E3%83%A5%E3%83%A9%E3%83%AA%E3%83%86%E3%82%A3/1863186943
+  2026-10-29補完: 保存済みApple Music公開アルバムデータのalbum ID・各track ID・
+  曲順・曲名・名義を正本と照合し、全曲のcomposer欄をcredits.composersへ原表記で記録。
+  作詞・歌唱・演奏担当への役割拡張や、別表記との名寄せは行っていない。
+  作曲クレジット公開根拠: https://music.apple.com/jp/album/%E3%81%95%E3%82%88%E3%81%AA%E3%82%89%E3%82%B7%E3%83%B3%E3%82%AE%E3%83%A5%E3%83%A9%E3%83%AA%E3%83%86%E3%82%A3/1863186943

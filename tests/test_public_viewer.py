@@ -94,7 +94,8 @@ class PublicViewerTests(unittest.TestCase):
                                'private_source': 'NEVER_EXPORT'}
         self.fixture.write('artists/example.yaml', artist)
         release = yaml.safe_load((self.root / 'releases/example.yaml').read_text())
-        release['tracks'][0]['credits'] = {'songwriters': ['Original Name'], 'private_proof': 'NEVER_EXPORT'}
+        release['tracks'][0]['credits'] = {'songwriters': ['Original Name'], 'lyricists': ['Lyricist'],
+            'composers': ['Composer'], 'vocalists': ['Singer'], 'private_proof': 'NEVER_EXPORT'}
         release['links'] = {'amazon_music': 'https://music.amazon.com/albums/B0FJTPVPSJ',
                             'private_source': 'NEVER_EXPORT'}
         self.fixture.write('releases/example.yaml', release)
@@ -104,5 +105,9 @@ class PublicViewerTests(unittest.TestCase):
         self.assertEqual(data['artists'][0]['biography'], 'Public biography')
         self.assertIsNone(data['artists'][0]['portrait'])
         self.assertEqual(data['releases'][0]['tracks'][0]['songwriters'], ['Original Name'])
+        for role, name in [('lyricists', 'Lyricist'), ('composers', 'Composer'), ('vocalists', 'Singer')]:
+            self.assertEqual(data['releases'][0]['tracks'][0][role], [name])
+            tracks = json.loads((self.destination / 'data/tracks.json').read_text())
+            self.assertEqual(tracks[self.fixture.key][role], [name])
         self.assertNotIn('NEVER_EXPORT', raw)
         self.assertEqual(data['releases'][0]['tracks'][0]['candidate_count'], 0)

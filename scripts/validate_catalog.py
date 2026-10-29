@@ -194,9 +194,13 @@ for path in release_files:
             credits = track.get("credits", {})
             if not isinstance(credits, dict):
                 error(path, f"tracks[{index}].credits must be a mapping")
-            elif "songwriters" in credits and (not isinstance(credits["songwriters"], list)
-                    or any(not isinstance(name, str) or not name.strip() for name in credits["songwriters"])):
-                error(path, f"tracks[{index}].credits.songwriters must be a list of nonempty names")
+            else:
+                for role in ("songwriters", "lyricists", "composers", "vocalists"):
+                    if role in credits and (not isinstance(credits[role], list)
+                            or any(not isinstance(name, str) or not name.strip() for name in credits[role])):
+                        error(path, f"tracks[{index}].credits.{role} must be a list of nonempty names")
+                if track.get("instrumental") and credits.get("vocalists"):
+                    error(path, f"tracks[{index}].credits.vocalists conflicts with instrumental confirmation")
 
     cover = data.get("cover", {})
     if not isinstance(cover, dict):

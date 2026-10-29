@@ -68,7 +68,7 @@ def validate_export(directory: Path):
     adopted = 0
     for track in tracks.values():
         if set(track) != {'key', 'number', 'title', 'isrc', 'status', 'candidate_count', 'spotify_id', 'adopted',
-                         'duration_seconds', 'songwriters', 'links', 'instrumental'}:
+                         'duration_seconds', 'songwriters', 'lyricists', 'composers', 'vocalists', 'links', 'instrumental'}:
             raise ValueError('Unexpected track fields in public export')
         if track['instrumental'] is not None and track['instrumental'] is not True:
             raise ValueError('Instrumental must be explicitly confirmed or unknown')

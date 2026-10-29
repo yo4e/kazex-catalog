@@ -34,60 +34,90 @@ generation:
 tracks:
   - title: Threshold Drift
     isrc: "QZVEM2650661"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/5JuHukRjjsvF5zBMxUtDsP"
       apple_music: "https://music.apple.com/in/song/threshold-drift/1882975583"
   - title: Gravity Pulse
     isrc: "QZVEM2650662"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/2Ib401kluio9pla0iYC8CF"
       apple_music: "https://music.apple.com/in/song/gravity-pulse/1882975584"
   - title: Warm Disintegration
     isrc: "QZVEM2650663"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/1q4X6QGTGtUsMYqbyasYRw"
       apple_music: "https://music.apple.com/in/song/warm-disintegration/1882975587"
   - title: Submerged Pattern
     isrc: "QZVEM2650664"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/7sH9PIbLAIFg6teUZlyoUn"
       apple_music: "https://music.apple.com/in/song/submerged-pattern/1882975949"
   - title: Pulse Without Origin
     isrc: "QZVEM2650665"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/4TCtrX5kR5x6aB9uuwgD1M"
       apple_music: "https://music.apple.com/in/song/pulse-without-origin/1882975955"
   - title: Tactile Fog
     isrc: "QZVEM2650666"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/56Am3unOxuBGLfHejOGXXT"
       apple_music: "https://music.apple.com/in/song/tactile-fog/1882975957"
   - title: Breathing in Frequencies
     isrc: "QZVEM2650667"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/7eWtQOJ1ZvLPsA3CYGRo2c"
       apple_music: "https://music.apple.com/in/song/breathing-in-frequencies/1882975960"
   - title: Depth Apparition
     isrc: "QZVEM2650658"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/5e0bXdAgH8djawGAFLKLnB"
       apple_music: "https://music.apple.com/in/song/depth-apparition/1882975965"
   - title: Reclining Signal
     isrc: "QZVEM2650659"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/1hoI40UGVKkEiKuPw3rv6Y"
       apple_music: "https://music.apple.com/in/song/reclining-signal/1882975966"
   - title: Outro_ Dissolve Me Kindly
     isrc: "QZVEM2650660"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/4StWsSE6zKgBCjpUyjKgpB"
@@ -132,3 +162,7 @@ notes_public: |
   歌詞なしはToo Lostのlanguage欄のNo lyricsに基づく。UIのインストゥルメンタルバッジ単独から判定していない。
   公開根拠: https://open.spotify.com/album/3jjY9xckLf9X2HfTaV4G88
   公開根拠: https://music.apple.com/in/album/reliquary-ii-brown-noise-immersion/1882975577
+  2026-10-29補完: 保存済みApple Music公開アルバムデータのalbum ID・各track ID・
+  曲順・曲名・名義を正本と照合し、全曲のcomposer欄をcredits.composersへ原表記で記録。
+  作詞・歌唱・演奏担当への役割拡張や、別表記との名寄せは行っていない。
+  作曲クレジット公開根拠: https://music.apple.com/in/album/reliquary-ii-brown-noise-immersion/1882975577

@@ -43,7 +43,7 @@ tracks:
     isrc: "QZPEW0848423"
     duration_seconds: 225
     credits:
-      songwriters:
+      composers:
         - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
@@ -53,7 +53,7 @@ tracks:
     isrc: "QZPEW0848424"
     duration_seconds: 195
     credits:
-      songwriters:
+      composers:
         - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
@@ -63,7 +63,7 @@ tracks:
     isrc: "QZPEW0848425"
     duration_seconds: 233
     credits:
-      songwriters:
+      composers:
         - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
@@ -73,7 +73,7 @@ tracks:
     isrc: "QZPEW0848426"
     duration_seconds: 195
     credits:
-      songwriters:
+      composers:
         - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
@@ -83,7 +83,7 @@ tracks:
     isrc: "QZPEW0848427"
     duration_seconds: 177
     credits:
-      songwriters:
+      composers:
         - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
@@ -93,7 +93,7 @@ tracks:
     isrc: "QZPEW0848428"
     duration_seconds: 240
     credits:
-      songwriters:
+      composers:
         - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
@@ -103,7 +103,7 @@ tracks:
     isrc: "QZPEW0848429"
     duration_seconds: 213
     credits:
-      songwriters:
+      composers:
         - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
@@ -113,7 +113,7 @@ tracks:
     isrc: "QZPEW0848430"
     duration_seconds: 131
     credits:
-      songwriters:
+      composers:
         - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
@@ -123,7 +123,7 @@ tracks:
     isrc: "QZPEW0848431"
     duration_seconds: 232
     credits:
-      songwriters:
+      composers:
         - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
@@ -133,7 +133,7 @@ tracks:
     isrc: "QZPEW0848432"
     duration_seconds: 183
     credits:
-      songwriters:
+      composers:
         - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
@@ -143,7 +143,7 @@ tracks:
     isrc: "QZPEW0848433"
     duration_seconds: 309
     credits:
-      songwriters:
+      composers:
         - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
@@ -230,3 +230,5 @@ notes_public: >
   配信日・UPC・ISRC・Instrumental確認・画像候補・website.publish・pitchは変更していない。
   公開根拠: https://open.spotify.com/album/6mbDVw5ILYJQn2h4HltiVv
   公開根拠: https://too.fm/ghostvelocity
+  2026-10-29: 上記の全11曲は役割がcomposerとして確認できるため、登録名を変更せず
+  credits.songwritersからcredits.composersへ移した。作詞者・歌唱者の名前は追加していない。

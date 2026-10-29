@@ -34,60 +34,90 @@ generation:
 tracks:
   - title: Photosphere Drift
     isrc: "QT62U2544118"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/0P1pYo8fekQbZxf8qRukIO"
       apple_music: "https://music.apple.com/in/song/photosphere-drift/1846559998"
   - title: The Soil Remembers
     isrc: "QT62U2544119"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/7lTSwsA8xl7DZKKiSJLxlR"
       apple_music: "https://music.apple.com/in/song/the-soil-remembers/1846560001"
   - title: Leaf by Leaf
     isrc: "QT62U2544120"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/2elzWGzpirlRuUllFOZcuR"
       apple_music: "https://music.apple.com/in/song/leaf-by-leaf/1846560003"
   - title: Gravity Slows the Rain
     isrc: "QT62U2544121"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/0nuD7SZrc36Qp9Zq0WFlo8"
       apple_music: "https://music.apple.com/in/song/gravity-slows-the-rain/1846560004"
   - title: Between Breath and Moss
     isrc: "QT62U2544122"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/69coyygRmAKUPUfrn4A3IF"
       apple_music: "https://music.apple.com/in/song/between-breath-and-moss/1846560007"
   - title: Polaris Beneath Skin
     isrc: "QT62U2544123"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/0UeFEMNs6sMQvxyljDyhXM"
       apple_music: "https://music.apple.com/in/song/polaris-beneath-skin/1846560130"
   - title: Soft Roots, Distant Bells
     isrc: "QT62U2544124"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/0CxbQYlY6fGb4cOWOtWCHp"
       apple_music: "https://music.apple.com/in/song/soft-roots-distant-bells/1846560133"
   - title: Garden Sleeps With You
     isrc: "QT62U2544125"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/0fQZrZW1PUDEmpOdh2bOkR"
       apple_music: "https://music.apple.com/in/song/garden-sleeps-with-you/1846560135"
   - title: Light No Longer Moving
     isrc: "QT62U2544126"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/6NWWzynD7IKvg34cKLKhGB"
       apple_music: "https://music.apple.com/in/song/light-no-longer-moving/1846560139"
   - title: Slow Light Garden
     isrc: "QT62U2544127"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/7oMxGsQ4nanDe5Q4L6NSZT"
@@ -132,3 +162,7 @@ notes_public: |
   歌詞なしはToo Lostのlanguage欄のNo lyricsに基づく。UIのインストゥルメンタルバッジ単独から判定していない。
   公開根拠: https://open.spotify.com/album/3mc2zwXcXstFo1TqmxU9kv
   公開根拠: https://music.apple.com/in/album/slow-light-garden/1846559995
+  2026-10-29補完: 保存済みApple Music公開アルバムデータのalbum ID・各track ID・
+  曲順・曲名・名義を正本と照合し、全曲のcomposer欄をcredits.composersへ原表記で記録。
+  作詞・歌唱・演奏担当への役割拡張や、別表記との名寄せは行っていない。
+  作曲クレジット公開根拠: https://music.apple.com/in/album/slow-light-garden/1846559995
