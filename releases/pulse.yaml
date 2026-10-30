@@ -35,8 +35,12 @@ tracks:
   - title: パルス
     isrc: "QT4K42507024"
     credits:
+      lyricists:
+        - 月野テンプレクス
       composers:
         - ぐらまらす ふぁん
+      vocalists:
+        - 影音
     links:
       spotify: "https://open.spotify.com/track/5WVjrJk7ORILGoCfCGyyXn"
       apple_music: "https://music.apple.com/jp/song/%E3%83%91%E3%83%AB%E3%82%B9/1831221761"
@@ -84,3 +88,7 @@ notes_public: |
   曲順・曲名・名義を正本と照合し、全曲のcomposer欄をcredits.composersへ原表記で記録。
   作詞・歌唱・演奏担当への役割拡張や、別表記との名寄せは行っていない。
   作曲クレジット公開根拠: https://music.apple.com/jp/album/%E3%83%91%E3%83%AB%E3%82%B9-single/1831221485
+  2026-10-30本人確認: 本作品の現存曲は作詞が月野テンプレクス、作曲がぐらまらすふぁん、歌唱が影音。
+  作曲者は同一人物と確認された既存の登録原表記「ぐらまらす ふぁん」を保持。
+  作詞・歌唱を曲別creditsへ反映。歌詞本文の採用・確認待ち状態は変更せず、将来曲へ自動継承しない。
+  旧メモの「作詞者欄」の原語はWritersであり、欄名だけでは作詞・作曲を確定しない。今回の役割は本人回答を根拠とする。

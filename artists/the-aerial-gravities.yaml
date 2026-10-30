@@ -107,7 +107,7 @@ assets:
   epk_drive_folder_url: "https://drive.google.com/drive/folders/1A_cBBDzFw9Ki3R5h-YxpSTeo4uWX2hR3"
   releases_drive_folder_url: "https://drive.google.com/drive/folders/16Iops57vn-5pdXh2P9f8ax1-PciTTTdv"
   artist_image:
-    github_path: assets/artists/the-aerial-gravities/artist-photos/The_Aerial_Gravities_Band_Group_Candidate_2026-10-25.png
+    github_path: assets/artists/the-aerial-gravities/artist-photos/The_Aerial_Gravities_Square_Candidate_2026-10-30.png
     web_url: null
     drive_url: null
   logo:
@@ -119,6 +119,13 @@ assets:
     web_url: null
     drive_url: null
   artist_photo_candidates:
+    - github_path: assets/artists/the-aerial-gravities/artist-photos/The_Aerial_Gravities_Square_Candidate_2026-10-30.png
+      status: selected
+      role: band-group-square
+      description: 白いヘルメットと黒いスーツの4人と、ヴィブラフォン・グランドピアノ・コントラバス・ドラムを収めた正方形の集合画像。
+      generation_method: ai-generated
+      width_px: 1254
+      height_px: 1254
     - github_path: assets/artists/the-aerial-gravities/artist-photos/The_Aerial_Gravities_Band_Group_Candidate_2026-10-25.png
       status: selected
       role: band-group
@@ -218,3 +225,5 @@ notes_public: >
   同一artist ID・作品対応を確認した日本ストアURLへ更新。配信サービス側の内容は変更していない。
   公開根拠: https://open.spotify.com/artist/26VmtM7je1d3PqWMW5ZXzc
   公開根拠: https://music.apple.com/jp/artist/the-aerial-gravities/1838453123
+  2026-10-30本人採用: 正方形の集合画像を代表アーティスト画像に指定。4人・4楽器を実画像で確認。
+  2026-10-25の旧代表画像は原本・selected状態を保持し、他の候補・保管画像も変更していない。

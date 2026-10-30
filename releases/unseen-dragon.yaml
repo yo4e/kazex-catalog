@@ -33,6 +33,9 @@ generation:
 tracks:
   - title: MRI_Music Resonance Imaging
     isrc: "QZPEW0826527"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/1G7kgTeW6K89WiLG5oGAR4"
@@ -44,6 +47,9 @@ tracks:
       cold urgency, 128 BPM, live percussion, stereo hammering, dark machine funk
   - title: Remove All Metal
     isrc: "QZPEW0826528"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/76wH3dp5jGljDuIkBnadBz"
@@ -51,6 +57,9 @@ tracks:
     creative_prompt: *unseen_dragon_prompt
   - title: Table Feed
     isrc: "QZPEW0826529"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/0q8VptgwElZH2ys9b5cc7C"
@@ -58,6 +67,9 @@ tracks:
     creative_prompt: *unseen_dragon_prompt
   - title: Bore Mouth
     isrc: "QZPEW0826530"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/4kA9etD4E1L2T6kB5WH8Cu"
@@ -65,6 +77,9 @@ tracks:
     creative_prompt: *unseen_dragon_prompt
   - title: Gradient Hammer
     isrc: "QZPEW0826531"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/4vbc4Jk07DenwlRfh5OGIt"
@@ -72,6 +87,9 @@ tracks:
     creative_prompt: *unseen_dragon_prompt
   - title: Hospital Piano
     isrc: "QZPEW0826532"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/7rniEoJYt4vRziHuRpaMtg"
@@ -79,6 +97,9 @@ tracks:
     creative_prompt: *unseen_dragon_prompt
   - title: Out of Sync
     isrc: "QZPEW0826533"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/2EBUlOncT9YzqUE01Q7fGN"
@@ -86,6 +107,9 @@ tracks:
     creative_prompt: *unseen_dragon_prompt
   - title: Slice Selection
     isrc: "QZPEW0826534"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/2loP6YhYWuGPbxOIpTGcjS"
@@ -93,6 +117,9 @@ tracks:
     creative_prompt: *unseen_dragon_prompt
   - title: Signal Void
     isrc: "QZPEW0826535"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/7oudzgZVjvblY3PKb5leCc"
@@ -100,6 +127,9 @@ tracks:
     creative_prompt: *unseen_dragon_prompt
   - title: The Third Disc
     isrc: "QZPEW0826536"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/2mJTCuHs9c1zOFWPweEN8H"
@@ -107,6 +137,9 @@ tracks:
     creative_prompt: *unseen_dragon_prompt
   - title: Nerve Root
     isrc: "QZPEW0826537"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/0sA4tUeGIBT0dFm8GCJUwz"
@@ -114,6 +147,9 @@ tracks:
     creative_prompt: *unseen_dragon_prompt
   - title: Unseen Dragon
     isrc: "QZPEW0826538"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/5NrxuGQGHzAoXHqw3u9aNh"
@@ -121,6 +157,9 @@ tracks:
     creative_prompt: *unseen_dragon_prompt
   - title: Gated Silence
     isrc: "QZPEW0826539"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/2UxeupCNXmTOkmPVHb5Qhx"
@@ -128,6 +167,9 @@ tracks:
     creative_prompt: *unseen_dragon_prompt
   - title: Image Reconstruction
     isrc: "QZPEW0826540"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/1Sdsow0XPH30aGFdmtGNyP"
@@ -135,6 +177,9 @@ tracks:
     creative_prompt: *unseen_dragon_prompt
   - title: Resonance After the Machine
     isrc: "QZPEW0826541"
+    credits:
+      composers:
+        - Glamorous Fan
     instrumental: {basis: owner_confirmation, confirmed_on: "2026-10-28"}
     links:
       spotify: "https://open.spotify.com/track/7a1uXEumlQJzNm5Rf1oAEb"
@@ -192,3 +237,6 @@ notes_public: >
   同日のToo Lost作品詳細で曲名ごとに直接照合したUPC/EAN・catalog number・15曲のISRCを登録。
   配信サービス上のアーティスト表記は「MRI: Music Resonance Imaging」だが、catalogの名称は維持。
   website.publishとPriority Pitchのstatusは変更しない。
+  2026-10-30本人確認: 現存15曲の作曲者をGlamorous Fanとして登録。
+  Too Lost原語UIのWriters表記と本人指定を照合し、役割は本人回答を根拠とする。
+  全曲Instrumentalの既存確認、曲名・ISRC・歌詞状態・公開設定・pitchは保持。

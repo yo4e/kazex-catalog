@@ -35,8 +35,12 @@ tracks:
   - title: SPARK
     isrc: "QT62V2574411"
     credits:
+      lyricists:
+        - 月野テンプレクス
       composers:
         - ぐらまらす ふぁん
+      vocalists:
+        - 影音
     links:
       spotify: "https://open.spotify.com/track/7vTQx0oU50yA10nfLqKUAR"
       apple_music: "https://music.apple.com/jp/song/spark/1862156779"
@@ -83,3 +87,6 @@ notes_public: |
   曲順・曲名・名義を正本と照合し、全曲のcomposer欄をcredits.composersへ原表記で記録。
   作詞・歌唱・演奏担当への役割拡張や、別表記との名寄せは行っていない。
   作曲クレジット公開根拠: https://music.apple.com/jp/album/spark-single/1862156776
+  2026-10-30本人確認: 本作品の現存曲は作詞が月野テンプレクス、作曲がぐらまらすふぁん、歌唱が影音。
+  作曲者は同一人物と確認された既存の登録原表記「ぐらまらす ふぁん」を保持。
+  作詞・歌唱を曲別creditsへ反映。歌詞本文の採用・確認待ち状態は変更せず、将来曲へ自動継承しない。
