@@ -1,0 +1,137 @@
+id: please-remain-still
+title: Please Remain Still
+artist_id: mri-music-resonance-imaging
+release_type: album
+release_date: null
+status: planned
+genres: []
+label: null
+identifiers:
+  upc_ean: null
+  catalog_number: null
+  amazon_asin: null
+copyright:
+  c_line: null
+  p_line: null
+lyrics:
+  has_lyrics: null
+  language: null
+  index_path: null
+cover:
+  github_path: assets/releases/please-remain-still/cover/Please_Remain_Still_Cover.png
+  web_url: null
+  drive_url: null
+links:
+  spotify: null
+  apple_music: null
+  youtube: null
+  smartlink: null
+  amazon_music: null
+generation:
+  provider: suno
+  source_playlist_url: null
+tracks:
+- title: Please Remain Still
+  isrc: null
+  duration_seconds: 179
+  credits: {}
+- title: The Narrowest Room
+  isrc: null
+  duration_seconds: 184
+  credits: {}
+- title: A Voice Through the Glass
+  isrc: null
+  duration_seconds: 159
+  credits: {}
+- title: The Magnet Never Sleeps
+  isrc: null
+  duration_seconds: 169
+  credits: {}
+- title: Repetition Time
+  isrc: null
+  duration_seconds: 222
+  credits: {}
+- title: The Coil Is Listening
+  isrc: null
+  duration_seconds: 173
+  credits: {}
+- title: The Space Between Pulses
+  isrc: null
+  duration_seconds: 174
+  credits: {}
+- title: Motion Artifact
+  isrc: null
+  duration_seconds: 199
+  credits: {}
+- title: K-Space Lullaby
+  isrc: null
+  duration_seconds: 141
+  credits: {}
+- title: Echo Time
+  isrc: null
+  duration_seconds: 180
+  credits: {}
+- title: Soft Tissue Memory
+  isrc: null
+  duration_seconds: 178
+  credits: {}
+- title: Something Moves Anyway
+  isrc: null
+  duration_seconds: 178
+  credits: {}
+- title: The Shape of Waiting
+  isrc: null
+  duration_seconds: 171
+  credits: {}
+- title: End of Sequence
+  isrc: null
+  duration_seconds: 156
+  credits: {}
+- title: You May Move Now
+  isrc: null
+  duration_seconds: 162
+  credits: {}
+credits: {}
+description:
+  short: 'The second album from MRI: Music Resonance Imaging explores the movement that persists within
+    a body instructed to remain still.'
+  long: |-
+    Please Remain Still is the second album from MRI: Music Resonance Imaging, tracing the restless inner life of a body asked not to move. Following Unseen Dragon, it turns from the machine's search beneath the skin toward the experience of waiting inside it: the voice beyond the glass, the intervals between pulses, and the small movements that resist control.
+
+    Across fifteen tracks, the language of the scan becomes a sequence of rooms, signals, memories, and interruptions. Mechanical repetition, metallic resonance, silence, and clinical tension frame a question that runs through the album: what keeps moving when the body must stay still?
+
+    Beginning with the instruction “Please Remain Still” and ending with “You May Move Now,” the album follows the space between restraint and release, where a machine measures the body while thought and sensation continue beyond its command.
+promotion:
+  priority_pitch:
+    status: draft
+    selected_track: null
+    release_summary: null
+    spotify_artist: null
+    marketing_elements: []
+    past_awards_milestones: null
+    upcoming_tour_dates: null
+    social:
+      facebook: null
+      instagram: null
+      x: null
+      tiktok: null
+    attachments:
+      image_url: null
+      epk_url: null
+assets:
+  github_asset_dir: assets/releases/please-remain-still/
+  drive_folder_url: null
+  cover_drive_folder_url: null
+  visuals_drive_folder_url: null
+  other_assets_drive_folder_url: null
+website:
+  publish: false
+  publish_at: null
+  featured: false
+notes_public: '2026-10-31: Owner requested pre-release catalog organization and supplied the cover. The
+  15 English titles and sequence were applied to the production album on the same day. Durations are the
+  displayed Suno times, rounded to whole seconds; total 2,625 seconds (43:45), not a verified final-master
+  runtime. The English description is a concept-based draft prepared for owner review, not a listening
+  review. Release date, distribution identifiers, track credits and final-master details remain unconfirmed.
+  Production-service URLs are intentionally omitted from this public repository. Status remains planned;
+  no distribution submission or release publication is implied.'
