@@ -6,7 +6,9 @@ These files were uploaded to the repository root in commit `a512805247c96a95efeb
 
 ## Status
 
-All images in this directory are currently **candidate** artist photos.
+The seven artist photos are currently **candidate** assets.
+
+`candidate-04` is a **CHARACTER REFERENCE SHEET**, not an artist photo. Find the canonical reference in [concept-art](../concept-art/README.md). Its old file remains here only to preserve existing links; the artist YAML indexes it once under `assets.concept_art`.
 
 No single image is designated as the official or representative artist image. Promote one or more files to `selected` only after an explicit selection by the artist/label owner.
 
