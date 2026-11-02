@@ -1,0 +1,85 @@
+id: shirasu
+title: しらす
+artist_id: gramarasfan
+release_type: single
+release_date: null
+status: planned
+
+genres: []
+
+label: カゼックスレコード
+
+identifiers:
+  upc_ean: null
+  catalog_number: null
+  amazon_asin: null
+
+copyright:
+  c_line: null
+  p_line: null
+
+lyrics:
+  has_lyrics: true
+  language: Japanese
+  index_path: null
+
+cover:
+  github_path: null
+  web_url: null
+  drive_url: null
+
+links:
+  spotify: null
+  apple_music: null
+  youtube: null
+  smartlink: null
+  amazon_music: null
+
+generation:
+  provider: null
+  source_playlist_url: null
+
+tracks:
+  - title: しらす
+    isrc: null
+
+credits: {}
+
+description:
+  short: null
+  long: null
+
+promotion:
+  priority_pitch:
+    status: draft
+    selected_track: null
+    release_summary: null
+    spotify_artist: null
+    marketing_elements: []
+    past_awards_milestones: null
+    upcoming_tour_dates: null
+    social:
+      facebook: null
+      instagram: null
+      x: null
+      tiktok: null
+    attachments:
+      image_url: null
+      epk_url: null
+
+assets:
+  github_asset_dir: null
+  drive_folder_url: null
+  cover_drive_folder_url: null
+  visuals_drive_folder_url: null
+  other_assets_drive_folder_url: null
+
+website:
+  publish: false
+  publish_at: null
+  featured: false
+
+notes_public: |
+  2026-11-02に本人の意向を受けてシングルとして登録。SunoおよびInstagramで反応が立っている楽曲で、アルバム『ぐらまらす』には未収録。
+  歌詞本文は本人から提供済み。カタログの歌詞索引がISRC単位のため、本文の採用登録はISRC発行後に行う（現時点で索引なし）。
+  ジャケットは本人が制作中。プロモーション用のMVは制作済み。
