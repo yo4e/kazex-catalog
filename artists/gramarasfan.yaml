@@ -48,9 +48,6 @@ assets:
     - github_path: assets/artists/gramarasfan/artist-photos/gramarasfan-artist-photo-candidate-03.png
       status: candidate
       role: null
-    - github_path: assets/artists/gramarasfan/artist-photos/gramarasfan-artist-photo-candidate-04.png
-      status: candidate
-      role: null
     - github_path: assets/artists/gramarasfan/artist-photos/gramarasfan-artist-photo-candidate-05.jpg
       status: candidate
       role: null
@@ -63,12 +60,16 @@ assets:
     - github_path: assets/artists/gramarasfan/artist-photos/gramarasfan-artist-photo-candidate-08.jpg
       status: candidate
       role: null
-  concept_art: []
+  concept_art:
+    - github_path: assets/artists/gramarasfan/concept-art/gramarasfan-character-reference-candidate-04.png
+      status: candidate
+      role: character-reference
+      description: キャラクターリファレンスシート（CHARACTER REFERENCE SHEET）。四方向・表情・ポーズ・衣装細部を収録した設定画。
 notes_public: |
   2026-10-27にToo Lost登録情報と公開Spotify／Apple Musicの作品・アーティスト対応を照合して登録。
   公開配信ページで名義を確認したものであり、Spotify for Artists等の管理権限取得状況を示すものではない。
   レーベル公式サイト https://kazex.my.canva.site/ と既存assetsのREADMEで同名義を照合。
-  既存のアー写候補8点をcandidateのまま参照。代表アー写・正式BIOは未指定。
+  既存のアー写候補7点とキャラクターリファレンスシート1点をcandidateのまま参照。代表アー写・正式BIOは未指定。
   パンダ兄弟はこの名義のシングルであり、独立アーティストとして登録しない。
   配信ページ: https://open.spotify.com/album/7jYeZiJGTGeVoux5Z4qRgj
   配信ページ: https://music.apple.com/jp/album/%E3%81%90%E3%82%89%E3%81%BE%E3%82%89%E3%81%99/1841316515
