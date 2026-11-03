@@ -20,7 +20,7 @@ social:
   bluesky: "https://bsky.app/profile/templextsukino.bsky.social"
 milestones: []
 assets:
-  github_asset_dir: null
+  github_asset_dir: assets/artists/templex-tsukino/
   drive_folder_url: null
   artist_photos_drive_folder_url: null
   logos_drive_folder_url: null
@@ -38,7 +38,15 @@ assets:
     github_path: null
     web_url: null
     drive_url: null
-  artist_photo_candidates: []
+  artist_photo_candidates:
+    - github_path: assets/artists/templex-tsukino/artist-photos/templex-tsukino-artist-photo-candidate-01.jpg
+      status: candidate
+      role: null
+      description: 2026-11-03 Muse制作。自然光の読書室で万年筆と手書きノートを持つポエトコア風ポートレート。
+    - github_path: assets/artists/templex-tsukino/artist-photos/templex-tsukino-artist-photo-candidate-02.jpg
+      status: candidate
+      role: null
+      description: 2026-11-03 Muse制作。古書店の本棚に手を伸ばすポエトコア風の横顔。
   concept_art: []
 notes_public: |
   2026-10-27にToo Lost登録情報と公開Spotify／Apple Musicの作品・アーティスト対応を照合して登録。
@@ -47,3 +55,4 @@ notes_public: |
   公式サイトには https://note.com/templex へのリンクも掲載。
   配信ページ: https://open.spotify.com/album/1WZ9eWaANqpBiVOQiYNGjJ
   配信ページ: https://music.apple.com/jp/album/%E3%83%91%E3%83%AB%E3%82%B9-single/1831221485
+  2026-11-03にMuse制作のポエトコア風アー写2点を候補として追加。公開用JPEGは元PNGから変換し、正式代表アー写には未指定。
