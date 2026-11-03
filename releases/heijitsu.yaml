@@ -1,0 +1,115 @@
+id: heijitsu
+title: 平日
+artist_id: thamall-shinagawa
+release_type: album
+release_date: null
+status: planned
+
+genres:
+  - Mallsoft
+
+label: カゼックスレコード
+
+identifiers:
+  upc_ean: null
+  catalog_number: null
+  amazon_asin: null
+
+copyright:
+  c_line: null
+  p_line: null
+
+lyrics:
+  has_lyrics: null
+  language: null
+  index_path: null
+
+cover:
+  github_path: null
+  web_url: null
+  drive_url: null
+
+links:
+  spotify: null
+  apple_music: null
+  youtube: null
+  smartlink: null
+  amazon_music: null
+
+generation:
+  provider: null
+  source_playlist_url: null
+
+tracks:
+  - title: Weekday
+    isrc: null
+  - title: '2001'
+    isrc: null
+  - title: Standard Size
+    isrc: null
+  - title: kokura
+    isrc: null
+  - title: Just Looking
+    isrc: null
+  - title: Green Park
+    isrc: null
+  - title: 3 Boxes 3 Lines
+    isrc: null
+  - title: Please Take One
+    isrc: null
+  - title: susi
+    isrc: null
+  - title: It's Working
+    isrc: null
+  - title: Blue Plastic
+    isrc: null
+  - title: For Some Reason
+    isrc: null
+  - title: The Next Station Is Shinagawa
+    isrc: null
+  - title: Near the Window
+    isrc: null
+  - title: ROAS
+    isrc: null
+
+credits: {}
+
+description:
+  short: null
+  long: null
+
+promotion:
+  priority_pitch:
+    status: draft
+    selected_track: null
+    release_summary: null
+    spotify_artist: null
+    marketing_elements: []
+    past_awards_milestones: null
+    upcoming_tour_dates: null
+    social:
+      facebook: null
+      instagram: null
+      x: null
+      tiktok: null
+    attachments:
+      image_url: null
+      epk_url: null
+
+assets:
+  github_asset_dir: null
+  drive_folder_url: null
+  cover_drive_folder_url: null
+  visuals_drive_folder_url: null
+  other_assets_drive_folder_url: null
+
+website:
+  publish: false
+  publish_at: null
+  featured: false
+
+notes_public: |
+  2026-11-03に本人の指示で、ThaMall品川のファーストアルバム『平日』として制作中の情報を登録。
+  約100曲の試作から15曲を厳選中。
+  収録15件の曲名と並びは2026-11-03時点の仮案。個々の音源との対応や最終曲順は未確定。
+  発売日、楽曲識別子、正式なジャケット、音源・クレジットは未登録。
