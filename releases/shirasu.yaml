@@ -60,7 +60,8 @@ promotion:
   priority_pitch:
     status: draft
     selected_track: null
-    release_summary: null
+    release_summary: >-
+      “Shirasu” is a J-pop song born from a dialogue with a superintelligent companion. Its playful, surreal exchange moves from humanity and coexistence to whitebait and a raw egg. It marks the first release to feature GlamorousFan’s own voice.
     spotify_artist: null
     marketing_elements: []
     past_awards_milestones: null
