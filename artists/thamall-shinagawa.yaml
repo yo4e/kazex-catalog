@@ -1,0 +1,54 @@
+id: thamall-shinagawa
+name: ThaMall品川
+sort_name: ThaMall品川
+status: active
+
+description:
+  short: Mallsoftを制作するKAZEX Recordsのアーティスト。
+  long: null
+
+concept: null
+
+genres:
+  - Mallsoft
+
+platforms:
+  spotify_artist_url: null
+  apple_music_artist_url: null
+  youtube_artist_url: null
+
+social:
+  website: null
+  instagram: null
+  x: null
+  facebook: null
+  tiktok: null
+  bluesky: null
+
+milestones: []
+
+assets:
+  github_asset_dir: null
+  drive_folder_url: null
+  artist_photos_drive_folder_url: null
+  logos_drive_folder_url: null
+  epk_drive_folder_url: null
+  releases_drive_folder_url: null
+  artist_image:
+    github_path: null
+    web_url: null
+    drive_url: null
+  logo:
+    github_path: null
+    web_url: null
+    drive_url: null
+  epk:
+    github_path: null
+    web_url: null
+    drive_url: null
+  artist_photo_candidates: []
+  concept_art: []
+
+notes_public: |
+  2026-11-03に本人が「ThaMall品川」をアーティスト名として指定。
+  ファーストアルバム『平日』を制作中。正式な配信先・アーティスト写真は未確定。
