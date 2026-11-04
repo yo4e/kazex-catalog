@@ -54,6 +54,13 @@ assets:
       generation_method: ai-generated
       width_px: 1536
       height_px: 1024
+    - github_path: assets/artists/thamall-shinagawa/artist-photos/thamall-shinagawa-artist-photo-crumpled-bag-2026-11-04.png
+      status: candidate
+      role: crumpled-bag-variant
+      description: ベンチの右側にThaMall品川のロゴ入りレジ袋を置いた追加バリエーション。袋の取っ手が長く垂れた最終制作版。代表画像は袋なし版を維持。
+      generation_method: ai-generated
+      width_px: 1536
+      height_px: 1024
   concept_art: []
 
 notes_public: |
@@ -61,3 +68,5 @@ notes_public: |
   ファーストアルバム『平日』を制作中。正式な配信先は未確定。
   2026-11-04に山田さんが最終ビーニー修正版を正式アー写として指定。artist_imageはそのPNGを参照する。
   採用・出典・画像ハッシュの記録はassets/artists/thamall-shinagawa/artist-photos/README.mdを参照。
+  2026-11-04に本人作成のロゴ原本と、取っ手が長く垂れたレジ袋入りアー写の保管を依頼。袋なし版と代表画像指定を維持し、袋入り版は追加候補として保存。
+  ロゴ原本の保存先・出典・ハッシュはassets/artists/thamall-shinagawa/logos/README.mdを参照。正式ロゴの参照指定は未変更。
