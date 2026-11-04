@@ -28,14 +28,14 @@ social:
 milestones: []
 
 assets:
-  github_asset_dir: null
+  github_asset_dir: assets/artists/thamall-shinagawa/
   drive_folder_url: null
   artist_photos_drive_folder_url: null
   logos_drive_folder_url: null
   epk_drive_folder_url: null
   releases_drive_folder_url: null
   artist_image:
-    github_path: null
+    github_path: assets/artists/thamall-shinagawa/artist-photos/thamall-shinagawa-artist-photo-revised-beanie-2026-11-04.png
     web_url: null
     drive_url: null
   logo:
@@ -46,9 +46,18 @@ assets:
     github_path: null
     web_url: null
     drive_url: null
-  artist_photo_candidates: []
+  artist_photo_candidates:
+    - github_path: assets/artists/thamall-shinagawa/artist-photos/thamall-shinagawa-artist-photo-revised-beanie-2026-11-04.png
+      status: selected
+      role: representative
+      description: 公園のベンチに座る透明人間。ビーニーとブルゾン、Tシャツ、靴下を着用したフィルムスナップ風のアーティスト画像。
+      generation_method: ai-generated
+      width_px: 1536
+      height_px: 1024
   concept_art: []
 
 notes_public: |
   2026-11-03に本人が「ThaMall品川」をアーティスト名として指定。
-  ファーストアルバム『平日』を制作中。正式な配信先・アーティスト写真は未確定。
+  ファーストアルバム『平日』を制作中。正式な配信先は未確定。
+  2026-11-04に山田さんが最終ビーニー修正版を正式アー写として指定。artist_imageはそのPNGを参照する。
+  採用・出典・画像ハッシュの記録はassets/artists/thamall-shinagawa/artist-photos/README.mdを参照。
