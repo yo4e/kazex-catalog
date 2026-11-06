@@ -198,7 +198,7 @@ promotion:
     status: draft
     selected_track: MRI_Music Resonance Imaging
     release_summary: >
-      “MRI_Music Resonance Imaging” opens Unseen Dragon, transforming the real sonic experience of an MRI scan into industrial techno. Metallic percussion, distorted kicks, prepared piano, glitch edits, sub-bass, and classical piano recreate the cold, mechanical intensity of being scanned. The track introduces the project’s core idea: turning resonance into music to reveal what cannot be seen.
+      “MRI_Music Resonance Imaging” opens Unseen Dragon: industrial techno inspired by the real experience of being inside an MRI scanner. Through the headset, classical piano plays; the machine’s metallic hammering swallows it, and in the abrupt silence the piano returns. Metallic percussion, distorted kicks, prepared piano and glitch edits recreate that gap — the cold intensity of the scan, and the quiet after it. Resonance turned into music, to reveal what cannot be seen.
     spotify_artist: null
     marketing_elements:
       - visual content strategy
@@ -240,3 +240,6 @@ notes_public: >
   2026-10-30本人確認: 現存15曲の作曲者をGlamorous Fanとして登録。
   Too Lost原語UIのWriters表記と本人指定を照合し、役割は本人回答を根拠とする。
   全曲Instrumentalの既存確認、曲名・ISRC・歌詞状態・公開設定・pitchは保持。
+  2026-11-06本人確認: Release Summaryを改訂。MRIの実音をサンプリングしたという意味ではなく、
+  ヘッドセットのクラシックピアノ、機械の金属音、急な静寂という検査中の聴覚体験から
+  インスパイアされた作品であることを明確化。Priority Pitchはdraftを維持。

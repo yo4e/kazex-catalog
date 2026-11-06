@@ -20,7 +20,7 @@ copyright:
   p_line: null
 
 lyrics:
-  has_lyrics: null
+  has_lyrics: false
   language: null
   index_path: null
 
@@ -37,46 +37,80 @@ links:
   amazon_music: null
 
 generation:
-  provider: null
+  provider: suno
   source_playlist_url: null
 
 tracks:
   - title: Weekday
     isrc: null
+    duration_seconds: 216
+    creative_prompt: &heijitsu_prompt >-
+      ambient dream pop, 68 BPM, vocoder haze, tape delay, plate reverb, wide stereo field, glockenspiel motifs, smeared synth pads, sidechained drones, filtered piano accents, fretless bass, brushed drums, half-time pulse, sleepy euphoria, empty calm, dry loop, noisy park speakers
   - title: '2001'
     isrc: null
+    duration_seconds: 52
+    creative_prompt: *heijitsu_prompt
   - title: Standard Size
     isrc: null
+    duration_seconds: 128
+    creative_prompt: *heijitsu_prompt
   - title: kokura
     isrc: null
+    duration_seconds: 156
+    creative_prompt: *heijitsu_prompt
   - title: Just Looking
     isrc: null
+    duration_seconds: 142
+    creative_prompt: *heijitsu_prompt
   - title: Green Park
     isrc: null
+    duration_seconds: 61
+    creative_prompt: *heijitsu_prompt
   - title: 3 Boxes 3 Lines
     isrc: null
+    duration_seconds: 178
+    creative_prompt: *heijitsu_prompt
   - title: Please Take One
     isrc: null
+    duration_seconds: 142
+    creative_prompt: *heijitsu_prompt
   - title: susi
     isrc: null
+    duration_seconds: 152
+    creative_prompt: *heijitsu_prompt
   - title: It's Working
     isrc: null
+    duration_seconds: 90
+    creative_prompt: *heijitsu_prompt
   - title: Blue Plastic
     isrc: null
+    duration_seconds: 103
+    creative_prompt: *heijitsu_prompt
   - title: For Some Reason
     isrc: null
+    duration_seconds: 123
+    creative_prompt: *heijitsu_prompt
   - title: The Next Station Is Shinagawa
     isrc: null
+    duration_seconds: 162
+    creative_prompt: *heijitsu_prompt
   - title: Near the Window
     isrc: null
+    duration_seconds: 109
+    creative_prompt: *heijitsu_prompt
   - title: ROAS
     isrc: null
+    duration_seconds: 119
+    creative_prompt: *heijitsu_prompt
 
 credits: {}
 
 description:
-  short: null
-  long: null
+  short: >
+    地元の広い公園で錆びたスピーカーから流れ続ける乾いたループ音楽に着想を得た、
+    ThaMall品川のデビューアルバム。
+  long: >
+    mallsoftを通じて、日常の幸福感と空虚さ、夢に入り込んだような感覚を描く。
 
 promotion:
   priority_pitch:
@@ -110,6 +144,14 @@ website:
 
 notes_public: |
   2026-11-03に本人の指示で、ThaMall品川のファーストアルバム『平日』として制作中の情報を登録。
-  約100曲の試作から15曲を厳選中。
-  収録15件の曲名と並びは2026-11-03時点の仮案。個々の音源との対応や最終曲順は未確定。
-  発売日、楽曲識別子、正式なジャケット、音源・クレジットは未登録。
+  2026-11-03時点では約100曲の試作から15曲を厳選中で、収録15件の曲名と並びは仮案として保存していた。
+  2026-11-06本人指定の制作アルバムと全15曲の公開ページを照合。既存の曲名・曲順が掲載内容と一致した。
+  各曲の表示時間と共通Styles、作品説明、制作サービスを補完した。個々の音源対応の詳細は私的保管とする。
+  creative_promptは公開Styles欄の表示を保持したもので、非公開の生成設定を確認したものではない。
+  duration_secondsはSunoの表示時間。配信版音源の尺とToo Lostへの最終納品内容は未確認。
+  全15曲のLyrics欄が[Instrumental]のためhas_lyricsをfalseとした。曲別instrumentalの本人確認は未登録。
+  Suno上のReleased日付は配信日として使用しない。本人確認でToo Lostではリリース前のためplannedを維持。
+  配信日、UPC/EAN、catalog number、各曲ISRC、配信URL、正式ジャケット、クレジットは未確定のまま保持する。
+  Priority Pitchはdraft、代表曲・施策等は未選定のまま。制作元URLは公開カタログへ含めない。
+  2026-11-04に本人が承認した英語セールスピッチと日本語訳の全文は docs/releases/heijitsu-sales-pitch.md に保存。
+  英語原文は562文字のため、500文字上限のPriority Pitch用Release Summaryは申請準備時に別途整える。
