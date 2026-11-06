@@ -153,3 +153,5 @@ notes_public: |
   Suno上のReleased日付は配信日として使用しない。本人確認でToo Lostではリリース前のためplannedを維持。
   配信日、UPC/EAN、catalog number、各曲ISRC、配信URL、正式ジャケット、クレジットは未確定のまま保持する。
   Priority Pitchはdraft、代表曲・施策等は未選定のまま。制作元URLは公開カタログへ含めない。
+  2026-11-04に本人が承認した英語セールスピッチと日本語訳の全文は docs/releases/heijitsu-sales-pitch.md に保存。
+  英語原文は562文字のため、500文字上限のPriority Pitch用Release Summaryは申請準備時に別途整える。
