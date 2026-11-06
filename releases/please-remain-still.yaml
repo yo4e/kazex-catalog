@@ -1,0 +1,162 @@
+id: please-remain-still
+title: Please Remain Still
+artist_id: mri-music-resonance-imaging
+release_type: album
+release_date: null
+status: planned
+
+genres:
+  - industrial techno
+
+label: null
+
+identifiers:
+  upc_ean: null
+  catalog_number: null
+  amazon_asin: null
+
+copyright:
+  c_line: null
+  p_line: null
+
+lyrics:
+  has_lyrics: false
+  language: null
+  index_path: null
+
+cover:
+  github_path: assets/releases/please-remain-still/cover/Please_Remain_Still_Cover.png
+  web_url: null
+  drive_url: null
+
+links:
+  spotify: null
+  apple_music: null
+  youtube: null
+  smartlink: null
+  amazon_music: null
+
+generation:
+  provider: suno
+  source_playlist_url: null
+
+tracks:
+  - title: "Please Remain Still"
+    isrc: null
+    duration_seconds: 179
+    creative_prompt: &please_remain_still_title_prompt >-
+      industrial techno, techno percussion, classical piano solo, prepared piano stabs, metallic percussion, found-object hits, sub bass pulses, distorted kick, gated reverb, abrupt silence, syncopated toms, glitch edits, dry spoken delivery, monotone cadence, cold urgency, 128 BPM, live percussion, stereo hammering, dark machine funk, Please Remain Still
+  - title: "The Narrowest Room"
+    isrc: null
+    duration_seconds: 184
+    creative_prompt: &please_remain_still_base_prompt >-
+      industrial techno, techno percussion, classical piano solo, prepared piano stabs, metallic percussion, found-object hits, sub bass pulses, distorted kick, gated reverb, abrupt silence, syncopated toms, glitch edits, dry spoken delivery, monotone cadence, cold urgency, 128 BPM, live percussion, stereo hammering, dark machine funk
+  - title: "A Voice Through the Glass"
+    isrc: null
+    duration_seconds: 159
+    creative_prompt: *please_remain_still_base_prompt
+  - title: "The Magnet Never Sleeps"
+    isrc: null
+    duration_seconds: 169
+    creative_prompt: *please_remain_still_base_prompt
+  - title: "Repetition Time"
+    isrc: null
+    duration_seconds: 222
+    creative_prompt: *please_remain_still_title_prompt
+  - title: "The Coil Is Listening"
+    isrc: null
+    duration_seconds: 173
+    creative_prompt: *please_remain_still_title_prompt
+  - title: "The Space Between Pulses"
+    isrc: null
+    duration_seconds: 174
+    creative_prompt: *please_remain_still_base_prompt
+  - title: "Motion Artifact"
+    isrc: null
+    duration_seconds: 199
+    creative_prompt: *please_remain_still_base_prompt
+  - title: "K-Space Lullaby"
+    isrc: null
+    duration_seconds: 141
+    creative_prompt: *please_remain_still_base_prompt
+  - title: "Echo Time"
+    isrc: null
+    duration_seconds: 180
+    creative_prompt: *please_remain_still_base_prompt
+  - title: "Soft Tissue Memory"
+    isrc: null
+    duration_seconds: 178
+    creative_prompt: *please_remain_still_base_prompt
+  - title: "Something Moves Anyway"
+    isrc: null
+    duration_seconds: 178
+    creative_prompt: *please_remain_still_title_prompt
+  - title: "The Shape of Waiting"
+    isrc: null
+    duration_seconds: 171
+    creative_prompt: *please_remain_still_title_prompt
+  - title: "End of Sequence"
+    isrc: null
+    duration_seconds: 156
+    creative_prompt: *please_remain_still_title_prompt
+  - title: "You May Move Now"
+    isrc: null
+    duration_seconds: 162
+    creative_prompt: *please_remain_still_title_prompt
+
+credits: {}
+
+description:
+  short: 'The second album from MRI: Music Resonance Imaging explores the movement that persists within
+    a body instructed to remain still.'
+  long: |-
+    Please Remain Still is the second album from MRI: Music Resonance Imaging, tracing the restless inner life of a body asked not to move. Following Unseen Dragon, it turns from the machine's search beneath the skin toward the experience of waiting inside it: the voice beyond the glass, the intervals between pulses, and the small movements that resist control.
+
+    Across fifteen tracks, the language of the scan becomes a sequence of rooms, signals, memories, and interruptions. Mechanical repetition, metallic resonance, silence, and clinical tension frame a question that runs through the album: what keeps moving when the body must stay still?
+
+    Beginning with the instruction “Please Remain Still” and ending with “You May Move Now,” the album follows the space between restraint and release, where a machine measures the body while thought and sensation continue beyond its command.
+promotion:
+  priority_pitch:
+    status: draft
+    selected_track: Please Remain Still
+    release_summary: >-
+      The second album from MRI_Music Resonance Imaging was born in a hospital ward. Ordered to rest — a body kept perfectly still in bed, and in the scanner — while inside, the mind kept dancing to the machine's rhythm. Industrial techno at 128 BPM: metallic percussion, distorted kicks, prepared piano and gated silence, with classical piano surfacing like music through a patient's headset. On "Please Remain Still," the instruction becomes the groove: the body obeys; the heart doesn't.
+    spotify_artist: null
+    marketing_elements: []
+    past_awards_milestones: >-
+      MRI_Music Resonance Imaging released its debut album, Unseen Dragon, on August 22, 2026.
+    upcoming_tour_dates: null
+    social:
+      facebook: null
+      instagram: null
+      x: null
+      tiktok: null
+    attachments:
+      image_url: null
+      epk_url: null
+
+assets:
+  github_asset_dir: assets/releases/please-remain-still/
+  drive_folder_url: null
+  cover_drive_folder_url: null
+  visuals_drive_folder_url: null
+  other_assets_drive_folder_url: null
+
+website:
+  publish: false
+  publish_at: null
+  featured: false
+
+notes_public: |
+  2026-10-31本人依頼で作成された既存draft PRの提供ジャケットと概念ベースの英語説明草案を維持。
+  2026-11-06本人指定の制作アルバムと全15曲の公開ページを照合し、作品名・曲名・掲載順・表示時間・Stylesを登録。
+  全曲完成の2作目として登録し、表題曲のMuse作成Release Summaryを保存。Priority Pitchはdraftを維持。
+  公開ページのアーティスト表記は「MRI: Music Resonance Imaging」。既存artist_idへ紐づける。
+  creative_promptは各曲の公開Styles欄の表示を保持したもので、非公開の生成設定を確認したものではない。
+  共通Stylesの末尾にPlease Remain Stillが付くのは1・5・6・12・13・14・15曲目のみ。
+  duration_secondsはSunoの表示時間。配信版音源の尺は未確認。
+  全15曲のLyrics欄は[Instrumental]。既存の本人指定によるMRIの基本歌詞なし方針とも一致する。
+  曲別instrumentalの本人確認、今回の曲別作曲クレジットは未確認のため、前作から継承しない。
+  Suno上のReleased日付は配信日として使用しない。Too Lostではリリース前のためstatusはplannedとし、
+  配信日・UPC/EAN・catalog number・各曲ISRC・配信URLは未確定のまま保持する。
+  ジャケットは既存draft PRの本人提供画像を引き継ぐ。制作元URL・音源対応の詳細は公開カタログへ含めない。
