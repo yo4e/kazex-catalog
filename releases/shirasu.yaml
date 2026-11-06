@@ -24,7 +24,7 @@ lyrics:
   index_path: null
 
 cover:
-  github_path: null
+  github_path: assets/releases/shirasu/cover/shirasu-cover-2026-11-02-web.jpg
   web_url: null
   drive_url: null
 
@@ -76,7 +76,7 @@ promotion:
       epk_url: null
 
 assets:
-  github_asset_dir: null
+  github_asset_dir: assets/releases/shirasu/
   drive_folder_url: null
   cover_drive_folder_url: null
   visuals_drive_folder_url: null
@@ -94,4 +94,4 @@ notes_public: |
   同日、本人指定により歌詞の該当2行を次の表記に訂正（「いく」「かえって」をひらがなに統一）。本文の採用登録時にもこの表記を使用する。
   存在論にいくはずだったのに
   生卵にかえっていく
-  ジャケットは本人が制作中。プロモーション用のMVは制作済み。
+  2026-11-06に本人の依頼でジャケットをカタログへ追加。プロモーション用のMVは制作済み。
