@@ -2,7 +2,7 @@
 
 KAZEX Records のアーティスト情報・リリース情報・公開素材・プロモーション情報を、AIと人間が共同で扱える形で蓄積する公開カタログです。
 
-[カタログを開く](https://yo4e.github.io/kazex-catalog/) — このリポジトリのYAML・画像・採用済み歌詞から生成し、main更新時に自動更新します。
+[カタログを開く](https://yo4e.github.io/kazex-catalog/) — このリポジトリのYAML・画像・採用済み歌詞から生成し、main更新時に自動更新します。リリース前の作品も掲載し、一覧と作品ページに「リリース前」と表示します。
 
 現在の主目的は、制作中の会話から作品情報を随時蓄積し、Too Lost の **Priority Pitch** や Spotify for Artists 等の外部サービス操作へ再利用できる状態を作ることです。外部サービス操作は、カタログ正本から生成した安全なbrowser task packetとしてChatGPT等のブラウザ操作担当へ渡せるようにします。
 
