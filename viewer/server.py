@@ -210,6 +210,7 @@ class Catalog:
                 cover = self.image((data.get('cover') or {}).get('github_path'), 'registered', '登録ジャケット', 'ジャケット')
                 releases.append({'id': data['id'], 'title': data['title'], 'artist_id': data['artist_id'],
                                  'release_date': str(data.get('release_date') or ''), 'type': data.get('release_type'),
+                                 'release_status': data.get('status') if data.get('status') in {'planned', 'upcoming', 'released'} else None,
                                  'cover': cover, 'tracks': tracks,
                                  'links': service_links(data.get('links') or {}, 'release'),
                                  'metadata': {'genres': text_list(data.get('genres')), 'label': data.get('label'),

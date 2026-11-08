@@ -111,3 +111,25 @@ class PublicViewerTests(unittest.TestCase):
             self.assertEqual(tracks[self.fixture.key][role], [name])
         self.assertNotIn('NEVER_EXPORT', raw)
         self.assertEqual(data['releases'][0]['tracks'][0]['candidate_count'], 0)
+
+    def test_prerelease_is_exported_even_without_website_publish(self):
+        release = yaml.safe_load((self.root / 'releases/example.yaml').read_text())
+        release.update({'status': 'planned', 'release_date': None, 'website': {'publish': False}})
+        self.fixture.write('releases/example.yaml', release)
+        export(self.root, self.destination)
+        data = json.loads((self.destination / 'data/catalog.json').read_text())
+        self.assertEqual(data['releases'][0]['release_status'], 'planned')
+        self.assertEqual(data['releases'][0]['release_date'], '')
+        self.assertEqual(data['releases'][0]['tracks'][0]['title'], '確認曲')
+        self.assertNotIn('website', data['releases'][0])
+
+    def test_upcoming_without_tracks_remains_in_catalog(self):
+        release = yaml.safe_load((self.root / 'releases/example.yaml').read_text())
+        release.update({'status': 'upcoming', 'release_date': '2027-01-02', 'tracks': []})
+        self.fixture.write('releases/example.yaml', release)
+        result = export(self.root, self.destination)
+        data = json.loads((self.destination / 'data/catalog.json').read_text())
+        self.assertEqual(result['releases'], 1)
+        self.assertEqual(result['tracks'], 0)
+        self.assertEqual(data['releases'][0]['release_status'], 'upcoming')
+        self.assertEqual(data['releases'][0]['release_date'], '2027-01-02')

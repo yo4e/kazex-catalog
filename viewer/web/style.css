@@ -36,3 +36,5 @@ a,.card-match{color:#24584b}
 .image-card .badge{position:absolute;left:6px;bottom:6px;max-width:calc(100% - 12px)}
 .track-credits{display:grid;grid-template-columns:4em minmax(0,1fr);gap:5px 14px;font-size:13px;margin:14px 0}
 .track-credits dt{color:var(--muted)}.track-credits dd{margin:0;overflow-wrap:anywhere}
+
+.badge.prerelease{background:#e8eefb;color:#365a98}.hero-meta{align-items:center}

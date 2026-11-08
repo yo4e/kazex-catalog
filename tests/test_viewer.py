@@ -335,6 +335,18 @@ class LocalReviewTests(unittest.TestCase):
         for role in ('songwriters', 'lyricists', 'composers', 'vocalists'):
             self.assertEqual(track[role], [])
 
+    def test_release_state_is_separate_from_lyric_state(self):
+        release = yaml.safe_load((self.repo / 'releases/example.yaml').read_text())
+        for state in ['planned', 'upcoming', 'released', None, 'PRIVATE_UNKNOWN_VALUE']:
+            with self.subTest(state=state):
+                release['status'] = state
+                self.write('releases/example.yaml', release)
+                catalog = Catalog(self.repo, PrivateCandidates(self.repo, None)).catalog
+                expected = state if state in {'planned', 'upcoming', 'released'} else None
+                self.assertEqual(catalog['releases'][0]['release_status'], expected)
+                self.assertEqual(catalog['releases'][0]['tracks'][0]['status'], 'pending_selection')
+                self.assertNotIn('PRIVATE_UNKNOWN_VALUE', json.dumps(catalog))
+
 
 if __name__ == '__main__':
     unittest.main()
