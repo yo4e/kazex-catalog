@@ -18,7 +18,7 @@ lyrics:
   has_lyrics: false
   language: null
 cover:
-  github_path: null
+  github_path: assets/releases/drift-logic/cover/drift-logic-cover-web.jpg
   web_url: null
   drive_url: null
 links:
@@ -151,7 +151,7 @@ promotion:
       image_url: null
       epk_url: null
 assets:
-  github_asset_dir: null
+  github_asset_dir: assets/releases/drift-logic/
   drive_folder_url: null
   cover_drive_folder_url: null
   visuals_drive_folder_url: null

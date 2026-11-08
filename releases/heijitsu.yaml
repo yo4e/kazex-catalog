@@ -25,7 +25,7 @@ lyrics:
   index_path: null
 
 cover:
-  github_path: null
+  github_path: assets/releases/heijitsu/cover/heijitsu-cover-web.jpg
   web_url: null
   drive_url: null
 
@@ -131,7 +131,7 @@ promotion:
       epk_url: null
 
 assets:
-  github_asset_dir: null
+  github_asset_dir: assets/releases/heijitsu/
   drive_folder_url: null
   cover_drive_folder_url: null
   visuals_drive_folder_url: null
@@ -151,7 +151,8 @@ notes_public: |
   duration_secondsはSunoの表示時間。配信版音源の尺とToo Lostへの最終納品内容は未確認。
   全15曲のLyrics欄が[Instrumental]のためhas_lyricsをfalseとした。曲別instrumentalの本人確認は未登録。
   Suno上のReleased日付は配信日として使用しない。本人確認でToo Lostではリリース前のためplannedを維持。
-  配信日、UPC/EAN、catalog number、各曲ISRC、配信URL、正式ジャケット、クレジットは未確定のまま保持する。
+  配信日、UPC/EAN、catalog number、各曲ISRC、配信URL、クレジットは未確定のまま保持する。
   Priority Pitchはdraft、代表曲・施策等は未選定のまま。制作元URLは公開カタログへ含めない。
   2026-11-04に本人が承認した英語セールスピッチと日本語訳の全文は docs/releases/heijitsu-sales-pitch.md に保存。
   英語原文は562文字のため、500文字上限のPriority Pitch用Release Summaryは申請準備時に別途整える。
+  2026-11-08本人確認により、作品名・名義入りのジャケットを採用。Web掲載用コピーを登録。

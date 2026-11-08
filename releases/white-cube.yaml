@@ -20,7 +20,7 @@ lyrics:
   has_lyrics: null
   language: Japanese
 cover:
-  github_path: null
+  github_path: assets/releases/white-cube/cover/white-cube-cover-web.jpg
   web_url: null
   drive_url: null
 links:
@@ -186,7 +186,7 @@ promotion:
       image_url: null
       epk_url: null
 assets:
-  github_asset_dir: null
+  github_asset_dir: assets/releases/white-cube/
   drive_folder_url: null
   cover_drive_folder_url: null
   visuals_drive_folder_url: null
