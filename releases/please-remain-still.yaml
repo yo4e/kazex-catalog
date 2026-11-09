@@ -44,64 +44,154 @@ tracks:
   - title: "Please Remain Still"
     isrc: null
     duration_seconds: 179
+    credits:
+      lyricists: []
+      composers:
+        - Glamorous Fan
+      vocalists: []
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-11-09"}
     creative_prompt: &please_remain_still_title_prompt >-
       industrial techno, techno percussion, classical piano solo, prepared piano stabs, metallic percussion, found-object hits, sub bass pulses, distorted kick, gated reverb, abrupt silence, syncopated toms, glitch edits, dry spoken delivery, monotone cadence, cold urgency, 128 BPM, live percussion, stereo hammering, dark machine funk, Please Remain Still
   - title: "The Narrowest Room"
     isrc: null
     duration_seconds: 184
+    credits:
+      lyricists: []
+      composers:
+        - Glamorous Fan
+      vocalists: []
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-11-09"}
     creative_prompt: &please_remain_still_base_prompt >-
       industrial techno, techno percussion, classical piano solo, prepared piano stabs, metallic percussion, found-object hits, sub bass pulses, distorted kick, gated reverb, abrupt silence, syncopated toms, glitch edits, dry spoken delivery, monotone cadence, cold urgency, 128 BPM, live percussion, stereo hammering, dark machine funk
   - title: "A Voice Through the Glass"
     isrc: null
     duration_seconds: 159
+    credits:
+      lyricists: []
+      composers:
+        - Glamorous Fan
+      vocalists: []
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-11-09"}
     creative_prompt: *please_remain_still_base_prompt
   - title: "The Magnet Never Sleeps"
     isrc: null
     duration_seconds: 169
+    credits:
+      lyricists: []
+      composers:
+        - Glamorous Fan
+      vocalists: []
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-11-09"}
     creative_prompt: *please_remain_still_base_prompt
   - title: "Repetition Time"
     isrc: null
     duration_seconds: 222
+    credits:
+      lyricists: []
+      composers:
+        - Glamorous Fan
+      vocalists: []
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-11-09"}
     creative_prompt: *please_remain_still_title_prompt
   - title: "The Coil Is Listening"
     isrc: null
     duration_seconds: 173
+    credits:
+      lyricists: []
+      composers:
+        - Glamorous Fan
+      vocalists: []
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-11-09"}
     creative_prompt: *please_remain_still_title_prompt
   - title: "The Space Between Pulses"
     isrc: null
     duration_seconds: 174
+    credits:
+      lyricists: []
+      composers:
+        - Glamorous Fan
+      vocalists: []
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-11-09"}
     creative_prompt: *please_remain_still_base_prompt
   - title: "Motion Artifact"
     isrc: null
     duration_seconds: 199
+    credits:
+      lyricists: []
+      composers:
+        - Glamorous Fan
+      vocalists: []
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-11-09"}
     creative_prompt: *please_remain_still_base_prompt
   - title: "K-Space Lullaby"
     isrc: null
     duration_seconds: 141
+    credits:
+      lyricists: []
+      composers:
+        - Glamorous Fan
+      vocalists: []
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-11-09"}
     creative_prompt: *please_remain_still_base_prompt
   - title: "Echo Time"
     isrc: null
     duration_seconds: 180
+    credits:
+      lyricists: []
+      composers:
+        - Glamorous Fan
+      vocalists: []
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-11-09"}
     creative_prompt: *please_remain_still_base_prompt
   - title: "Soft Tissue Memory"
     isrc: null
     duration_seconds: 178
+    credits:
+      lyricists: []
+      composers:
+        - Glamorous Fan
+      vocalists: []
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-11-09"}
     creative_prompt: *please_remain_still_base_prompt
   - title: "Something Moves Anyway"
     isrc: null
     duration_seconds: 178
+    credits:
+      lyricists: []
+      composers:
+        - Glamorous Fan
+      vocalists: []
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-11-09"}
     creative_prompt: *please_remain_still_title_prompt
   - title: "The Shape of Waiting"
     isrc: null
     duration_seconds: 171
+    credits:
+      lyricists: []
+      composers:
+        - Glamorous Fan
+      vocalists: []
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-11-09"}
     creative_prompt: *please_remain_still_title_prompt
   - title: "End of Sequence"
     isrc: null
     duration_seconds: 156
+    credits:
+      lyricists: []
+      composers:
+        - Glamorous Fan
+      vocalists: []
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-11-09"}
     creative_prompt: *please_remain_still_title_prompt
   - title: "You May Move Now"
     isrc: null
     duration_seconds: 162
+    credits:
+      lyricists: []
+      composers:
+        - Glamorous Fan
+      vocalists: []
+    instrumental: {basis: owner_confirmation, confirmed_on: "2026-11-09"}
     creative_prompt: *please_remain_still_title_prompt
 
 credits: {}
@@ -156,7 +246,7 @@ notes_public: |
   共通Stylesの末尾にPlease Remain Stillが付くのは1・5・6・12・13・14・15曲目のみ。
   duration_secondsはSunoの表示時間。配信版音源の尺は未確認。
   全15曲のLyrics欄は[Instrumental]。既存の本人指定によるMRIの基本歌詞なし方針とも一致する。
-  曲別instrumentalの本人確認、今回の曲別作曲クレジットは未確認のため、前作から継承しない。
+  2026-11-09本人指定により全15曲をInstrumentalと確認し、作曲をGlamorous Fanに統一。作詞・歌唱は該当なし。
   Suno上のReleased日付は配信日として使用しない。Too Lostではリリース前のためstatusはplannedとし、
   配信日・UPC/EAN・catalog number・各曲ISRC・配信URLは未確定のまま保持する。
   ジャケットは既存draft PRの本人提供画像を引き継ぐ。制作元URL・音源対応の詳細は公開カタログへ含めない。
