@@ -95,11 +95,11 @@
 - 08. ドミノエフェクト — 採用版確認待ち
 - 09. あたしでよかった — 採用版確認待ち
 
-## MRI_Music Resonance Imaging — Unseen Dragon
+## MRI: Music Resonance Imaging — Unseen Dragon
 
 [作品情報](../releases/unseen-dragon.yaml) / [歌詞データ](unseen-dragon/index.yaml)
 
-- 01. MRI_Music Resonance Imaging — 歌詞なし（本人確認済み）
+- 01. MRI: Music Resonance Imaging — 歌詞なし（本人確認済み）
 - 02. Remove All Metal — 歌詞なし（本人確認済み）
 - 03. Table Feed — 歌詞なし（本人確認済み）
 - 04. Bore Mouth — 歌詞なし（本人確認済み）

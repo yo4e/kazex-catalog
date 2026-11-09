@@ -31,7 +31,7 @@ generation:
   source_playlist_url: null
 
 tracks:
-  - title: MRI_Music Resonance Imaging
+  - title: "MRI: Music Resonance Imaging"
     isrc: "QZPEW0826527"
     credits:
       composers:
@@ -196,14 +196,14 @@ description:
 promotion:
   priority_pitch:
     status: draft
-    selected_track: MRI_Music Resonance Imaging
+    selected_track: "MRI: Music Resonance Imaging"
     release_summary: >
-      “MRI_Music Resonance Imaging” opens Unseen Dragon: industrial techno inspired by the real experience of being inside an MRI scanner. Through the headset, classical piano plays; the machine’s metallic hammering swallows it, and in the abrupt silence the piano returns. Metallic percussion, distorted kicks, prepared piano and glitch edits recreate that gap — the cold intensity of the scan, and the quiet after it. Resonance turned into music, to reveal what cannot be seen.
+      “MRI: Music Resonance Imaging” opens Unseen Dragon: industrial techno inspired by the real experience of being inside an MRI scanner. Through the headset, classical piano plays; the machine’s metallic hammering swallows it, and in the abrupt silence the piano returns. Metallic percussion, distorted kicks, prepared piano and glitch edits recreate that gap — the cold intensity of the scan, and the quiet after it. Resonance turned into music, to reveal what cannot be seen.
     spotify_artist: null
     marketing_elements:
       - visual content strategy
     past_awards_milestones: >
-      This is the debut release from MRI_Music Resonance Imaging. The project has no prior awards, chart milestones, or previous releases to report.
+      This is the debut release from MRI: Music Resonance Imaging. The project has no prior awards, chart milestones, or previous releases to report.
     upcoming_tour_dates: null
     social:
       facebook: null
@@ -235,7 +235,10 @@ notes_public: >
   リリース日・15曲・KazeX Recordsを照合した調査結果から、statusをreleasedへ更新。
   本人指定のsmartlink、アルバム配信リンク、全15曲のSpotify／YouTubeリンクを反映。
   同日のToo Lost作品詳細で曲名ごとに直接照合したUPC/EAN・catalog number・15曲のISRCを登録。
-  配信サービス上のアーティスト表記は「MRI: Music Resonance Imaging」だが、catalogの名称は維持。
+  2026-11-09本人確認に基づき、1曲目（ISRC QZPEW0826527）のtitleとピッチ内の名称表記を正式表記に統一。
+  正式表記の文字・空白のルールはartists/mri-music-resonance-imaging.yamlのnotes_publicを参照。
+  配信先に残る曲名「MRI_Music Resonance Imaging」は外部照合用の原表記としてここに記録する。
+  配信サービス側の登録修正は行っていない。ISRCと配信URLは維持する。
   website.publishとPriority Pitchのstatusは変更しない。
   2026-10-30本人確認: 現存15曲の作曲者をGlamorous Fanとして登録。
   Too Lost原語UIのWriters表記と本人指定を照合し、役割は本人回答を根拠とする。

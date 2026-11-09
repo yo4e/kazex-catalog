@@ -1,6 +1,6 @@
 id: mri-music-resonance-imaging
-name: MRI_Music Resonance Imaging
-sort_name: MRI_Music Resonance Imaging
+name: "MRI: Music Resonance Imaging"
+sort_name: "MRI: Music Resonance Imaging"
 status: active
 
 lyrics:
@@ -127,5 +127,8 @@ notes_public: >
   2026-08-12にGitHub公開素材中心の参照設計へ移行し、MRI公開画像4点を分類登録。
   正方形のDuoアーティスト写真を正式アー写として選定。
   2026-10-26の公開配信ページ調査で確認済みのSpotify／Apple Music Artist URLを登録。
-  配信サービス上の表記は「MRI: Music Resonance Imaging」。catalogの名称は維持する。
+  2026-11-09本人確認: バンド名と同名曲の正式表記は「MRI: Music Resonance Imaging」。
+  コロンは半角の「:」（U+003A）で、直後に半角スペース（U+0020）を1文字置く。
+  「MRI_Music Resonance Imaging」は一部の配信先・既存資料に残る表記ゆれであり、正式表記ではない。
+  変換が発生した理由・工程は未確認。既存artist ID、ISRC、配信URL、素材パスは変更せず照合に使う。
   YouTubeの共用Release - TopicはMRI専用の公式artist URLとして扱わず、未確認のためnullを維持。

@@ -12,7 +12,7 @@
 
 調査時の公開カタログには、Unseen Dragonの15曲とGhost Velocityの11曲が登録されていた。両リリースのstatusはupcoming、release-levelのSpotify URLはnull。記載発売日はそれぞれ2026-08-22と2026-08-24で、調査日より前である。これだけで現在の未配信・配信済みを断定できず、選曲前に配信ページでの照合が必要。
 
-MRIの正式名は「MRI_Music Resonance Imaging」。公開コンセプトは機械音、金属音、静寂、共鳴で、industrial techno、electronic、experimentalに位置付けられている。captionでは「MRI」だけの略称より正式名を併記する方が、曲を探す手掛かりが明確になる。
+MRIの正式表記は[アーティスト正本のnotes_public](../artists/mri-music-resonance-imaging.yaml)を参照（2026-11-09本人確認を反映）。公開コンセプトは機械音、金属音、静寂、共鳴で、industrial techno、electronic、experimentalに位置付けられている。captionでは「MRI」だけの略称より正式名を併記する方が、曲を探す手掛かりが明確になる。
 
 選曲根拠として利用できるのは、この作品情報、実際の試聴、原本の準備状況、既に公開した内容や取得できる反応である。カタログには曲別のSpotify反応データがなく、26曲の中で最も流入が期待できる曲を統計的に選べる状態ではない。
 
@@ -77,7 +77,7 @@ KazeXで試すこと: 情景を伝える一文と、聴く先を伝える一文�
 
 見えない竜の気配。
 
-MRI_Music Resonance Imaging / Unseen Dragon
+MRI: Music Resonance Imaging / Unseen Dragon
 続きはSpotifyで。artist名と曲名で探せます。
 
 AI-generated visual.
@@ -87,7 +87,7 @@ AI-generated visual.
 
 金属音と静寂のあいだに、見えない竜。
 
-MRI_Music Resonance Imaging / Unseen Dragon
+MRI: Music Resonance Imaging / Unseen Dragon
 フルはプロフィールのリンクから。
 
 AI-generated visual.
@@ -97,7 +97,7 @@ AI-generated visual.
 
 この8秒の続きへ。
 
-MRI_Music Resonance Imaging / Unseen Dragon
+MRI: Music Resonance Imaging / Unseen Dragon
 Spotifyで聴くリンクはストーリーズに。
 
 AI-generated visual.
