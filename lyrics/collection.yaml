@@ -1,7 +1,7 @@
 schema_version: 2
 publication_scope: adopted_lyrics_only
 counts:
-  adopted_tracks: 10
-  pending_selection_tracks: 35
+  adopted_tracks: 21
+  pending_selection_tracks: 24
   not_collected_tracks: 0
   no_lyrics_tracks: 15

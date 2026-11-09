@@ -1,58 +1,80 @@
 schema_version: 2
 release_id: white-cube
 tracks:
-  - isrc: QT4K42660822
-    status: pending_selection
-    text_path: null
-    sha256: null
-    adoption: null
-  - isrc: QT4K42660823
-    status: pending_selection
-    text_path: null
-    sha256: null
-    adoption: null
-  - isrc: QT4K42660824
-    status: pending_selection
-    text_path: null
-    sha256: null
-    adoption: null
-  - isrc: QT4K42660825
-    status: pending_selection
-    text_path: null
-    sha256: null
-    adoption: null
-  - isrc: QT4K42660826
-    status: pending_selection
-    text_path: null
-    sha256: null
-    adoption: null
-  - isrc: QT4K42660827
-    status: pending_selection
-    text_path: null
-    sha256: null
-    adoption: null
-  - isrc: QT4K42660828
-    status: pending_selection
-    text_path: null
-    sha256: null
-    adoption: null
-  - isrc: QT4K42660829
-    status: pending_selection
-    text_path: null
-    sha256: null
-    adoption: null
-  - isrc: QT4K42660830
-    status: pending_selection
-    text_path: null
-    sha256: null
-    adoption: null
-  - isrc: QT4K42660831
-    status: pending_selection
-    text_path: null
-    sha256: null
-    adoption: null
-  - isrc: QT4K42660832
-    status: pending_selection
-    text_path: null
-    sha256: null
-    adoption: null
+- isrc: QT4K42660822
+  status: adopted
+  text_path: lyrics/white-cube/qt4k42660822.txt
+  sha256: 6efb9b7b4ea745ff9583fdd0e00e85dbda352446329d66f7a12e27e1d243f041
+  adoption:
+    basis: owner_confirmation
+    verified_on: '2026-11-09'
+- isrc: QT4K42660823
+  status: adopted
+  text_path: lyrics/white-cube/qt4k42660823.txt
+  sha256: 96717d31229bd6baf072fa6e4114c560c9a6cb0c42449dedeac65b0e7045fb86
+  adoption:
+    basis: owner_confirmation
+    verified_on: '2026-11-09'
+- isrc: QT4K42660824
+  status: adopted
+  text_path: lyrics/white-cube/qt4k42660824.txt
+  sha256: 836fe5f769567c610227030dabf7e18183fcce5cdcb2278a6865115c8e048fee
+  adoption:
+    basis: owner_confirmation
+    verified_on: '2026-11-09'
+- isrc: QT4K42660825
+  status: adopted
+  text_path: lyrics/white-cube/qt4k42660825.txt
+  sha256: acbc7318d704fe1c647d7c0253753ea5278a7ba4237046790aba4a7ef72b89dd
+  adoption:
+    basis: owner_confirmation
+    verified_on: '2026-11-09'
+- isrc: QT4K42660826
+  status: adopted
+  text_path: lyrics/white-cube/qt4k42660826.txt
+  sha256: dde4a738554b8ddd7e65501d68d6609fee9ad2767ecd4f48f97f7b838dc8b74f
+  adoption:
+    basis: owner_confirmation
+    verified_on: '2026-11-09'
+- isrc: QT4K42660827
+  status: adopted
+  text_path: lyrics/white-cube/qt4k42660827.txt
+  sha256: 789e66a105830e235b0dbe46fa20d08219b237b5b9ab0aa36daa95f1330f348f
+  adoption:
+    basis: owner_confirmation
+    verified_on: '2026-11-09'
+- isrc: QT4K42660828
+  status: adopted
+  text_path: lyrics/white-cube/qt4k42660828.txt
+  sha256: b0b6a7521c16afa02193d9b71732deca50231dbb18e48a6b9b7ff1ae9d1ea63d
+  adoption:
+    basis: owner_confirmation
+    verified_on: '2026-11-09'
+- isrc: QT4K42660829
+  status: adopted
+  text_path: lyrics/white-cube/qt4k42660829.txt
+  sha256: 1da3f1b8b03f9091cf03b8c8091dc8a62351f344c6b7a153c57dd61f1639bf76
+  adoption:
+    basis: owner_confirmation
+    verified_on: '2026-11-09'
+- isrc: QT4K42660830
+  status: adopted
+  text_path: lyrics/white-cube/qt4k42660830.txt
+  sha256: 681635149c6b75ca075055574bfe8fb3d55e8f77c70a00088b33e6d2a62d3f85
+  adoption:
+    basis: owner_confirmation
+    verified_on: '2026-11-09'
+- isrc: QT4K42660831
+  status: adopted
+  text_path: lyrics/white-cube/qt4k42660831.txt
+  sha256: 26aa017a3f3468a9b386d39f844de5f63a2e57f6fa53a39bbedf452d49acecec
+  adoption:
+    basis: owner_confirmation
+    verified_on: '2026-11-09'
+- isrc: QT4K42660832
+  status: adopted
+  text_path: lyrics/white-cube/qt4k42660832.txt
+  sha256: d9424f1371da6f44b137fd8c8dcabbfac7f42fcfe32efd2f7d0271cdb4773db7
+  adoption:
+    basis: owner_confirmation
+    verified_on: '2026-11-09'

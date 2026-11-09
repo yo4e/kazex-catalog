@@ -17,7 +17,7 @@ copyright:
   p_line: カゼックスレコード ℗ 2026
 lyrics:
   index_path: lyrics/white-cube/index.yaml
-  has_lyrics: null
+  has_lyrics: true
   language: Japanese
 cover:
   github_path: assets/releases/white-cube/cover/white-cube-cover-web.jpg
@@ -212,3 +212,4 @@ notes_public: |
   2026-10-30本人確認: 本作品の現存曲は作詞が月野テンプレクス、作曲がぐらまらすふぁん、歌唱が影音。
   作曲者は同一人物と確認された既存の登録原表記「ぐらまらす ふぁん」を保持。
   作詞・歌唱を曲別creditsへ反映。歌詞本文の採用・確認待ち状態は変更せず、将来曲へ自動継承しない。
+  2026-11-09本人確認: 最終版歌詞資料を全11曲の曲順・曲名に照合し、採用済み本文として収録。
