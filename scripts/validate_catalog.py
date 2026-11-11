@@ -113,6 +113,14 @@ def validate_pitch(path: Path, data: dict) -> None:
         elif isinstance(value, str) and len(value) > 500:
             error(path, f"promotion.priority_pitch.{field} exceeds 500 characters ({len(value)})")
 
+    translation = pitch.get("release_summary_ja")
+    if translation is not None and not isinstance(translation, str):
+        error(path, "promotion.priority_pitch.release_summary_ja must be text or null")
+    elif isinstance(translation, str) and translation.strip():
+        summary = pitch.get("release_summary")
+        if not isinstance(summary, str) or not summary.strip():
+            error(path, "promotion.priority_pitch.release_summary_ja requires an English release_summary")
+
     selected_track = pitch.get("selected_track")
     if selected_track is not None:
         track_titles = {

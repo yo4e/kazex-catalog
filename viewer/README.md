@@ -101,10 +101,14 @@ python scripts/build_public_viewer.py --output /tmp/kazex-public-preview
 本文のない作品では見出しも空欄も出さない。キーボードでも開閉でき、長文・段落を省略せず表示する。
 
 - 通常は公開YAMLの `promotion.priority_pitch.release_summary` をそのまま表示する。
+  カタログ用の日本語訳は同じブロックの `release_summary_ja` に保存し、英語の直下に表示する。
+  英語本文は二重管理せず、翻訳はToo Lost申請用の英語本文や500文字制限とは分けて扱う。
 - 承認済み全文が公開Markdownを正本としている場合は、`promotion.sales_pitch_path` に
   `docs/releases/<id>-sales-pitch.md` を指定する。`## English` と `## 日本語訳` の本文だけを読み、
   申請用メモやリンクは出力しない。全文を優先し、短縮版との重複表示や手入力での二重管理を避ける。
 - 現在の掲載本文はPlease Remain Still、Unseen Dragon、しらす、Ghost Velocityと、平日の承認済み日英全文。
+  2026-11-12の本人依頼で、前4作品にも日本語訳を追加。Please Remain StillとUnseen Dragonは既存訳を使用し、
+  アーティスト名・曲名だけを公開正本の表記に合わせた。平日の既存訳は変更していない。
   既存の公開正本を使用し、Slack内だけにある未保存の翻訳や草稿を自動で追加しない。
 - Priority Pitchの `status` は申請の進行状態であり、本文の表示と切り離す。
   本文掲載によってdraftを申請済みに変えたり、代表曲・施策・リリース日を補ったりしない。

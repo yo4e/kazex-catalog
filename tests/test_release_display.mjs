@@ -70,6 +70,7 @@ test('pitch escapes markup and preserves paragraphs without shortening',()=>{
   assert.match(html,/&lt;script&gt;alert\(1\)&lt;\/script&gt; &amp; &quot;quote&quot;/);
   assert.match(html,/\n\nSecond paragraph\./);
   assert.match(html,/lang="ja">日本語の全文。/);
+  assert.ok(html.indexOf('lang="en"')<html.indexOf('lang="ja"'));
   assert.doesNotMatch(html,/<script>/);
 });
 test('empty pitches create no heading or gap',()=>{

@@ -16,6 +16,25 @@ class PitchTests(unittest.TestCase):
                 self.assertEqual(release_pitch(ROOT, {'promotion': {'priority_pitch': {'release_summary': value}}}), [])
         self.assertEqual(release_pitch(ROOT, {}), [])
 
+    def test_translation_follows_english_and_preserves_full_text(self):
+        english = 'English body.\n\nAnother paragraph.\n'
+        japanese = '日本語の本文。\n\n二つ目の段落。\n'
+        self.assertEqual(release_pitch(ROOT, {'promotion': {'priority_pitch': {
+            'release_summary': english, 'release_summary_ja': japanese}}}), [
+                {'language': 'en', 'label': 'English', 'body': english},
+                {'language': 'ja', 'label': '日本語訳', 'body': japanese}])
+
+    def test_empty_or_nontext_translation_does_not_create_section(self):
+        for value in [None, '', '  \n', [], {}]:
+            with self.subTest(value=value):
+                self.assertEqual(release_pitch(ROOT, {'promotion': {'priority_pitch': {
+                    'release_summary': 'English', 'release_summary_ja': value}}}),
+                    [{'language': 'en', 'label': 'English', 'body': 'English'}])
+
+    def test_translation_without_english_does_not_create_pitch(self):
+        self.assertEqual(release_pitch(ROOT, {'promotion': {'priority_pitch': {
+            'release_summary_ja': '日本語だけ。'}}}), [])
+
     def test_sales_pitch_path_cannot_escape_public_docs(self):
         for path in ['../../private/example.md', 'docs/releases/../../secret-sales-pitch.md',
                      '/tmp/example-sales-pitch.md', 'docs/releases/example.md', 123]:
@@ -51,5 +70,7 @@ class PitchTests(unittest.TestCase):
         for ident in ['please-remain-still', 'unseen-dragon', 'ghost-velocity', 'shirasu']:
             data = yaml.safe_load((ROOT / f'releases/{ident}.yaml').read_text())
             self.assertEqual(release_pitch(ROOT, data)[0]['body'], data['promotion']['priority_pitch']['release_summary'])
+            self.assertEqual(release_pitch(ROOT, data)[1], {'language': 'ja', 'label': '日本語訳',
+                'body': data['promotion']['priority_pitch']['release_summary_ja']})
         data = yaml.safe_load((ROOT / 'releases/heijitsu.yaml').read_text())
         self.assertEqual([p['language'] for p in release_pitch(ROOT, data)], ['en', 'ja'])

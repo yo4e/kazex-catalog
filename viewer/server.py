@@ -89,9 +89,15 @@ def release_pitch(root: Path, data):
         if not result:
             raise ValueError('Public sales pitch has no English or Japanese body')
         return result
-    summary = (promotion.get('priority_pitch') or {}).get('release_summary')
-    return ([{'language': 'en', 'label': 'English', 'body': summary}]
-            if isinstance(summary, str) and summary.strip() else [])
+    pitch = promotion.get('priority_pitch') or {}
+    summary = pitch.get('release_summary')
+    if not isinstance(summary, str) or not summary.strip():
+        return []
+    result = [{'language': 'en', 'label': 'English', 'body': summary}]
+    translation = pitch.get('release_summary_ja')
+    if isinstance(translation, str) and translation.strip():
+        result.append({'language': 'ja', 'label': '日本語訳', 'body': translation})
+    return result
 
 
 class PrivateCandidates:

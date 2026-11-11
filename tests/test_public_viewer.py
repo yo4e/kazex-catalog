@@ -137,20 +137,24 @@ class PublicViewerTests(unittest.TestCase):
     def test_export_pitch_preserves_public_summary_and_omits_submission_fields(self):
         release = yaml.safe_load((self.root / 'releases/example.yaml').read_text())
         summary = 'Approved <pitch> & text.\n\nSecond paragraph.\n'
+        translation = '公開ピッチの日本語訳。\n\n二つ目の段落。\n'
         release['promotion'] = {'priority_pitch': {'status': 'draft', 'release_summary': summary,
+            'release_summary_ja': translation,
             'draft_translation': 'NEVER_EXPORT', 'marketing_elements': ['NEVER_EXPORT'],
             'attachments': {'epk_url': 'NEVER_EXPORT'}}}
         self.fixture.write('releases/example.yaml', release)
         export(self.root, self.destination)
         raw = (self.destination / 'data/catalog.json').read_text()
-        self.assertEqual(json.loads(raw)['releases'][0]['pitch'], [{'language': 'en', 'label': 'English', 'body': summary}])
+        self.assertEqual(json.loads(raw)['releases'][0]['pitch'], [
+            {'language': 'en', 'label': 'English', 'body': summary},
+            {'language': 'ja', 'label': '日本語訳', 'body': translation}])
         self.assertNotIn('NEVER_EXPORT', raw)
         self.assertEqual(yaml.safe_load((self.root / 'releases/example.yaml').read_text())['promotion']['priority_pitch']['status'], 'draft')
 
     def test_export_approved_full_sales_pitch_without_document_notes_or_duplicate_summary(self):
         release = yaml.safe_load((self.root / 'releases/example.yaml').read_text())
         release['promotion'] = {'sales_pitch_path': 'docs/releases/example-sales-pitch.md',
-            'priority_pitch': {'release_summary': 'SHORT_VERSION'}}
+            'priority_pitch': {'release_summary': 'SHORT_VERSION', 'release_summary_ja': 'SHORT_TRANSLATION'}}
         self.fixture.write('releases/example.yaml', release)
         path = self.root / release['promotion']['sales_pitch_path']
         path.parent.mkdir(parents=True)
@@ -160,7 +164,7 @@ class PublicViewerTests(unittest.TestCase):
         self.assertEqual(json.loads(raw)['releases'][0]['pitch'], [
             {'language': 'en', 'label': 'English', 'body': 'Full English.\n\nParagraph two.'},
             {'language': 'ja', 'label': '日本語訳', 'body': '日本語の全文。'}])
-        for private in ['NEVER_EXPORT', 'SHORT_VERSION', 'sales_pitch_path']:
+        for private in ['NEVER_EXPORT', 'SHORT_VERSION', 'SHORT_TRANSLATION', 'sales_pitch_path']:
             self.assertNotIn(private, raw)
 
     def test_export_no_pitch_is_an_empty_list(self):
