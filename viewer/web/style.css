@@ -38,3 +38,12 @@ a,.card-match{color:#24584b}
 .track-credits dt{color:var(--muted)}.track-credits dd{margin:0;overflow-wrap:anywhere}
 
 .badge.prerelease{background:#e8eefb;color:#365a98}.hero-meta{align-items:center}
+
+/* Pitch text follows work information and precedes images, from public sources only. */
+.pitch-section{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:0 0 24px;font-size:12px}
+.pitch-section summary{cursor:pointer;font-weight:600}
+.pitch-section summary:focus-visible{outline:2px solid #24584b;outline-offset:4px}
+.pitch-content{max-width:75ch;margin-top:16px}
+.pitch-content section+section{border-top:1px solid var(--line);padding-top:16px;margin-top:20px}
+.pitch-language{font-size:11px;font-weight:600;color:var(--muted);margin:0 0 8px}
+.pitch-copy{white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px;line-height:1.8;margin:0 0 4px}

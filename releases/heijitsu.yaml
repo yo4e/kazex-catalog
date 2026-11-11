@@ -113,6 +113,7 @@ description:
     mallsoftを通じて、日常の幸福感と空虚さ、夢に入り込んだような感覚を描く。
 
 promotion:
+  sales_pitch_path: docs/releases/heijitsu-sales-pitch.md
   priority_pitch:
     status: draft
     selected_track: null

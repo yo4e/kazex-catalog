@@ -65,6 +65,12 @@ def validate_export(directory: Path):
     tracks = json.loads((directory / 'data/tracks.json').read_text())
     if catalog['private_available'] is not False:
         raise ValueError('Public export cannot enable private candidates')
+    for release in catalog['releases']:
+        for pitch in release.get('pitch', []):
+            if set(pitch) != {'language', 'label', 'body'}:
+                raise ValueError('Unexpected pitch fields in public export')
+            if pitch['language'] not in {'en', 'ja'} or not isinstance(pitch['body'], str) or not pitch['body'].strip():
+                raise ValueError('Invalid public pitch body')
     adopted = 0
     for track in tracks.values():
         if set(track) != {'key', 'number', 'title', 'isrc', 'status', 'candidate_count', 'spotify_id', 'adopted',

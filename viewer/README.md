@@ -93,3 +93,25 @@ python scripts/build_public_viewer.py --output /tmp/kazex-public-preview
 `status: planned` / `upcoming` は一覧・作品ページに「リリース前」と表示する。日付があれば「予定」、未定なら「リリース日未定」とし、日付経過だけでreleasedへ変更しない。リリース前作品は一覧の先頭に置き、曲目未登録の作品も検索・閲覧できる。
 既存の `website.publish` は将来の公式サイト連携設定として値を保持する。公開カタログへの掲載、音楽の配信開始、外部サービスへの申請はそれぞれ別の操作である。非公開原稿・制作サービスの出典は引き続き公開しない。
 ローカル比較版は引き続き `--private-config` で利用でき、公開版への切替で私的原稿が消えることはない。
+
+
+## ピッチ表示
+
+作品ページの「作品情報」と「画像を確認」のあいだに「ピッチを読む」を表示する。
+本文のない作品では見出しも空欄も出さない。キーボードでも開閉でき、長文・段落を省略せず表示する。
+
+- 通常は公開YAMLの `promotion.priority_pitch.release_summary` をそのまま表示する。
+- 承認済み全文が公開Markdownを正本としている場合は、`promotion.sales_pitch_path` に
+  `docs/releases/<id>-sales-pitch.md` を指定する。`## English` と `## 日本語訳` の本文だけを読み、
+  申請用メモやリンクは出力しない。全文を優先し、短縮版との重複表示や手入力での二重管理を避ける。
+- 現在の掲載本文はPlease Remain Still、Unseen Dragon、しらす、Ghost Velocityと、平日の承認済み日英全文。
+  既存の公開正本を使用し、Slack内だけにある未保存の翻訳や草稿を自動で追加しない。
+- Priority Pitchの `status` は申請の進行状態であり、本文の表示と切り離す。
+  本文掲載によってdraftを申請済みに変えたり、代表曲・施策・リリース日を補ったりしない。
+- 追加する本文は採用と公開可否を確認してから公開正本に保存する。私的な候補本文や出典は対象外。
+
+```bash
+node --test tests/test_release_display.mjs
+python -m unittest discover -s tests
+python scripts/validate_catalog.py
+```

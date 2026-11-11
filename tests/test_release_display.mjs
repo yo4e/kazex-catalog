@@ -61,3 +61,39 @@ test('detail displays scheduled date and prerelease status with existing tracks'
   assert.match(v.app.innerHTML,/2027-01-02 予定/);
   assert.match(v.app.innerHTML,/Track/);
 });
+
+test('pitch escapes markup and preserves paragraphs without shortening',()=>{
+  const v=viewer([]);
+  v.context.sample={pitch:[{language:'en',label:'English',body:'First <script>alert(1)</script> & "quote".\n\nSecond paragraph.'},{language:'ja',label:'日本語訳',body:'日本語の全文。'}]};
+  const html=v.run('releasePitch(sample)');
+  assert.match(html,/ピッチを読む/);
+  assert.match(html,/&lt;script&gt;alert\(1\)&lt;\/script&gt; &amp; &quot;quote&quot;/);
+  assert.match(html,/\n\nSecond paragraph\./);
+  assert.match(html,/lang="ja">日本語の全文。/);
+  assert.doesNotMatch(html,/<script>/);
+});
+test('empty pitches create no heading or gap',()=>{
+  const v=viewer([]);
+  for(const pitch of [undefined,[],[{body:null}],[{body:' \n'}]]){
+    v.context.sample={pitch};
+    assert.equal(v.run('releasePitch(sample)'),'');
+  }
+});
+test('pitch is between work information and gallery and survives repeated navigation',async()=>{
+  const withPitch=release('with','planned');
+  withPitch.metadata={label:'Test Label'};
+  withPitch.pitch=[{language:'en',label:'English',body:'Approved pitch body.'}];
+  const v=viewer([withPitch,release('without','released')]);
+  v.run('catalog.artists[0].images=[{id:"image",url:"assets/example.png",kind:"アー写",title:"Portrait",status:"selected"}]');
+  for(let i=0;i<2;i++){
+    await v.run('detailView("with",new URLSearchParams("track=1"),0)');
+    const html=v.app.innerHTML;
+    assert.ok(html.indexOf('class="catalog-info"')<html.indexOf('class="pitch-section"'));
+    assert.ok(html.indexOf('class="pitch-section"')<html.indexOf('class="image-section"'));
+    assert.equal((html.match(/Approved pitch body\./g)||[]).length,1);
+    assert.match(html,/Track/);
+    await v.run('detailView("without",new URLSearchParams("track=1"),0)');
+    assert.doesNotMatch(v.app.innerHTML,/ピッチを読む|Approved pitch body/);
+    assert.match(v.app.innerHTML,/画像を確認/);
+  }
+});

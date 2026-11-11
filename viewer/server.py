@@ -73,6 +73,27 @@ def contained(root: Path, value: str) -> Path:
     return target
 
 
+def release_pitch(root: Path, data):
+    """Read only the public pitch body, not submission fields or source notes."""
+    promotion = data.get('promotion') or {}
+    path = promotion.get('sales_pitch_path')
+    if path is not None:
+        if not isinstance(path, str) or not re.fullmatch(r'docs/releases/[a-z0-9-]+-sales-pitch\.md', path):
+            raise ValueError('Sales pitch must reference a public docs/releases sales-pitch file')
+        source = contained(root, path).read_text(encoding='utf-8')
+        sections = re.split(r'^## (.+)\n', source, flags=re.MULTILINE)
+        bodies = dict(zip(sections[1::2], sections[2::2]))
+        result = [{'language': lang, 'label': heading, 'body': bodies[heading].strip()}
+                  for lang, heading in [('en', 'English'), ('ja', '日本語訳')]
+                  if bodies.get(heading, '').strip()]
+        if not result:
+            raise ValueError('Public sales pitch has no English or Japanese body')
+        return result
+    summary = (promotion.get('priority_pitch') or {}).get('release_summary')
+    return ([{'language': 'en', 'label': 'English', 'body': summary}]
+            if isinstance(summary, str) and summary.strip() else [])
+
+
 class PrivateCandidates:
     def __init__(self, repo: Path, config: Path | None):
         self.versions: dict[str, list[dict]] = {}
@@ -211,7 +232,7 @@ class Catalog:
                 releases.append({'id': data['id'], 'title': data['title'], 'artist_id': data['artist_id'],
                                  'release_date': str(data.get('release_date') or ''), 'type': data.get('release_type'),
                                  'release_status': data.get('status') if data.get('status') in {'planned', 'upcoming', 'released'} else None,
-                                 'cover': cover, 'tracks': tracks,
+                                 'cover': cover, 'tracks': tracks, 'pitch': release_pitch(self.root, data),
                                  'links': service_links(data.get('links') or {}, 'release'),
                                  'metadata': {'genres': text_list(data.get('genres')), 'label': data.get('label'),
                                      'identifiers': text_fields(data.get('identifiers') or {}, ['upc_ean', 'catalog_number', 'amazon_asin']),
